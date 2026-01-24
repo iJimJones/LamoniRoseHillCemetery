@@ -3,55 +3,17 @@
 <head>
 <title>Lamoni Rose Hill Map</title>
 <meta charset="utf-8">
-<style>
-* {
-	box-sizing: border-box;
-}
-body {
-	font-family:sans-serif;
-}
-.center {
-	text-align: center;
-}
-.mapbox {
-	position:relative;
-	margin:auto;
-	min-width:450px;
-	max-width:800px;
-}
-.mapbox>img{
-	width:100%;
-	height:auto;
-}
-.used {
-	position:absolute;
-	color:yellow;
-	border: yellow .3vw solid;
-	font:bold 150% Arial, sans-serif;
-	text-align: center;
-	padding-top: .5vw;
-	cursor: pointer;
-	-webkit-user-select: none;
-	user-select: none;
-}
-.unused {
-	position:absolute;
-	color:yellow;
-	border: none;
-	font:italic 100% Arial, sans-serif;
-	text-align: center;
-	padding-top: .5vw;
-	cursor: pointer;
-	-webkit-user-select: none;
-	user-select: none;
-}
-</style>
+<link href="../rosehill.css" rel="stylesheet">
+<script src="../js/includes.js"></script>
 </head>
 <body>
+<div id="wrapper">
+<div data-include="../includes/header-sub.html"></div>
+<div data-include="../includes/nav-sub.html"></div>
 
+<div id="content">
 
 <h1 class="center">
-<img src="../icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80" alt="" title="icon by Mark Jones">
 Lamoni Rose Hill Cemetery Map
 </h1>
 
@@ -143,6 +105,8 @@ function openInNewTab(url){
 };
 </script>
 
-
+<div data-include="../includes/footer-sub.html"></div>
+</div>
+</div>
 </body>
-</head>
+</html>
