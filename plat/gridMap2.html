@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data-Driven Cemetery Plat Map</title>
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f0f0f0;
+    position: relative;
+    cursor: grab;
+  }
+
+  /* This is a fixed-size "grid canvas" we position plots on */
+  .map-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 80px); /* Adjust as needed */
+    grid-template-rows: repeat(15, 80px);    /* Adjust as needed */
+    transform-origin: 0 0;
+    user-select: none;
+  }
+
+  /* Row & column headers */
+  .header {
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  /* Plot cells */
+  .plot {
+    border: 1px solid #bbb;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; /* always show plot number */
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .plot:hover {
+    background: #d9f0ff;
+  }
+</style>
+</head>
+<body>
+
+<div class="map-container" id="mapContainer">
+  <div class="map-grid" id="mapGrid"></div>
+</div>
+
+<script>
+const grid = document.getElementById('mapGrid');
+
+// Example plot data (add as many as needed)
+const plotsData = [
+  { number: "A-1", names: ["John Doe", "Mary Smith"], col: 2, row: 2, colSpan: 1, rowSpan: 1 },
+  { number: "A-2", names: ["Alice Johnson", "Bob Brown"], col: 3, row: 2, colSpan: 1, rowSpan: 1 },
+  { number: "B-15", names: ["Ethan Clark"], col: 5, row: 4, colSpan: 2, rowSpan: 1 }, // double-width
+  { number: "C-7", names: ["Unknown"], col: 2, row: 5, colSpan: 1, rowSpan: 2 }, // double-height
+  // Add more plots here...
+];
+
+// Optional: row and column header labels
+const totalCols = 20; // must match grid-template-columns count
+const totalRows = 15; // must match grid-template-rows count
+for (let c = 1; c <= totalCols; c++) {
+  const header = document.createElement('div');
+  header.className = 'header';
+  header.textContent = c;
+  header.style.gridColumn = c;
+  header.style.gridRow = 1;
+  grid.appendChild(header);
+}
+for (let r = 1; r <= totalRows; r++) {
+  const header = document.createElement('div');
+  header.className = 'header';
+  header.textContent = r;
+  header.style.gridColumn = 1;
+  header.style.gridRow = r;
+  grid.appendChild(header);
+}
+
+// Place plots according to data
+plotsData.forEach(plotData => {
+  const div = document.createElement('div');
+  div.className = 'plot';
+  div.dataset.number = plotData.number;
+  div.dataset.names = plotData.names.join("\n");
+  div.style.gridColumn = `${plotData.col} / span ${plotData.colSpan}`;
+  div.style.gridRow = `${plotData.row} / span ${plotData.rowSpan}`;
+  grid.appendChild(div);
+});
+
+let zoom = 0.8;
+let offsetX = 0;
+let offsetY = 0;
+let isPanning = false;
+let startX, startY;
+
+function updateTransform() {
+  grid.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${zoom})`;
+}
+
+function updateLabels() {
+  document.querySelectorAll('.plot').forEach(plot => {
+    const num = plot.dataset.number;
+    const names = plot.dataset.names.split("\n");
+    if (zoom >= 2) {
+      plot.innerHTML = `${num}<br>${names.join("<br>")}`;
+    } else {
+      plot.innerHTML = `${num}`;
+    }
+  });
+}
+
+// Zoom
+mapContainer.addEventListener('wheel', e => {
+  e.preventDefault();
+  const zoomFactor = 0.1;
+  zoom += (e.deltaY < 0 ? zoomFactor : -zoomFactor);
+  zoom = Math.min(Math.max(zoom, 0.5), 4);
+  updateTransform();
+  updateLabels();
+});
+
+// Pan
+mapContainer.addEventListener('mousedown', e => {
+  isPanning = true;
+  startX = e.clientX - offsetX;
+  startY = e.clientY - offsetY;
+  mapContainer.style.cursor = 'grabbing';
+});
+mapContainer.addEventListener('mouseup', () => {
+  isPanning = false;
+  mapContainer.style.cursor = 'grab';
+});
+mapContainer.addEventListener('mousemove', e => {
+  if (!isPanning) return;
+  offsetX = e.clientX - startX;
+  offsetY = e.clientY - startY;
+  updateTransform();
+});
+
+updateTransform();
+updateLabels();
+</script>
+
+</body>
+</html>

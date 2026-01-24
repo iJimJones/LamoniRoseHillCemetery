@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lamoni Rose Hill Map</title>
+<meta charset="utf-8">
+<style>
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family:sans-serif;
+}
+.center {
+	text-align: center;
+}
+.mapbox {
+	position:relative;
+	margin:auto;
+	min-width:450px;
+	max-width:800px;
+}
+.mapbox>img{
+	width:100%;
+	height:auto;
+}
+.used {
+	position:absolute;
+	color:yellow;
+	border: yellow .3vw solid;
+	font:bold 150% Arial, sans-serif;
+	text-align: center;
+	padding-top: .5vw;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.unused {
+	position:absolute;
+	color:yellow;
+	border: none;
+	font:italic 100% Arial, sans-serif;
+	text-align: center;
+	padding-top: .5vw;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+</style>
+</head>
+<body>
+
+
+<h1 class="center">
+<img src="../icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80" alt="" title="icon by Mark Jones">
+Lamoni Rose Hill Cemetery Map
+</h1>
+
+<div class="center" style="font-size:14pt">
+   Click any section below to see plat image.
+</div>
+<div class="center" style="font-size:11pt; font-style:italic; margin-top: 6pt;">
+   Disclaimer: plat map is not official record for owners since buy-back/resales were not always updated on the plat
+</div>
+
+<div class="mapbox">
+   <!-- 960x612 pixel image of cemetery -->
+   <img src="pics/LRHC-droneMap.jpg" alt="Cemetery Map">
+   <div class="used"   style="width:18.4%; height:13.2%; top:10.7%; left:2.3%;" onclick='openInNewTab("pics/1n.jpg");'>1n</div>
+   <div class="used"   style="width:18.4%; height:17.6%; top:24.8%; left:2.3%;" onclick='openInNewTab("pics/1s.jpg");'>1s</div>
+   <div class="used"   style="width:18.4%; height:27.5%; top:44.1%; left:2.3%;" onclick='openInNewTab("pics/2.jpg");'>2</div>
+   
+   <div class="used"   style="width:11.1%; height:13.2%; top:10.7%; left:22.2%;" onclick='openInNewTab("pics/3n.jpg");'>3n</div>
+   <div class="used"   style="width:11.1%; height:17.6%; top:24.8%; left:22.2%;" onclick='openInNewTab("pics/3s.jpg");'>3s</div>
+   <div class="used"   style="width:11.1%; height:27.5%; top:44.1%; left:22.2%;" onclick='openInNewTab("pics/4.jpg");'>4</div>
+   
+   <div class="used"   style="width:15.2%; height:13.2%; top:10.7%; left:34.8%;" onclick='openInNewTab("pics/5n.jpg");'>5n</div>
+   <div class="used"   style="width:15.2%; height:17.3%; top:25.5%; left:34.8%;" onclick='openInNewTab("pics/5s.jpg");'>5s</div>
+   <div class="used"   style="width:15.2%; height:22.0%; top:44.7%; left:34.8%;" onclick='openInNewTab("pics/6.jpg");'>6</div>
+   
+   <div class="used"   style="width:12.8%; height:13.2%; top:10.7%; left:52.5%;" onclick='openInNewTab("pics/B9.jpg");'>B9</div>
+   <div class="used"   style="width:12.8%; height:17.0%; top:25.8%; left:52.5%;" onclick='openInNewTab("pics/B8.jpg");'>B8</div>
+   <div class="used"   style="width:12.8%; height:21.8%; top:45.0%; left:52.5%;" onclick='openInNewTab("pics/B3.jpg");'>B3</div>
+   <div class="unused" style="width:12.8%; height:19.3%; top:68.4%; left:52.5%;" onclick='openInNewTab("pics/B2.jpg");'>B2<br>grass</div>
+   
+   <div class="used"   style="width:13.5%; height:13.2%; top:10.7%; left:67.0%;" onclick='openInNewTab("pics/B10.jpg");'>B10</div>
+   <div class="used"   style="width:13.5%; height:17.0%; top:25.8%; left:67.0%;" onclick='openInNewTab("pics/B7.jpg");'>B7</div>
+   <div class="unused" style="width:13.5%; height:21.8%; top:45.0%; left:67.0%;" onclick='openInNewTab("pics/B4.jpg");'>B4<br>grass</div>
+   <div class="unused" style="width:13.5%; height:19.3%; top:68.4%; left:67.0%;" onclick='openInNewTab("pics/B1.jpg");'>B1<br>grass</div>
+   
+   <div class="unused" style="width:13.0%; height:13.2%; top:10.7%; left:81.8%;" onclick='openInNewTab("pics/B11.jpg");'>B11<br>grass</div>
+   <div class="unused" style="width:13.0%; height:17.0%; top:25.8%; left:81.8%;" onclick='openInNewTab("pics/B6.jpg");'>B6<br>grass</div>
+   <div class="unused" style="width:13.0%; height:17.6%; top:45.0%; left:81.8%;" onclick='openInNewTab("pics/B5.jpg");'>B5<br>grass</div>
+</div>
+
+<div>
+<h3 class="center">Layout of Lots and Plat Notes</h3>
+<p>
+The west (older) half is divided into sections 1n, 1s, 2, 3n, 3s, 4, 5n, 5s, and 6.
+The east (newer) half is divided into blocks B3, B7, B8, B9&nbsp;&amp; B10 (the only ones for burials).
+These sections and blocks are collectively referred to as sections.
+To see the grid map for all lots <a href="../search/RoseHillGrid.pdf" target="_blank">CLICK HERE</a>.
+Each lot has an X and Y coordinate relative to a section.
+X is the row of headstones starting with row 1 from west to east within a section.
+Y is the lot starting with 1 from north to south within a section (lots as plated).
+The term "row" by itself means X, because that is how the public would see a row.
+Each Y value represents a "horizontal row" of lots on the plat map or grid, but
+these plated rows are invisible to a visitor and probably should not call them rows
+to avoid confusions (or else qualify it with "horizontal rows" on the plat or grid).
+Without a plat map and measuring tape, Y is just a guide to help find the location.
+</p>
+
+<p>
+The width of a lot is consistent across a horizontal line of lots on the grid (as plated). 
+In the new east part of the cemetery most are 14' wide lots, made up of four 3.5' spaces.
+In the old west part of the cemetery most are 12' wide lots, made up of three 4' wide spaces
+(but prior to 1975 were viewed as four 3' wide spaces).
+</p>
+<p>
+There are grassy lanes running horizontally through sections of the cemetery and are
+identified by a letter (lanes A through G) but most of these lanes are being
+sold off as burial plots. The 8' lanes were divided into 8' wide lots made up of
+two 4' wide spaces. There is one 6' lane on the east side that is divided into
+single 6' wide space lots.
+</p>
+<p>
+There are some other exceptions to the lot sizes previously mentioned, all in
+the old west sections. The plat map shows that some of the horizontal rows of
+lots were plated for 5', 10', and 11' lot widths. A few lots have strange
+shapes along the curved roadways in sections 2 and 4. Section 6 was originally
+plated with very large 18.4' and 20.8' by 21' lots but in 1924 got re-plated
+so that most were 12' lots, but to do that some 10' horizontal lines of lots
+were needed. Furthermore, since some section 6 lots had already been sold
+they had to be worked around with some different size lots. One needs to look
+at the plat map to see these different measurements.
+</p>
+</div>
+
+
+<script type="text/javascript">
+function openInNewTab(url){
+	var win= window.open(url,'_blank');
+	win.focus();
+};
+</script>
+
+
+</body>
+</head>

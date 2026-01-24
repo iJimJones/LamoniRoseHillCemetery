@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Flags and Crosses</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<style>
+    body{font-family: serif;}
+    p{font-size: 12pt;}
+	tr:nth-child(even){background-color: #f2f2e2;}
+	tr:nth-child(odd) {background-color: #ffffff;}
+	
+	th:nth-child(1), td:nth-child(1) {width:200px; text-align:left;}   /* Name       */
+	th:nth-child(2), td:nth-child(2) {width:70px;  text-align:left;}   /* War        */
+	th:nth-child(3), td:nth-child(3) {width:70px;  text-align:left;}   /* Branch     */
+	th:nth-child(4), td:nth-child(4) {width:40px;  text-align:center;} /* Flag       */
+	th:nth-child(5), td:nth-child(5) {width:40px;  text-align:center;} /* Cross      */
+	th:nth-child(6), td:nth-child(6) {width:40px;  text-align:center;} /* Buried here*/
+	th:nth-child(7), td:nth-child(7) {width:380px; text-align:left;}   /* Notes      */
+	
+	th    {font-size:10pt; font-family: arial, sans-serif; height:20pt; vertical-align:bottom; background-color:#e0e0d0;}
+	tbody {font-size:11pt;}
+
+	table,th,td {border:0;}
+	#top, #bottom, #vetList, #colHeaders {width:90%; min-width:660px; margin:auto;}
+	#footer { 
+		font-size: .90em;
+		font-style: italic;
+		text-align: center;
+		padding: 10px;
+		clear: both;
+	}
+	#colHeaders, #colHeaders th {
+		position: sticky;
+		top: 0;
+	}
+
+</style>
+</head>
+
+<body>
+<div id="top">
+
+<div style="text-align:center; font-size:22pt; font-weight: bold;">
+  <img src="../icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80"  
+  alt="" title="icon by Mark Jones"> Veteran Flags &amp; Crosses at Rose Hill
+</div>
+
+<div style="text-align:center; font-size:14pt; font-weight: bold; margin:6pt 0 12pt 0;">
+  as of April 30, 2024
+</div>
+
+<div>
+  This lists all veterans with a flag or cross displayed on Memorial Day weekends,
+  including many who are not buried here but grew up or had connections to Lamoni.
+  This list is maintained by 
+  <a href="mailto:westsideacres@yahoo.com">Gary &amp; Shelly Waugh</a>, who make 
+  and maintain the crosses. The Lamoni Lions Club puts the flags and crosses up
+  each year for Memorial Day, and repair or replace damaged flags.
+  Rose Hill publishes its own <a href="VeteransByNameTable.html">Veterans&nbsp;List</a>
+  of veterans who are buried or have a monument here.
+</div>
+
+<div style="margin-top:8px;">
+<img src="../icons/new.gif" alt="" width="40px">
+Show lines containing <input id="searchValue" type="text" placeholder="Anything (search text)">
+in
+	<select id="columnSelect">
+		<option value="Anywhere">Anywhere</option>
+		<option value="Name">Name</option>
+		<option value="War">War</option>
+		<option value="Branch">Branch</option>
+		<option value="Flag">Flag</option>
+		<option value="buried here">buried here</option>
+		<option value="Notes">Notes</option>
+	</select> 
+	
+	<!-- The Show All button merely refreshes the page (the fastest way to show all) -->
+	<button onClick="window.location.href=window.location.href">Show All</button>
+</div>
+
+<div style="margin-top:6px;">
+  <div id="count" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
+</div>
+
+</div> <!-- end of top -->
+
+<table id="vetList" style="clear:both;">
+<thead id="colHeaders">
+<tr id="headings"><th>Name</th><th>War</th><th>Branch</th><th>Flag</th><th>Cross</th><th>buried<br>here</th><th>Notes</th></tr>
+</thead>
+<tbody id="geeks">
+<tr><td>Abbott, William Nathaniel </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Allen, David Oren </td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Allen, Robert Glen </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Allen, Wilbur Leland </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Amundson, Alma Victor </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Amundson, Veryl Alma </td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Anderson, Carnie Wayne </td><td></td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Anderson, Fay Charles </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Anderson, Lawrence Howard </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Anderson, Quentin V. </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Anderson, Robert Harold "Bob"</td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Atkins, Ferris Benjamin </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>10th Infantry, Pvt, Mich <i> </i></td></tr>
+<tr><td>Atteberry, Kenneth Leroy </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Atwood, Frederick A. </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Bailey, Oliver James </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry, Pvt, Mich <i> </i></td></tr>
+<tr><td>Baker, Benjamin Earl </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Baker, Benjamin Macleman </td><td></td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Baker, James Hooker Lt.</td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry, 1st. Lt. <i> </i></td></tr>
+<tr><td>Baldwin, Don E. </td><td>WW2</td><td>Army Air Corps</td><td>X</td><td>X</td><td>NO</td><td> <i> buried in New Buda cemetery (no headstone) </i></td></tr>
+<tr><td>Baldwin, John Frank </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ballantyne, Donald Keith "Keith"</td><td>Korea</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ballantyne, James Alvin </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ballantyne, Paul Ardinan </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Bandy, Richard Carl </td><td>WW1</td><td>Navy</td><td></td><td>X</td><td>yes</td><td>HS- US B.S.C.   <i> </i></td></tr>
+<tr><td>Banker, Norman Brand </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td>Signal Corps <i> </i></td></tr>
+<tr><td>Banta, Elijah  </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Banta, Robert Wayne </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Barnes, William Henry "Bill"</td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Barr, Charles Hart </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Barrows, Sidney Carleton </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td>USNR  <i> </i></td></tr>
+<tr><td>Bassett, Paul Milton </td><td>WW1</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Baughman, Doyle Dean </td><td>Korea</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Beaty, Earl Raymond </td><td>Korea</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Beck, Theodore Abel </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Beckman, Philip Haynes </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Bell, Keith Harold </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Benson, David James DDS</td><td>Vietnam</td><td></td><td></td><td>X</td><td>yes</td><td>USNR <i> </i></td></tr>
+<tr><td>Bergman, John Henry </td><td>WW2</td><td></td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Bergman, Roland Duane </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td>KIA  <i> </i></td></tr>
+<tr><td>Best, Warren Christie </td><td>WW1</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Biddle, Leroy William "Bud"</td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td>POW, Bataan Death March <i> </i></td></tr>
+<tr><td>Bierlein, Donald Gene </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Birlingmair, David Harold "Dave"</td><td></td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Bixby, Glenn Allen </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Black, George Albert Jr.</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Blair, Alma Roberts </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>later</td><td> <i> </i></td></tr>
+<tr><td>Blake, James Earl </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Blake, Myrtle Pearl "Tiny"</td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td>WAAC, Tec5   <i> </i></td></tr>
+<tr><td>Blake, Russell Elburn </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>17th Cavalry (horse) <i> </i></td></tr>
+<tr><td>Blevins, Ralph Wayne </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Blood, James Monroe </td><td>Civil War</td><td>Calvary</td><td></td><td>X</td><td>yes</td><td>Cavalry, Wisc <i> </i></td></tr>
+<tr><td>Bollinger, Henry Ephraim Jr.</td><td>WW2</td><td>Army Air Corps</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Booker, Arnold Bryce </td><td></td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Booker, William Derhyl </td><td>Multi War</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>WW2-Korea   <i> </i></td></tr>
+<tr><td>Boswell, Dennis Ray </td><td></td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> He served 1958-61</i></td></tr>
+<tr><td>Boswell, Gary Lee </td><td>Vietnam</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Boswell, Kenneth Earld "Fritz"</td><td>Vietnam</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Boswell, Leonard Leroy </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>Flying Cross, Bronze Star, Air Medal <i> </i></td></tr>
+<tr><td>Bowen, Winfield Orion </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Bowman, George William </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Boyer, Joseph Clinton Jr.</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Braby, James Wray </td><td>Korea</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Brenizer, Robert Charles Pvt.</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Briggs, Adeline Harris "Addie"</td><td>WW2</td><td></td><td>X </td><td>X</td><td>yes</td><td>WAC 1st Lt,  <i> Army, 1st Lt, WAC is on her official veteran's plaque.  </i></td></tr>
+<tr><td>Briggs, Roland Kelley </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Brown, Roger Odis </td><td>Korea</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Brownrigg, Russell Earl Jr.</td><td>Multi War</td><td>Navy</td><td></td><td>X</td><td>yes</td><td>WW2 & Korea  <i> </i></td></tr>
+<tr><td>Butler, Charles J. </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Butterworth, Gladys Irene </td><td>WW2</td><td>AAF</td><td>X </td><td>X</td><td>NO</td><td>CPL, Nurse <i> Jim Silsby's sis, buried Little Sioux, IA.  </i></td></tr>
+<tr><td>Butts, James Dallas </td><td>Korea</td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Cantrell, Clyde Vandal </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Case, Lyman Edwin </td><td>WW1</td><td>Army Air Corps</td><td></td><td>X</td><td>yes</td><td>KIA <i> </i></td></tr>
+<tr><td>Chasey, Ray Hobart </td><td>WW1</td><td>Army Air Corps</td><td></td><td>X</td><td>yes</td><td>482nd Aero Squad <i> </i></td></tr>
+<tr><td>Christenson, Christy Eric </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Clemens, Junior Uhr Flag-JW</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Closson, Edward Eugene "Ed"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Closson, Eugene Enoch </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Clough, Al  </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Cole, Pleasant Lovell </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Cole, Robert Earl </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Cole, Thomas  </td><td>Civil War</td><td>Cavalry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Coop, Philip Martin </td><td>Civil War</td><td>Calvary</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Cracraft, Charles Curtis </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td>KIA <i> Buried in Mt Ayr. </i></td></tr>
+<tr><td>Cracraft, Nathaniel Silas Jr.</td><td>Korea</td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Craig, Edwin O'Neil "Neil"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td>KIA, Sgt <i> Local kid, 1915-44, Buried Normandy, France, headstone in Davis City</i></td></tr>
+<tr><td>Crane, Daniel Franklin </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>POW-Battle of 1st Bull Run <i> Co G, 2nd WI Infantry "IRON BRIGADE", Reinlisted to Co B, 10th MN Infantry</i></td></tr>
+<tr><td>Crossan, Gilbert R. Jr.</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Davies, Robert Richard "Bob"</td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Day, Dennis Keith </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>DeLong, Darwin Alexander </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>DeLong, John Alvan </td><td></td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>DeLozier, Charles Albert </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Derry, Max Monroe </td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>DeVries, John Bennie Jr.</td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>DeVries, John David </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Doyon, Normand Louis Jr. "Butch"</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Driskill, Lyle Cecil </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Dunbar, Lloyd Arnold </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Dyer, Alice  </td><td>Vietnam</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Eberly, Laurence  "Scotty"</td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>NO</td><td>Pearl Harbor survivor <i> Diane Shelton's dad. Buried in IL</i></td></tr>
+<tr><td>Edgerton, Dwight Earl </td><td>Multi War</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Vietnam & Desert Storm, 1Sgt. <i> </i></td></tr>
+<tr><td>Elefson, Edward Andrew </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Purple Heart                           <i> </i></td></tr>
+<tr><td>Ellis, Mildred Judkins </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td>Nurse, 1st Lt <i> Lamoni Resident (died here). 1915-2006, buried in Maine.</i></td></tr>
+<tr><td>Emerson, Christopher  "Plummer"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Evans, Junior L. </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Evans, Rex Lee </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Everett, Donald Robert </td><td>Korea</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ewing, George Samuel Sr.</td><td></td><td></td><td></td><td>X</td><td>yes</td><td>cabinboy w/Adm. Perry in Battle of Lake Erie <i> (9yr old cabinboy in War1812 from family lore & obit)</i></td></tr>
+<tr><td>Fisher, Arthur Arnold </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Fisher, Carl Reed </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i> LHS grad, buried in Colorado. </i></td></tr>
+<tr><td>Fisher, Clifford  </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i> LHS grad, buried in Boone, IA. </i></td></tr>
+<tr><td>Fisher, Earl Dean </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i> LHS grad, buried in Larmar CO. Went by Dean. </i></td></tr>
+<tr><td>Fisher, Robert Dean "Bob"</td><td>Vietnam</td><td>Navy</td><td></td><td>X</td><td>NO</td><td> <i> from Lamoni, 1948-22, in Elk Cemetery in Decatur Co.</i></td></tr>
+<tr><td>Flowers, Everett Lyle </td><td>WW2</td><td>Multi BOS</td><td>X</td><td>X</td><td>yes</td><td>Army & Navy <i> </i></td></tr>
+<tr><td>Flowers, Richard Duane </td><td></td><td>Navy</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Foreman, Howard Leroy </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Foreman, Joseph Hawley </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Foster, Harold Lamoine </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Foster, John Thomas </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>France, Thomas W. </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Fry, Kenneth Richard </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Fuqua, Clarence Richard "Dick"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gamet, Elmo Eugene "Doc"</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td>56th Medical Battalion <i> </i></td></tr>
+<tr><td>Gaulter, Arthur Lewis </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gibson, Clarence Earl </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gibson, Jack Duane </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gillespie, Cecil Ray </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gilliland, David Elmer </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gilliland, Hiram Addsett </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gilliland, Paul  </td><td>WW2</td><td></td><td></td><td>X</td><td>NO</td><td> <i> Buried in Davis City</i></td></tr>
+<tr><td>Godfrey, John W. </td><td>Civil War</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gold, Vance Burton </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Cpl.  <i> </i></td></tr>
+<tr><td>Gorden, Chester Dale </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gorden, Kenneth Eugene </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>NO</td><td> <i> Bro of Chester G, buried in Davis City</i></td></tr>
+<tr><td>Gorden, Paul Lloyd </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>NO</td><td>KIA <i> Bro of Chester G, buried overseas</i></td></tr>
+<tr><td>Graves, Jimmie Lee </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Gray, Newton Morgan Jr.</td><td>Vietnam</td><td>Army</td><td></td><td>X</td><td>yes</td><td>KIA <i> </i></td></tr>
+<tr><td>Gray, Newton Morgan </td><td></td><td>Army Air Corps</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Green, Carl Eugene </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Green, Lloyd  </td><td>WW2</td><td></td><td></td><td>X</td><td>NO</td><td> <i> Bro of Richard G, buried in Des Moines</i></td></tr>
+<tr><td>Green, Richard Lee "Dick"</td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Grenawalt, Gerald R. Jr.</td><td>WW2</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Grenawalt, Harold V. </td><td>WW1</td><td>Army Air Corps</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Guay, Louis H. </td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Guenther, Clayton Arnold </td><td>WW1</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Guilliams, George Wesley </td><td>WW1</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Guthrie, George  </td><td>WW2</td><td></td><td>X</td><td>X</td><td>NO</td><td> <i> </i></td></tr>
+<tr><td>Hacke, Paul Rossiter </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hagler, Edwin  </td><td>WW2</td><td></td><td>X</td><td>X</td><td>NO</td><td> <i> . </i></td></tr>
+<tr><td>Hall, Leo Francis </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hall, Max Irvin </td><td>Multi War</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>WW II Korea                <i> </i></td></tr>
+<tr><td>Hall, Roy Robert </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hammer, Edward Franklin </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>NO</td><td> <i> LHS, 1923-2001, buried Riverside, CA</i></td></tr>
+<tr><td>Hammer, Herbert Ren </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hammer, James Maxwell "Jim"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hancock, Marvin Morris </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Harp, Eugene Donald Rev.</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Harp, Heman Alexander </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Harp, John Greenberry </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> Listed in the 1918 article as Joseph G.B. Harp  </i></td></tr>
+<tr><td>Harrington, Ellis Kermit "Kermit"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Harrington, Francis Marion "Frank"</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Harrington, Marion Earl "Red"</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Harris, Loren Franklin </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> Vietnam Era Vet (in Germany)</i></td></tr>
+<tr><td>Harris, Otto P. </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hart, James Mason </td><td></td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hart, Roscoe Lee </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hart, William Edward Sr.</td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>NO</td><td>CO. A, 35th MO INF <i> father of W. E. Hart, Jr. from Lamoni. Buried in Eagleville, MO</i></td></tr>
+<tr><td>Hartschen, Oren Nephi </td><td>WW1</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hatcher, Elmer A. </td><td>Spanish American</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hatcher, Wayne W. </td><td>WW2</td><td>Infantry</td><td></td><td>X</td><td>NO</td><td>KIA (Infantry) <i> Lamoni kid, son of Elmer & Minnie  buried w/ cross in Italy</i></td></tr>
+<tr><td>Hayer, Alvin Nathaniel </td><td>WW1</td><td>Army Air Corps</td><td></td><td>X</td><td>yes</td><td> <i> 476nd Aero Squd, Cpl</i></td></tr>
+<tr><td>Hazelton, Norman N. </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Herbert, Lawrence Alton </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Herring, Findley McCondley </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hetherington, Willard A. "Scott"</td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hickman, James Melvin </td><td>Korea</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hightshoe, Robert Allen </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hiles, Orville LeRoy </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hoffman, Darrel Wayne </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>Purple Heart                      <i> </i></td></tr>
+<tr><td>Hoffman, Gene Lyle </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hoffman, John Rex "Tyke"</td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Holloway, Robert V. </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> USNR <i> </i></td></tr>
+<tr><td>Hopkins, Horner Heman </td><td>WW1</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hopkins, William Nicholson </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Houston, Oliver Clifton Jr.</td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> Chaplain's Assistant</i></td></tr>
+<tr><td>Hughes, Walter E. </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hulmes, Alfred Willard </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hutchcroft, Gary Wayne </td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hutchcroft, Robert Leo </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Hynden, Robert Bailey </td><td>WW2</td><td>Navy</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jackel, Rufus Wayne </td><td>WW2</td><td>Navy</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jackson, Homer Leroy </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jackson, Lyle Willey </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td>USNR <i> </i></td></tr>
+<tr><td>Jans, Claude Peters </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jaques, Robert Traxler "Bob"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jensen, Dennis LeRoy </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnson, Charles E. </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnson, Darrel E. </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>NO</td><td> <i> Jim's father. Ashes scat. off submarine in SanDiego. 1920-1979</i></td></tr>
+<tr><td>Johnson, Glenn Fred </td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td>SSgt. <i> </i></td></tr>
+<tr><td>Johnson, Leslie Duane "Les"</td><td>Multi War</td><td></td><td></td><td>X</td><td>yes</td><td>Vietnam & Korea   <i> </i></td></tr>
+<tr><td>Johnson, Mervyn Leonard </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Medic <i> </i></td></tr>
+<tr><td>Johnson, Ralph W. </td><td>WW1</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnson, Ray Herbert Jr.</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnson, Robert LaVern "Bob"</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>NO</td><td> <i> </i></td></tr>
+<tr><td>Johnson, Roy Wesley </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnston, George J. </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnston, Marvin Albert </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Johnston, Merriam  </td><td>WW2</td><td></td><td>X</td><td>X</td><td>NO</td><td> <i> .  </i></td></tr>
+<tr><td>Jones, Arch J. </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jones, Lewis  </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jones, Marrien  </td><td>WW1</td><td></td><td></td><td>X</td><td>NO</td><td> <i> </i></td></tr>
+<tr><td>Jones, Maxwell Warren "Max"</td><td>WW2</td><td></td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Jowett, George Frederick </td><td>Korea</td><td>Navy</td><td></td><td>X</td><td>yes</td><td>Medic <i> </i></td></tr>
+<tr><td>Judson, Ralph Allen </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>KIA <i> </i></td></tr>
+<tr><td>Keen, Russell Martin </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Kelley, James Edmund </td><td>Spanish American</td><td>Infantry</td><td>X</td><td>X</td><td>yes</td><td>Sp. Am.  <i> </i></td></tr>
+<tr><td>Kelley, James Lorenzo </td><td>WW2</td><td>AAF</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Kelley, Robert Maxwell </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Kelley, William Henry </td><td>Civil War</td><td>Infantry</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Kelley, William Lea </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Keown, Benson Cortez </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>Infantry <i> </i></td></tr>
+<tr><td>Keown, Keith Kelly </td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td>Sgt. KIA MIA? <i> Lost in Action so not buried. Memorial inscription on back of parents' stone</i></td></tr>
+<tr><td>Kessel, Leon  "Bud"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i> Buried in Adel, IA, Veteran Cemetery</i></td></tr>
+<tr><td>King, Ralph Edward </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Kirkpatrick, Kent Kurtis </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i> Buried in Adel, IA, Veteran Cemetery</i></td></tr>
+<tr><td>Klinefelder, John  </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>NO</td><td> <i> Lucille Judson's bro. Buried in Sioux City, IA. .</i></td></tr>
+<tr><td>Knight, David Raymond </td><td>WW1</td><td></td><td></td><td>X</td><td>yes</td><td> <i> Same person as Ray Knight?</i></td></tr>
+<tr><td>Knight, Ray  </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> Same person as David Raymond Knight?</i></td></tr>
+<tr><td>Konopasek, Frank Anton </td><td>WW1</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Kubec, John Ellis </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lafferty, Archie LeRoy </td><td>WW1</td><td></td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lafferty, Darwin D. </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Landis, Samuel Franklin "Sam"</td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lane, Gerald Oliver </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lane, Herman Lee </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lasswell, Max Keith </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Law, Bethia Monetta Barnes </td><td>WW1</td><td></td><td></td><td>X</td><td>yes</td><td>USNRF <i> </i></td></tr>
+<tr><td>Leeper, Cloyd Wesley </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Leeper, James Alvern </td><td>Vietnam</td><td>Air Force</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Leeper, Joe Edd </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Leonard, Paul V. </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Med Corp <i> </i></td></tr>
+<tr><td>Leonard, Robert Raymond "Bob"</td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Leverson, Norman Lawrence </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Leverson, Vernon E. </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lewis, Cordis Gerald "CG"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Limric, Dean Walter </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lingard, Christopher  "Chris"</td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lingard, Walter  </td><td>WW1</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lockhart, John William </td><td>WW2</td><td></td><td>X </td><td>X</td><td>NO</td><td> <i> Ray Lockhart's father (Ray lived here). Buried in Des Moines.</i></td></tr>
+<tr><td>Lorance, Harry Allen </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lord, Kenneth Charles </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lovell, Morris  </td><td>Multi War</td><td>Air Force</td><td>X?</td><td>X</td><td>NO</td><td>WW2, Korea, Vietnam, Lt Col in USAF <i> Carl McGuire's uncle. Buried in Vet Cemetery in Raleigh, NC.  </i></td></tr>
+<tr><td>Lysinger, Duane Jerome </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Lysinger, Ned H. </td><td></td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>MacDonald, Kyle Warrington </td><td>WW2</td><td>USMC</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mader, Jacob  </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mann, Arlo Dan </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mann, Max Elwin </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Marsh, William Arthur </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Marshall, Albert H. </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i> Older bro of Erwin M, buried in Calif.</i></td></tr>
+<tr><td>Marshall, Erwin Dunkerson </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Martin, Emory E. "E.E."</td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mason, Lloyd Raymond </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td>KIA, Machine Gun Co. 38th Inf. U.S. Vol. <i> </i></td></tr>
+<tr><td>Mayhew, Elisha Chandler </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td>1856 Indian Wars in WA <i> </i></td></tr>
+<tr><td>McAninch, Joseph Eugene </td><td>Multi War</td><td>Air Force</td><td></td><td>X</td><td>yes</td><td>WW2, Korea, Vietnam, Army                   <i> </i></td></tr>
+<tr><td>McDaniel, Charles H. </td><td></td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>McElroy, John Henry </td><td>Civil War</td><td>Infantry</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>McElroy, Vaughn William </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>McFall, Raymond Byron </td><td>WW1</td><td></td><td>X ? Gone</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>McFarland, Douglas Farrell </td><td>Korea</td><td>Air Force</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>McLain, Donald  </td><td>WW2</td><td></td><td>X </td><td>X</td><td>NO</td><td> <i> Born Davis City, buried Des Moines</i></td></tr>
+<tr><td>Meredith, Leslie Hugh </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Minor, John Charles </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>NO</td><td>POW <i> Lamoni kid, son of Henry at Rose Hill. 1912-1990, buried Council Bluffs</i></td></tr>
+<tr><td>Minthorn, Maynard Lyman </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Artillery <i> </i></td></tr>
+<tr><td>Mitchell, Leland Wesley </td><td>Korea</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mollers, Edward Christian </td><td>WW1</td><td>Multi BOS</td><td>X</td><td>X</td><td>NO</td><td>Army, also in Navy on a tanker in 1945-46 (WW2) <i> 1896-1987, buried at Summitville, IA. </i></td></tr>
+<tr><td>Monroe, Donald Frazier </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Monroe, Richard Stanley "Dick"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Moon, Dale Fredrick </td><td>WW2</td><td>Multi BOS</td><td></td><td>X</td><td>yes</td><td>Army & Navy                     <i> </i></td></tr>
+<tr><td>Moon, Frances Lucille </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Moon, John Orrin </td><td>Civil War</td><td>Infantry</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Moon, Walter Allen </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Morgan, David Thomas </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Morris, Russell Thomas </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mortimore, Morris Edmund </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mortimore, Ronald Nathan </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mortimore, Roy Henry </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Mullins, Thomas O'Dea </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Naylor, Gary Bruce </td><td>Vietnam</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Neal, Herbert Oliver </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Neal, John Monroe </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Neal, Juanita Edith </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td>WAC <i> </i></td></tr>
+<tr><td>Neal, Victor Hale </td><td>WW2</td><td>USMC</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Needham, George Winfield </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Co. G, 7th Reg., IN <i> </i></td></tr>
+<tr><td>Needham, Lehi Worth "Pete"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Nelms, Lawrence Edwin </td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Nelson, Norman Meinecke MD</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td>Med Corp <i> </i></td></tr>
+<tr><td>Nicholson, Kenneth Delos </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Noble, Reginald Eugene </td><td>Korea</td><td>Air Force</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Noblitt, Harry Franklin Jr.</td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td>Sgt. <i> </i></td></tr>
+<tr><td>Noftsger, Arthur Yam </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Noftsger, Oliver Raymond </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ogier, Clyde Melvin </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>NO</td><td> <i> Buried in Kellerton, IA</i></td></tr>
+<tr><td>Oligney, Emrald John </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>NO</td><td> <i> Buried in MI. </i></td></tr>
+<tr><td>Omstead, Keith  </td><td>Korea</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Omstead, Kenneth Billie </td><td>Korea</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Omstead, Kevin Donald </td><td>Vietnam</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Outhouse, Earl C. </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td>KIA <i> Lamoni kid, buried overseas. </i></td></tr>
+<tr><td>Outhouse, Joseph E. </td><td>WW1</td><td>USMC</td><td>X</td><td>X</td><td>NO</td><td> <i> Bro to Earl Outhouse. Buried in Renton, WA. </i></td></tr>
+<tr><td>Paris, Arthur Edward </td><td></td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Paris, George Howard </td><td>Korea</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Park, Andrew Lewis </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>NO</td><td>KIA, Aviation Radioman 1C  <i> Lynn Vogel's uncle. Luella Park's son. Lost at sea. Wall of missing in Manila. </i></td></tr>
+<tr><td>Parker, Andrew  </td><td>WW2</td><td></td><td></td><td>X</td><td>NO</td><td>C-WW1? <i> </i></td></tr>
+<tr><td>Parker, Arthur  </td><td>WW1</td><td></td><td>X</td><td>X</td><td>NO</td><td> <i> Buried in Leon, IA</i></td></tr>
+<tr><td>Pattie, Glenn  </td><td>WW2</td><td></td><td></td><td>X</td><td>NO</td><td> <i> </i></td></tr>
+<tr><td>Payne, David Andrew </td><td>Desert Shield</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Perry, Earl E. </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Perry, Leo Ray </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Pool, James William </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Porter, Charles Kelley </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td>USNR <i> </i></td></tr>
+<tr><td>Prall, Gary Willard </td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Price, Larry Ray </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>Sgt.  <i> </i></td></tr>
+<tr><td>Pyle, Cortez  </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Rardin, Paul Reeves </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Rauch, Earl Herbert </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Reed, Jack Curtis </td><td>Multi War</td><td>Multi BOS</td><td></td><td>X</td><td>yes</td><td>WW2, Korea, AAF, Army            Purple Heart           <i> </i></td></tr>
+<tr><td>Reese, Frederick E. II</td><td>Vietnam</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Reese, Frederick Edwin "Fritz"</td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Reneau, Orley Vincent </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Reynard, John Emlin </td><td>WW1</td><td></td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Richards, Windsor  </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry Co. D, 153rd, IL  <i> </i></td></tr>
+<tr><td>Richey, James Lawrence </td><td>Civil War</td><td>Infantry</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ricker, George Franklin </td><td>Korea</td><td>USMC</td><td></td><td>X</td><td>NO</td><td> <i> LHS, 1930-75, buried in Coralville, IA</i></td></tr>
+<tr><td>Roberts, Floyd James </td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Robinson, Rex Lester </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Ross, Martin  </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Roth, John S. Elder</td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Sandage, Neil Roger </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Sandy, Lynn Carol </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Scarcliff, William Briton </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Schall, Lawrence Roderick "Rod"</td><td>Multi War</td><td>Army</td><td></td><td>X</td><td>yes</td><td>WW1/Korea, Signal Corp <i> </i></td></tr>
+<tr><td>Schenck, Walter Lavern </td><td>WW1</td><td>Navy</td><td></td><td>X</td><td>yes</td><td>Ship's Cook 1st Class  <i> </i></td></tr>
+<tr><td>Schofield, Melvin James </td><td>WW2</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Scott, Edward Lewis </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Scott, Rothmer Albert </td><td>WW1</td><td>Army Air Corps</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Searles, Jeffery Paul </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td>KIA <i> Darline Sherman's son. On wall in D.C. </i></td></tr>
+<tr><td>Shakespeare, Joseph  </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Shank, Joseph Oscar </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Shipman, Frank Lehua Jr.</td><td>WW2</td><td></td><td>X</td><td>X</td><td>NO</td><td>Frank Jr. on Cross <i> Dr Frank L. Shipman's son buried in Tacoma, WA  </i></td></tr>
+<tr><td>Shippy, John Harold </td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Silsby, James Burnham Jr.</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Silver, Howard Maxwell </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>Silver Star <i> </i></td></tr>
+<tr><td>Silver, Ralph Edison </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Simpson, Ronald Dale "Ron"</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Smith, Delbert Deane </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Smith, Hugh Wardell </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Smith, Peter Branum </td><td>Vietnam</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Smith, Robert Wayne </td><td>Korea</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Smith, Rollie Willis </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Smith, William Richard </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry, Co E, 25th, IL <i>  </i></td></tr>
+<tr><td>Snethen, Charles Oliver </td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Snethen, Frank Abner </td><td>WW2</td><td>Army</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Snethen, Robert Carl </td><td>Vietnam</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td>KIA <i> </i></td></tr>
+<tr><td>Snively, Joseph Smith </td><td>Civil War</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Spaulding, Grover Morgan </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Spillman, Thomas Harlan </td><td>WW2</td><td>Navy</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Sprague, Harbert Roger </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Spurrier, Ralph Cleary </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry, 14th IA <i> </i></td></tr>
+<tr><td>Staggers, Abraham S. Abram</td><td>Civil War</td><td>Cavalry</td><td></td><td>X</td><td>yes</td><td>Cavalry, IL (at Shiloh) <i> </i></td></tr>
+<tr><td>Stebbins, Henry Alfred </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry, Co B, 71st, IN <i> </i></td></tr>
+<tr><td>Stedman, Elias A. "Eli"</td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Stevenson, Leo Vey </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Stoll, Larry Francis </td><td></td><td>Air Force</td><td></td><td>X</td><td>later</td><td>A2C <i> </i></td></tr>
+<tr><td>Straight, Donald Eugene Sr.</td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Strait, James Douglas </td><td>Vietnam</td><td>Air Force</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Strait, Ralph Leslie Jr.</td><td>Vietnam</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Strand, Randall Edward </td><td></td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Strand, Rodney James </td><td>Vietnam</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Stuard, Ralph  </td><td></td><td></td><td></td><td>X</td><td>NO</td><td> <i> </i></td></tr>
+<tr><td>Stuck, Robert Charles "Bob"</td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Swanson, Enoch Carl </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Swanson, Gerald Walton MD</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Swigart, Kenneth Gene </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Tabor, Eugene Harold "Gene"</td><td>WW2</td><td>AAF</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Talley, Billy Lee </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td>Coast Guard <i> </i></td></tr>
+<tr><td>Tallman, Claude Edgar </td><td></td><td>Artillery</td><td></td><td>X</td><td>yes</td><td>Coast Artillery Corps at Port Worden, WA <i> (DNB, death not in battle but in line of duty)</i></td></tr>
+<tr><td>Tapscott, Jack G. </td><td>Multi War</td><td>Multi BOS</td><td></td><td>X</td><td>yes</td><td>WW II/USMC & Korea/Army             KIA                   <i> </i></td></tr>
+<tr><td>Tapscott, Joe Francis Jr.</td><td>WW2</td><td>USMC</td><td>X</td><td>X</td><td>yes</td><td>Silver Star, Purple Heart <i> Fought in Guam & Iwo Jima</i></td></tr>
+<tr><td>Tarver, John L. </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i>  </i></td></tr>
+<tr><td>Teale, Herbert Barton </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thomas, Cecil James </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thomas, David W. </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thomas, James David </td><td></td><td></td><td></td><td>X</td><td>yes</td><td>Coast Guard <i> </i></td></tr>
+<tr><td>Thomas, Joseph  </td><td>WW1</td><td></td><td>X</td><td>X</td><td>NO</td><td>C-WW2 <i> . </i></td></tr>
+<tr><td>Thomas, Roswell G. </td><td>Civil War</td><td>Cavalry</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thomas, Sharon Kay </td><td></td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thompson, Clifford Paul "Paul"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thompson, John D. </td><td>WW2</td><td></td><td>X</td><td>X</td><td>NO</td><td> <i> Bro of Clifford Paul Thompson. Buried in Luxemborg</i></td></tr>
+<tr><td>Thompson, Thomas Leo </td><td></td><td>Air Force</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Thorpe, James  </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>NO</td><td> <i> Father of Roger Thorpe. Buried in Iowa Vet Cemetery, in Van Meter, IA. </i></td></tr>
+<tr><td>Tilford, Harold Dwayne "Bud"</td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Titus, Thomas Richard "Dick"</td><td>Korea</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Toney, Jay Leroy </td><td>WW2</td><td>Navy</td><td>X </td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Trammell, Leroy Oral </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Tripp, Darrell Vern </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Trullinger, Glen Edward </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Truman, David Alfred </td><td>WW1</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Truman, Loren Frederick "Doc"</td><td>WW2</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Turner, Robert  </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>VanMeter, Joseph Beale </td><td>Civil War</td><td>Infantry</td><td></td><td>X</td><td>yes</td><td>Infantry Co. C, 106th IL, PVT <i> </i></td></tr>
+<tr><td>Vitek, Gilbert Allen "Gil"</td><td></td><td>Air Force</td><td></td><td>X</td><td>later</td><td>Capt. <i> </i></td></tr>
+<tr><td>Walden, Ernest Wallace </td><td>Multi War</td><td></td><td></td><td>X</td><td>NO</td><td>WW2 & Korea <i> Family connections here, 1915-87, ashes scattered (no cemetery)</i></td></tr>
+<tr><td>Walden, Leonard LaVerne </td><td>Multi War</td><td>Army</td><td>X</td><td>X</td><td>NO</td><td>WW2 & Korea                        <i> </i></td></tr>
+<tr><td>Walling, Guy Raymond </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Walling, Vaughn LeRoy "Pete"</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Waltenbaugh, Jacob  </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Watt, Charles Edward </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Watt, Frank Kenneth </td><td>WW2</td><td>AAF</td><td>X</td><td>X</td><td>yes</td><td>KIA <i> </i></td></tr>
+<tr><td>Watts, Oscar  </td><td>WW1</td><td></td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Waugh, Doyle Edwin </td><td>Korea</td><td>USMC</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Waugh, James Milton </td><td>WW2</td><td>Navy</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Waugh, Randy Ray </td><td>Vietnam</td><td>Navy</td><td></td><td>X</td><td>NO</td><td> <i> Son of Dwight Waugh. Buried in Iowa Vet Cemetery, in Van Meter, IA</i></td></tr>
+<tr><td>Webb, Eugene  </td><td>Vietnam</td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Wells, Milbert Allen </td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td>W5 JNK Reserves                 <i> </i></td></tr>
+<tr><td>White, James Warren "Jim"</td><td></td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>White, Kay Eugene "Gene"</td><td></td><td>Army</td><td>X</td><td>X</td><td>NO</td><td> <i>  Buried at Vet cemetery, Van Meter, IA</i></td></tr>
+<tr><td>White, Kay Orlando </td><td></td><td></td><td>X</td><td>X</td><td>yes</td><td>Army? <i> </i></td></tr>
+<tr><td>White, Kenneth Charles </td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Wightman, Richey Ray </td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>NO</td><td> <i> Son of Cora & George Wightman. He's not buried here (his parents are)</i></td></tr>
+<tr><td>Wiley, Thomas  </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Williams, James Franklin "Jim"</td><td></td><td>Navy</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Williams, Linyel  "Linn"</td><td>WW2</td><td>Army</td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Wimer, William Joseph </td><td>WW1</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Woodard, Robert L. Sr.</td><td>WW2</td><td>Navy</td><td></td><td>X</td><td>yes</td><td>2D Lt. <i> </i></td></tr>
+<tr><td>Wright, Glenn Perry </td><td>WW2</td><td>Army</td><td>X</td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+<tr><td>Young, Robert B. </td><td>Civil War</td><td></td><td></td><td>X</td><td>yes</td><td> <i>  </i></td></tr>
+<tr><td>Youngs, Carlisle R. "Clyde"</td><td>WW2</td><td></td><td></td><td>X</td><td>yes</td><td> <i> </i></td></tr>
+</tbody>
+</table>
+
+<div id="bottom" style="margin-top:6px;">
+  &nbsp; <img src="FG.png" width="16" alt="FG"> icon created by 
+  <a href="https://www.flaticon.com/free-icons/link" title="link icons">Creaticca-Flaticon</a>
+  <div id="count2" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
+</div>
+
+<p id="footer" style="text-align:center">Copyright &copy; 2024 Lamoni Rose Hill Cemetery<br>
+<a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a>
+</p>
+
+<br>
+<br>
+
+<script>
+	$(document).ready(function () {
+		let totalCount     = $('#geeks tr').length;
+		$("#count").html("all " + totalCount + " records displayed");
+		if (totalCount > 20)
+			$("#count2").html("all " + totalCount + " records displayed");
+		
+		let myFN = function () {
+			let searchValue    = $("#searchValue").val().toLowerCase();
+			let selectedColumn = $("#columnSelect").val();
+			let displayCount   = 0;
+
+			if (searchValue === "" && selectedColumn === "Anywhere") {
+				// this is a quick way to Show All, by simply reloading the page
+				location.replace(location.href);
+			} else {
+				// this is simply to change the heading colors slightly when we are showing a selection
+				document.getElementById("headings").style.color = "#006400";
+			}
+			
+			$("#geeks tr").each(function () {
+				let rowText = $(this).text().toLowerCase();
+				let isaMatch = true;
+				
+				if (searchValue === "") {
+					// This is a slower way to show All than pressing the Show All button (refresh page)
+					isaMatch = true;
+					$(this).toggle(isaMatch);
+				} else if (selectedColumn === "Anywhere") {
+					// Show the row if the search value appears anywhere in the row
+					isaMatch = rowText.indexOf(searchValue) > -1;
+					$(this).toggle(isaMatch);
+				} else {
+					let columnData = $(this).find("td:nth-child(" + 
+						(selectedColumn === "Name" ? 1 : 
+						(selectedColumn === "War" ? 2 : 
+						(selectedColumn === "Branch" ? 3 : 
+						(selectedColumn === "Flag" ? 4 : 
+						(selectedColumn === "buried here" ? 6 : 7))))) + ")").text().toLowerCase();
+					isaMatch = columnData.indexOf(searchValue) > -1;
+					$(this).toggle(isaMatch);
+				}
+				if (isaMatch) {
+					displayCount++;
+					if (displayCount%2 === 1) {
+						$(this).css("background-color", "#ffffff"); //odd
+					} else {
+						$(this).css("background-color", "#aaffaa"); //even
+					}
+				}
+
+			});
+			
+			$("#count").html(displayCount + " of " + totalCount + " records displayed");
+			if (displayCount > 20)
+				$("#count2").html(displayCount + " of " + totalCount + " records displayed");
+			else
+				$("#count2").html(" ");			
+		};
+		
+		$("#searchValue").on("keyup", myFN);   //triggers search change as one is typing a search entry
+		$("#columnSelect").on("change", myFN); //triggers search if this field changes (even if to what it was)
+
+	});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,810 @@
+<!--
+You must EXPORT this VETERANS report as a Windows text file (See the External Data menu). Then do the following:
+   1. OPTIONAL - open the file with Notepad++ and select the Line Editing menu option to remove all blank lines
+   2. Copy/Paste ONLY the <tbody> element to replace what is in the html file. Leave the <thead> part unchanged in the HTML file which has "sticky" coding to
+   3. Manually change the AS OF DATE that is under the heading in the existing HTML webpage that this is being pasted to - you want it to have today's date.
+   4. Save the HTML file, check it out for errors, and upload it to the website to replace the old one.
+NOTE: This generated code assumes that "FG.png" is a square image icon for Find-A-Grave that is in the same directory as the html file that contains this code.
+-->
+<h1> Wednesday, January 21, 2026                        </h1>
+<table  id="bottom">
+<thead>
+<tr><th>FG</th><th>Name</th><th>Military Record</th><th>Birthdate</th><th>Deathdate</th><th>Sect.</th><th>Lot</th><th>Code</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="http://FindAGrave.com/memorial/87240503" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Abbott, William Nathaniel</td><td>Civil War, Infantry, PVT, Co A, 3rd VT</td><td>09/19/1832</td><td>08/14/1917</td><td>3s</td><td>214</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/76786093" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Allen, David Oren</td><td>Navy</td><td>10/07/1937</td><td>07/24/2011</td><td>B8</td><td>B8 L30</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/87240541" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Allen, Robert Glenn</td><td>WW2, Army</td><td>04/10/1921</td><td>12/06/2001</td><td>1n</td><td>1071</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830922" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Allen, Wilber Leland</td><td>WW1, Army, Cpr, Artillery</td><td>08/19/1888</td><td>06/24/1968</td><td>1n</td><td>1081</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/33777628" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Amundson, Alma Victor</td><td>WW1</td><td>07/20/1893</td><td>05/16/1977</td><td>6</td><td>1683</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830924" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Amundson, Veryl Alma</td><td>WW2, AAF</td><td>05/12/1920</td><td>11/06/2000</td><td>B8</td><td>B8 L67</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/183057134" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Anderson, Carnie Wayne</td><td>USAF</td><td>03/15/1934</td><td>07/20/2017</td><td>B10</td><td>B10 L64</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/84579800" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Anderson, Fay Charles</td><td>WW2, Army, Tec5</td><td>05/15/1905</td><td>01/24/1990</td><td>B9</td><td>B9 L69</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/229544169" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Anderson, Lawrence Howard</td><td>Vietnam, Army</td><td>08/02/1943</td><td>01/04/2008</td><td>6</td><td>C41</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/205899290" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Anderson, Quentin V.</td><td>Army</td><td>05/07/1932</td><td>12/27/2019</td><td>B10</td><td>B10 L91</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/100491604" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Anderson, Robert Harold "Bob"</td><td>WW2, Navy, S1</td><td>08/30/1926</td><td>11/06/2012</td><td>B10</td><td>B10 L42</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991456" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Atkins, Ferris Benjamin</td><td>Civil War, Pvt, 10th Infantry, MI</td><td>05/05/1837</td><td>01/26/1910</td><td>3s</td><td>25</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991462" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Atteberry, Kenneth Leroy</td><td>WW2</td><td>01/30/1919</td><td>05/26/1993</td><td>6</td><td>1849</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991465" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Atwood, Frederick A.</td><td>WW2, AAF</td><td>12/16/1922</td><td>02/06/1973</td><td>5s</td><td>1429</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/7698771" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bailey, Oliver James</td><td>Civil War, Infantry, MI</td><td>05/05/1835</td><td>09/01/1897</td><td>1s</td><td>116</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991490" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Baker, Benjamin Earl</td><td>WW2, Army Air Force</td><td>07/10/1918</td><td>02/13/1986</td><td>5s</td><td>1428</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991491" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Baker, Benjamin Macleman</td><td>Army</td><td>03/20/1936</td><td>06/23/1983</td><td>5n</td><td>1375</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830925" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Baker, James Hooker, Lt.</td><td>Civil War, Infantry, 1st Lt, Co F, NH</td><td>03/17/1838</td><td>03/13/1923</td><td>2</td><td>834</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991500" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Baldwin, John Frank</td><td>Vietnam, Army, SP4 (KIA)</td><td>01/23/1949</td><td>01/13/1969</td><td>6</td><td>1771</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/210030875" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Ballantyne, Donald Keith</td><td>Korea, Army, SSgt</td><td>11/07/1930</td><td>09/11/2019</td><td>6</td><td>1752</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830935" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Ballantyne, James Alvin</td><td>WW1, Army, Pvt</td><td>10/06/1895</td><td>03/12/1942</td><td>5s</td><td>1489</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991503" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Ballantyne, Paul Ardinan</td><td>WW2, Army, Maj</td><td>07/18/1909</td><td>07/26/1996</td><td>5n</td><td>1375</td><td>NS C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991511" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bandy, Richard Carl</td><td>WW1, Navy, U.S.B.S.C. 1917-1919</td><td>08/17/1892</td><td>09/04/1922</td><td>2</td><td>824</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991512" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Banker, Norman Brand</td><td>WW2, Signal Corps</td><td>11/26/1908</td><td>03/19/1969</td><td>6</td><td>1658</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/80471246" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Banta, Elijah</td><td>Civil War</td><td>01/05/1823</td><td>03/19/1889</td><td>2</td><td>270</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/149823999" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Banta, Robert Wayne</td><td>WW2, Army, Pvt</td><td>09/25/1919</td><td>08/23/1973</td><td>3s</td><td>183</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/192010163" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Barnes, William Henry "Bill"</td><td>WW2, Navy, S1</td><td>11/08/1918</td><td>01/02/2005</td><td>6</td><td>1771</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/99028443" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Barr, Charles Hart</td><td>Civil War, Infantry, Cpl, 44th Reg, IN</td><td>05/14/1832</td><td>08/14/1911</td><td>2</td><td>299</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991553" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Barrows, Sidney Carleton</td><td>WW2, USNR, Lt Cmdr</td><td>01/30/1899</td><td>12/30/1961</td><td>2</td><td>448</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106991579" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bassett, Paul Milton</td><td>WW1</td><td>03/04/1891</td><td>04/11/1947</td><td>5s</td><td>1573</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/11493512" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Baughman, Doyle Dean</td><td>Korea, USMC</td><td>11/20/1931</td><td>08/02/2023</td><td>B8</td><td>B8 L120</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/50026238" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Beaty, Earl Raymond</td><td>Korea, Army</td><td>11/23/1931</td><td>10/17/1997</td><td>B10</td><td>B10 L69</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/72215162" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Beck, Theodore Able "Ted"</td><td>WW2</td><td>02/10/1919</td><td>12/12/2003</td><td>B9</td><td>B9 L9</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830950" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Beckmann, Philip Haynes</td><td>WW2, Navy, EM1</td><td>11/28/1920</td><td>01/07/2005</td><td>6</td><td>1668</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111302165" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bell, Keith Harold</td><td>WW2, Army</td><td>07/27/1919</td><td>07/04/1984</td><td>6</td><td>1719</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/22856038" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Benson, David James, DDS</td><td>Viet Era, Navy/Reserves</td><td>11/23/1943</td><td>11/11/2007</td><td>6</td><td>1781</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111302197" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bergman, John Henry</td><td>WW2</td><td>06/07/1925</td><td>06/25/1999</td><td>4</td><td>492</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830951" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bergman, Roland Duane</td><td>WW2, AAF, Sgt (KIA)</td><td>08/17/1920</td><td>12/18/1944</td><td>5n</td><td>1406</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111302200" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Best, Warren Christie</td><td>WW2, USMC</td><td>09/03/1899</td><td>04/03/1980</td><td>5n</td><td>1328</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/51087749" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Biddle, Leroy William "Bud"</td><td>WW2, POW-Bataan Death March</td><td>08/20/1916</td><td>10/24/1986</td><td>2</td><td>841</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/11493478" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bierlein, Donald Gene</td><td>WW2, Army, PFC</td><td>01/06/1928</td><td>02/25/1993</td><td>B8</td><td>B8 L119</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191785294" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Birlingmair, David Harold "Dave"</td><td>Army</td><td>08/21/1933</td><td>02/23/2009</td><td>B9</td><td>B9 L89</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830954" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bixby, Glenn Allen</td><td>WW2, Navy</td><td>08/02/1923</td><td>01/05/1998</td><td>6</td><td>1631</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111302221" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Black, George Albert Jr.</td><td>WW2, Army</td><td>06/27/1924</td><td>12/06/2000</td><td>B10</td><td>B10 L79</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/251895416" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Blair, Alma Roberts [PENDING]</td><td>Korea, Army</td><td>01/27/1929</td><td>04/06/2023</td><td>5n</td><td>1331</td><td>NS CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/155295323" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Blake, James Earl</td><td>WW2, Army, TSgt</td><td>04/02/1912</td><td>08/26/2006</td><td>B8</td><td>B8 L42</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/182885252" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Blake, Myrtle Pearl "Tiny"</td><td>WW2, Army, Tec5 (WAAC)</td><td>09/23/1916</td><td>08/29/2017</td><td>B8</td><td>B8 L42</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111302241" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Blake, Russell Elburn</td><td>WW2, Army, 17th Cavalry</td><td>07/24/1912</td><td>03/02/1995</td><td>B9</td><td>B9 L34</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/13377664" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Blevins, Ralph Wayne</td><td>WW2, Navy</td><td>03/26/1920</td><td>02/23/2005</td><td>B10</td><td>B10 L87</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830960" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Blood, James Monroe</td><td>Civil War, Cavalry, 1st WI</td><td>08/17/1829</td><td>06/25/1917</td><td>3s</td><td>581</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/11493498" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bollinger, Henry Ephraim Jr.</td><td>WW2, Army Air Corps</td><td>02/14/1925</td><td>04/24/2003</td><td>B8</td><td>B8 L97</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52485431" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Booker, Arnold Bryce</td><td>Navy</td><td>10/25/1930</td><td>05/14/2010</td><td>B8</td><td>B8 L52</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111380038" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Booker, William Derhyl</td><td>Korea, Army</td><td>06/01/1930</td><td>09/18/1992</td><td>B10</td><td>B10 L41</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111380054" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Boswell, Dennis Ray</td><td>Navy, MA3</td><td>08/14/1940</td><td>05/17/1973</td><td>6</td><td>1736</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/209840641" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Boswell, Gary Lee</td><td>Vietnam, Army, 1st Lt</td><td>07/19/1944</td><td>01/13/2020</td><td>B10</td><td>B10 L68</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111380062" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Boswell, Kenneth Earld "Fritz"</td><td>Vietnam</td><td>01/24/1929</td><td>06/28/1998</td><td>B8</td><td>B8 L105</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/192328980" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Boswell, Leonard Leroy Edward</td><td>Vietnam, Army, LTC, Flying Cross, Bronze Star, Air Medal</td><td>01/10/1934</td><td>08/17/2018</td><td>5n</td><td>1371</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/68671742" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bowen, Winfield Orion</td><td>WW1</td><td>07/06/1894</td><td>08/27/1982</td><td>4</td><td>378</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830961" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Bowman, George William</td><td>WW2, Army, 1SG</td><td>11/01/1919</td><td>06/10/1986</td><td>B8</td><td>B8 L98</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830962" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Boyer, Joseph Clinton Jr.</td><td>WW2, Army, PFC</td><td>04/16/1922</td><td>12/22/2002</td><td>B8</td><td>B8 L34</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/93479845" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Braby, James Wray</td><td>Korea, Navy, JO2</td><td>03/12/1929</td><td>07/01/2012</td><td>B8</td><td>B8 L106</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/64726252" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Brenizer, Robert Charles</td><td>Army, PVT</td><td>10/03/1935</td><td>08/20/2001</td><td>B8</td><td>B8 L9</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/291474723" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Breshears, Donald L.ee [PENDING]</td><td>??</td><td>05/18/1934</td><td>01/09/2026</td><td>B8</td><td>E41</td><td>CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/229518561" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Briggs, Adeline "Addie"</td><td>WW2, WAC, 1st Lt</td><td>03/19/1920</td><td>06/13/2018</td><td>5s</td><td>1427</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191793174" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Briggs, Roland Kelley</td><td>WW2, Army, SSgt</td><td>12/19/1918</td><td>08/13/2008</td><td>5s</td><td>1427</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191677827" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Brown, Roger Odis</td><td>Korea, Navy, AN</td><td>08/19/1929</td><td>03/11/2000</td><td>B8</td><td>B8 L81</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191300202" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Brownrigg, Russell Earl Jr.</td><td>WW2/Korea, Navy</td><td>09/11/1926</td><td>07/05/1954</td><td>4</td><td>382</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111380170" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Butler, Charles J.</td><td>Civil War</td><td>12/23/1834</td><td>01/27/1907</td><td>1s</td><td>724</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/240035882" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Butts, James Dallas</td><td>Korea, USAF</td><td>05/06/1938</td><td>07/25/2020</td><td>5n</td><td>1385</td><td>NS C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/106490408" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Cantrell, Clyde Vandal</td><td>WW1 (? Or 2)</td><td>01/16/1897</td><td>07/17/1954</td><td>5n</td><td>1346</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/6418756" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Case, Lyman Edwin</td><td>WW1, AF (KIA)</td><td>08/07/1896</td><td>08/14/1918</td><td>2</td><td>538</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/155560468" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Chasey, Ray Hobert</td><td>WW1, Army Air Corps</td><td>09/05/1896</td><td>07/12/1923</td><td>1s</td><td>599</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/284130995" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Cheville, Richard Arthur [PENDING]</td><td>Korea, Army</td><td>12/26/1931</td><td>__/__/2025</td><td>6</td><td>C35</td><td>CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/167664540" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Christenson, Christy Eric</td><td>WW2</td><td>05/16/1916</td><td>09/23/2002</td><td>B9</td><td>G1</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/167671056" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Clemens, Junior Uhr</td><td>WW2, Army</td><td>01/10/1914</td><td>02/22/1983</td><td>5n</td><td>1398</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/108617780" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Closson, Edward Eugene</td><td>Navy</td><td>10/26/1930</td><td>04/13/2013</td><td>5s</td><td>1600</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/100792592" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Closson, Eugene Enoch</td><td>WW1</td><td>01/02/1894</td><td>02/10/1974</td><td>5s</td><td>1601</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/209660714" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Clough, Al</td><td>Army</td><td>11/07/1931</td><td>01/10/2017</td><td>3n</td><td>1217</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830963" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Cole, Pleasant Lovell</td><td>WW2, Army, PFC</td><td>09/07/1902</td><td>09/25/1979</td><td>5n</td><td>1299</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830964" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Cole, Robert Earl</td><td>WW2, Navy, CSp</td><td>11/01/1921</td><td>02/10/1996</td><td>B8</td><td>B8 L86</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157796198" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Cole, Thomas</td><td>Civil War, Cavalry, 8th IA</td><td>01/28/1845</td><td>03/28/1929</td><td>5s</td><td>1591</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/115899299" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Coop, Philip Martin</td><td>Civil War, Cavalry, 8th IA</td><td>01/27/1847</td><td>11/18/1932</td><td>3s</td><td>4</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/62041845" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Cracraft, Nathaniel Silas Jr.</td><td>Korea, USAF</td><td>09/08/1931</td><td>11/21/2010</td><td>B9</td><td>B9 L66</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/95067588" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Crane, Daniel Franklin</td><td>Civil War, Infantry, WI, MN</td><td>11/04/1840</td><td>10/12/1897</td><td>2</td><td>420</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830965" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Crossan, Gilbert R. Jr.</td><td>WW2, Army</td><td>05/26/1912</td><td>03/20/2001</td><td>5n</td><td>1300</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/77752278" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Davies, Robert Richard "Bob"</td><td>WW2, Navy</td><td>04/23/1918</td><td>10/05/2011</td><td>5n</td><td>1319</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830968" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Day, Dennis Keith</td><td>Army</td><td>12/20/1943</td><td>08/18/2003</td><td>5n</td><td>1310</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830969" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>DeLong, Darwin Alexander</td><td>WW2, Army</td><td>05/04/1918</td><td>07/13/2003</td><td>B10</td><td>B10 L70</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/252415538" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>DeLong, John Alvan</td><td>USMC</td><td>03/12/1936</td><td>04/14/2023</td><td>B8</td><td>B8 L73</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/110553743" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>DeLozier, Charles Albert</td><td>WW2, Army</td><td>02/25/1906</td><td>01/26/1953</td><td>3s</td><td>584</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/11493405" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Derry, Max Monroe</td><td>WW2, Army Air Force</td><td>__/__/1923</td><td>12/13/1955</td><td>2</td><td>544</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191299129" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>DeVries, John Bennis Jr.</td><td>WW1, Army</td><td>10/18/1896</td><td>02/02/1919</td><td>4</td><td>505</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/206680667" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>DeVries, John David</td><td>Army, Cpl</td><td>01/11/1936</td><td>01/29/2020</td><td>4</td><td>506</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/229348573" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Doyon, Normand Louis Jr. "Butch" [PENDING]</td><td>Army</td><td>03/29/1963</td><td>06/30/2021</td><td>6</td><td>1630</td><td>NS CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/167453621" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Driskill, Lyle Cecil</td><td>Korea, Army (in Okinawa)</td><td>11/09/1928</td><td>10/26/2015</td><td>B8</td><td>B8 L76</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/167457705" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Dunbar, Lloyd Arnold</td><td>WW2</td><td>04/12/1916</td><td>05/08/1960</td><td>5n</td><td>1334</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191994924" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Dyer, Alice</td><td>Vietnam, Navy, CDR (RN, PhD)</td><td>10/05/1937</td><td>06/20/2011</td><td>6</td><td>1668</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/239290790" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Edgerton, Dwight Earl [PENDING]</td><td>Vietnam/Desert Storm, Army, 1Sgt</td><td>07/05/1935</td><td>04/22/2022</td><td>B10</td><td>B10 L66</td><td>CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/274278983" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Edwards, Paul M. [PENDING]</td><td>Korea, Army</td><td>02/26/1933</td><td>10/13/2022</td><td>2</td><td>D11</td><td>CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/41776262" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Elefson, Edward Andrew</td><td>WW1, Army</td><td>01/07/1888</td><td>02/17/1957</td><td>1s</td><td>741</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/284986380" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Elswick, Robert James "Bob"</td><td>Vietnam, Army, Bronze Star</td><td>03/25/1945</td><td>07/14/2025</td><td>2</td><td>D4</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/163517530" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Emerson, Christopher Plummer, II</td><td>WW2, Army</td><td>10/03/1921</td><td>12/03/2010</td><td>B8</td><td>B8 L43</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191694648" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Evans, Junior L.</td><td>Korea, Army</td><td>03/05/1932</td><td>04/09/2009</td><td>B8</td><td>E34</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830972" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Evans, Rex Lee</td><td>WW2, AAF, Sgt</td><td>10/27/1921</td><td>08/29/1972</td><td>5s</td><td>1515</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157493268" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Everett, Donald Robert</td><td>Korea, Army</td><td>01/10/1929</td><td>03/25/2013</td><td>B8</td><td>B8 L25</td><td>Cx2</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830976" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Fisher, Arthur Arnold</td><td>WW2, Army, PFC</td><td>09/17/1915</td><td>01/06/2003</td><td>6</td><td>1664</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830977" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Flowers, Everett Lyle</td><td>WW2, Navy and Army Sgt</td><td>07/04/1925</td><td>04/20/2003</td><td>B10</td><td>B10 L105</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/190604960" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Flowers, Richard Duane</td><td>Navy</td><td>01/13/1940</td><td>07/01/1970</td><td>6</td><td>1737</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/190599043" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Foreman, Howard Leroy</td><td>WW2, Army, Pvt</td><td>10/31/1917</td><td>02/13/2007</td><td>2</td><td>864</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830978" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Foreman, Joseph Hawley</td><td>WW2, Navy, BM2</td><td>02/03/1916</td><td>10/31/2004</td><td>4</td><td>512</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/223091937" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Foster, Harold Lamoine</td><td>Army</td><td>04/08/1936</td><td>06/09/2010</td><td>B10</td><td>B10 L10</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191939363" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Foster, John Thomas</td><td>WW1, Army, Sgt</td><td>01/16/1893</td><td>03/31/1969</td><td>6</td><td>1800</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/144716274" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>France, Thomas W.</td><td>WW1</td><td>09/11/1897</td><td>05/25/1959</td><td>5s</td><td>1543</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191683896" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Fry, Kenneth Richard</td><td>Korea Army</td><td>11/17/1927</td><td>07/26/1999</td><td>B9</td><td>B9 L76</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/225099962" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Fuqua, Clarence Richard "Dick"</td><td>Navy</td><td>03/16/1932</td><td>08/30/2018</td><td>B7</td><td>B7 L154</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/161681301" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gamet, Elmo Eugene "Doc"</td><td>WW2, Army, Maj, 56th Medical Battalion</td><td>09/04/1910</td><td>09/21/2005</td><td>6</td><td>1756</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/161689451" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gaulter, Arthur Lewis</td><td>WW1</td><td>08/08/1893</td><td>05/03/1971</td><td>6</td><td>1775</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830979" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gibson, Clarence Earl</td><td>WW1, Army, Cpl</td><td>12/07/1895</td><td>06/26/1975</td><td>6</td><td>1744</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830980" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gibson, Jack Duane</td><td>WW2, Navy, RM1</td><td>12/17/1922</td><td>10/24/1967</td><td>6</td><td>1744</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830981" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gillespie, Cecil Ray</td><td>WW2, Army</td><td>09/10/1918</td><td>10/06/1991</td><td>6</td><td>1847</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160127323" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gilliland, David Elmer</td><td>WW1, Army, Cpl</td><td>09/27/1893</td><td>03/26/1974</td><td>5s</td><td>1498</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830982" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gilliland, Hiram Addsett</td><td>WW1, Army, Cpl</td><td>06/07/1895</td><td>11/23/1966</td><td>5s</td><td>1451</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/7931064" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Godfrey, John W., Capt.</td><td>Civil War, Navy, Capt</td><td>03/18/1818</td><td>12/02/1894</td><td>2</td><td>271</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191689516" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gold, Vance Burton</td><td>WW2, Army, Cpl</td><td>05/21/1919</td><td>12/29/1999</td><td>B9</td><td>B9 L83</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/47336628" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gorden, Chester Dale "Chet"</td><td>WW2, Army</td><td>01/13/1920</td><td>01/28/2007</td><td>B9</td><td>B9 L22</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830984" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Graves, Jimmie Lee</td><td>Army</td><td>04/03/1933</td><td>06/30/1999</td><td>B8</td><td>B8 L60</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191283649" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gray, Newton Morgan</td><td>Army Air Corps</td><td>01/30/1925</td><td>10/12/2009</td><td>5n</td><td>1280</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/110535299" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Gray, Newton Morgan Jr.</td><td>Vietnam, Army, Cpl (KIA)</td><td>02/05/1947</td><td>05/20/1968</td><td>5n</td><td>1278</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/162149001" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Green, Carl Eugene</td><td>WW2</td><td>10/25/1920</td><td>07/30/2001</td><td>B10</td><td>B10 L99</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/162181450" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Green, Richard Lee</td><td>WW2, Army, PFC</td><td>10/05/1923</td><td>05/16/1998</td><td>B9</td><td>B9 L29</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/29268724" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Grenawalt, Gerald R. Jr.</td><td>WW2, USMC, PFC</td><td>10/17/1930</td><td>09/06/1949</td><td>2</td><td>875</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/120646969" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Grenawalt, Harold Vane</td><td>WW1, Army Air Corps, 1Lt</td><td>04/08/1891</td><td>10/24/1918</td><td>1s</td><td>689</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830986" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Guay, Louis Henri</td><td>Navy</td><td>01/16/1940</td><td>08/26/2000</td><td>B9</td><td>G2</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830987" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Guenther, Clayton Arnold</td><td>WW1, USMC, PVT</td><td>08/03/1897</td><td>12/10/1990</td><td>6</td><td>1714</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/162205537" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Guilliams, George Wesley</td><td>WW1</td><td>08/10/1895</td><td>04/03/1981</td><td>6</td><td>1675</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/127096138" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hacke, Paul Rossiter</td><td>WW2, Army, 1st Lt</td><td>08/28/1919</td><td>04/28/1970</td><td>6</td><td>1641</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830994" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hall, Leo Francis</td><td>WW2, Army, PVT</td><td>07/27/1900</td><td>05/15/1970</td><td>5s</td><td>1575</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/29830229" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hall, Max Irvin</td><td>WW2/Korea, Army</td><td>06/14/1921</td><td>09/13/2008</td><td>B9</td><td>B9 L10</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/80522324" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hall, Roy Robert</td><td>WW1</td><td>05/12/1888</td><td>01/14/1962</td><td>5n</td><td>1306</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/89879540" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hammer, Herbert Ren</td><td>WW2, Navy, LTJG</td><td>11/16/1924</td><td>05/08/2012</td><td>B9</td><td>G9</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/214815828" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hammer, James Maxwell "Jim"</td><td>Navy</td><td>05/19/1946</td><td>08/24/2020</td><td>B3</td><td>B3 L85</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/271004654" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hampton, Gerald Elmer "Jerry"</td><td>Korea, Army</td><td>07/24/1932</td><td>06/02/2024</td><td>3n</td><td>1167</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160806701" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hancock, Marvin Morris</td><td>WW2, Army</td><td>11/09/1915</td><td>02/26/1997</td><td>3n</td><td>1207</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191283756" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harp, Eugene Donald, Rev.</td><td>Army</td><td>09/24/1929</td><td>03/18/1990</td><td>5n</td><td>1339</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830996" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harp, Heman Alexander</td><td>WW2, Army</td><td>04/04/1907</td><td>10/25/1991</td><td>5n</td><td>1337</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150841634" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harp, John Greenberry</td><td>Civil War, Infantry, 13th, IN</td><td>03/09/1827</td><td>02/15/1907</td><td>4</td><td>411</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830997" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harrington, Ellis Kermit</td><td>WW2, Army</td><td>02/12/1907</td><td>02/10/1997</td><td>5n</td><td>1277</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/148223466" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harrington, Francis Marion</td><td>Army?</td><td>08/18/1846</td><td>02/09/1917</td><td>1s</td><td>123</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830998" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harrington, Marion Earl "Red"</td><td>WW2, Army</td><td>07/20/1908</td><td>01/29/1993</td><td>B8</td><td>B8 L84</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/216389904" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harris, Loren Franklin</td><td>Army (Vietnam Era, Germany)</td><td>04/12/1934</td><td>12/13/2015</td><td>6</td><td>1651</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830999" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Harris, Otto P.</td><td>WW1, Army</td><td>09/02/1895</td><td>09/29/1918</td><td>2</td><td>268</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191293249" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hart, James Mason</td><td>USAF, 1959-63</td><td>11/06/1940</td><td>11/29/2015</td><td>2</td><td>476</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831000" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hart, Roscoe Lee</td><td>WW2, Navy, S1</td><td>03/23/1926</td><td>01/30/1976</td><td>B8</td><td>B8 L102</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/14141535" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hartschen, Oren Nephi</td><td>WW1</td><td>12/10/1896</td><td>03/17/1988</td><td>1s</td><td>138</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/39273762" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hatcher, Elmer A.</td><td>Sp. Am., Infantry, Pvt</td><td>03/10/1881</td><td>07/11/1961</td><td>2</td><td>762</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/41775233" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hayer, Alvin Nathaniel</td><td>WW1, Army Air Corps, Cpl</td><td>03/28/1894</td><td>07/13/1934</td><td>2</td><td>458</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150845772" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hazelton, Norman N.</td><td>Civil War, Infantry, Co A, OH</td><td>04/05/1843</td><td>04/11/1898</td><td>4</td><td>258</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/113380710" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Herbert, Lawrence Alton</td><td>WW2</td><td>01/11/1920</td><td>04/24/2013</td><td>B8</td><td>B8 L73</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831009" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Herring, Findley McCondley</td><td>WW2, Army</td><td>12/18/1908</td><td>09/22/1977</td><td>6</td><td>1743</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/30309424" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hetherington, Willard A. "Scott"</td><td>WW2, Navy</td><td>11/17/1919</td><td>08/20/1988</td><td>5n</td><td>1297</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/161629959" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hickman, James Melvin</td><td>Korea, Army</td><td>10/18/1931</td><td>09/27/2003</td><td>6</td><td>1797</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/95650997" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hightshoe, Robert Allen</td><td>Army, Sgt</td><td>08/23/1940</td><td>12/13/2008</td><td>5s</td><td>1491</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/232422613" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hiles, Orville LeRoy</td><td>WW2, Navy</td><td>11/04/1925</td><td>11/20/2005</td><td>2</td><td>A3</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831010" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hoffman, Darrel Wayne</td><td>WW2, Army, Tec5</td><td>08/11/1922</td><td>04/08/1970</td><td>3n</td><td>1197</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/161634427" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hoffman, Gene Lyle</td><td>WW2, Navy</td><td>09/08/1912</td><td>10/16/1998</td><td>6</td><td>1773</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/16649706" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hoffman, John Rex "Tyke"</td><td>WW2, Navy</td><td>12/16/1924</td><td>02/07/2003</td><td>3n</td><td>1197</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831014" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Holloway, Robert V</td><td>WW2, USNR, BM2</td><td>08/21/1925</td><td>12/04/1954</td><td>5s</td><td>1537</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150848835" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hopkins, Horner Heman</td><td>WW1, Army</td><td>11/07/1894</td><td>01/10/1975</td><td>2</td><td>430</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/161660883" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hopkins, William Nicholson</td><td>WW2, Army</td><td>02/28/1925</td><td>07/09/2016</td><td>2</td><td>430</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/125845291" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Houston, Oliver C. Jr. "Ollie"</td><td>Korea, Army, Chaplain Asst</td><td>09/24/1928</td><td>03/01/2014</td><td>B10</td><td>B10 L50</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/161666789" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hughes, Walter C.</td><td>WW2, Army</td><td>06/08/1910</td><td>05/12/1973</td><td>3n</td><td>1227</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150849659" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hulmes, Alfred Willard</td><td>WW1, Army</td><td>08/19/1890</td><td>10/17/1940</td><td>5s</td><td>1486</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/190490425" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hutchcroft, Gary Wayne</td><td>Navy</td><td>11/19/1940</td><td>05/15/2012</td><td>3n</td><td>1228</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/113422842" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hutchcroft, Robert Leo</td><td>WW2, Navy</td><td>07/02/1923</td><td>06/27/1988</td><td>6</td><td>1811</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/122298089" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Hynden, Robert Bailey</td><td>WW2, Navy</td><td>04/24/1927</td><td>03/20/2006</td><td>B8</td><td>B8 L36</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831017" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jackel, Rufus Wayne</td><td>WW2, Navy</td><td>10/25/1924</td><td>01/05/1992</td><td>1s</td><td>E13</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/55446363" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jackson, Homer Leroy</td><td>WW2</td><td>12/30/1902</td><td>11/30/1985</td><td>5s</td><td>1434</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831018" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jackson, Lyle Willey</td><td>WW2, USNR, LT</td><td>08/11/1917</td><td>09/14/1965</td><td>5s</td><td>1514</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160635678" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jans, Claude Peters</td><td>WW2</td><td>07/10/1906</td><td>04/21/1991</td><td>B8</td><td>B8 L124</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/226376143" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jaques, Robert Traxler "Bob"</td><td>Navy</td><td>10/17/1940</td><td>04/28/2021</td><td>5s</td><td>1582</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150308230" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jensen, Dennis LeRoy</td><td>Korea, Army, Cpl</td><td>11/09/1931</td><td>07/08/2015</td><td>6</td><td>1808</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160130752" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Charles E.</td><td>WW1, Army, Pvt</td><td>10/18/1893</td><td>05/06/1970</td><td>4</td><td>251</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160206944" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Glenn Fred</td><td>WW2, AAF, SSgt</td><td>06/21/1922</td><td>12/07/1999</td><td>B10</td><td>B10 L77</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/209669342" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Leslie Duane "Les"</td><td>Korea/Vietnam</td><td>09/10/1930</td><td>03/24/2016</td><td>B10</td><td>B10 L105</td><td>NS Cx2</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/117858147" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Mervyn Leonard</td><td>Korea, Army, medic</td><td>07/04/1930</td><td>09/23/2013</td><td>6</td><td>1787</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160209929" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Ralph W.</td><td>WW1</td><td>08/15/1888</td><td>10/__/1981</td><td>5s</td><td>1505</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160209929" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Ray Herbert Jr.</td><td>WW2, Army</td><td>04/12/1919</td><td>04/04/1972</td><td>6</td><td>1783</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/267322447" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnson, Roy Wesley</td><td>Army</td><td>05/28/1932</td><td>03/14/2024</td><td>B9</td><td>B9 L19</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831019" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnston, George John</td><td>WW2, Army</td><td>10/08/1913</td><td>08/28/1973</td><td>4</td><td>248</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831020" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Johnston, Marvin Albert</td><td>WW2, Army, Sgt</td><td>09/19/1925</td><td>07/01/1991</td><td>B10</td><td>B10 L96</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831021" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jones, Arch J.</td><td>WW1, Army, Sgt</td><td>08/28/1890</td><td>11/29/1948</td><td>5n</td><td>1405</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160682256" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jones, Lewis</td><td>WW1, Army</td><td>01/23/1892</td><td>01/31/1980</td><td>2</td><td>545</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160645377" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jones, Maxwell Warren "Max"</td><td>WW2</td><td>05/04/1912</td><td>12/29/1971</td><td>5s</td><td>1420</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/263476669" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Jowett, George Frederick</td><td>Korea, Navy, Medic</td><td>01/04/1929</td><td>06/21/2007</td><td>1s</td><td>658</td><td>Cx2</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/41776671" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Judson, Ralph Allen</td><td>WW1, Infantry (KIA)</td><td>09/17/1891</td><td>07/31/1918</td><td>1s</td><td>733</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/192003455" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kaestner, Franklin Dean</td><td>Vietnam, USMC, Sgt</td><td>03/27/1945</td><td>06/09/2007</td><td>B8</td><td>B8 L96</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/149552029" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Keen, Russell Martin</td><td>WW2, Army, Tec3</td><td>04/10/1918</td><td>04/07/2009</td><td>2</td><td>B6</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/27882293" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kelley, James Edmund</td><td>Sp. Am., Infantry</td><td>06/11/1879</td><td>06/04/1917</td><td>2</td><td>841</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/51088288" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kelley, James Lorenzo</td><td>WW2, AAF</td><td>08/02/1908</td><td>05/26/1942</td><td>2</td><td>841</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/105338615" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kelley, Robert Maxwell "Max"</td><td>WW2, Navy</td><td>02/22/1910</td><td>07/05/1994</td><td>2</td><td>C5</td><td>NB?</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/84937922" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kelley, William Henry</td><td>Civil War, Infantry, OH</td><td>04/01/1841</td><td>08/14/1915</td><td>1s</td><td>743</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/87039136" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kelley, William Lea "Buddy"</td><td>WW2, Army Air Corps, Lt, (NHCS)</td><td>05/27/1917</td><td>08/23/1942</td><td>3s</td><td>962</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831022" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Keown, Benson Cortez</td><td>WW1, Infantry, CP1</td><td>09/20/1894</td><td>05/10/1968</td><td>5s</td><td>1436</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831023" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Keown, Keith Kelley</td><td>WW2, AAF, Sgt, MIA</td><td>12/02/1922</td><td>09/25/1944</td><td>5s</td><td>1436</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831025" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>King, Ralph</td><td>WW2, Navy</td><td>04/12/1918</td><td>10/19/1973</td><td>4</td><td>514</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831026" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Knight, David Raymond</td><td>WW1</td><td>10/11/1886</td><td>06/11/1964</td><td>6</td><td>1639</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/99151453" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Konopasek, Frank Anton</td><td>WW1, Army</td><td>11/26/1896</td><td>01/25/1985</td><td>1n</td><td>1100</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831027" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Kubec, John Ellis</td><td>WW2, Army, Cprl</td><td>06/11/1906</td><td>08/24/1998</td><td>5s</td><td>1423</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160016202" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lafferty, Archie LeRoy</td><td>WW1</td><td>06/07/1894</td><td>10/15/1982</td><td>3n</td><td>1188</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831030" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lafferty, Darwin D.</td><td>WW2, Army</td><td>07/15/1926</td><td>03/27/1981</td><td>3n</td><td>1188</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/66949375" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Landis, Samuel Franklin "Sam"</td><td>WW2, Navy</td><td>10/26/1925</td><td>03/13/2011</td><td>B9</td><td>B9 L68</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/175144466" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lane, Gerald Oliver</td><td>WW2</td><td>12/27/1927</td><td>04/15/1997</td><td>6</td><td>1785</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/174999810" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lane, Herman Lee</td><td>WW2, Army</td><td>04/15/1925</td><td>03/25/2013</td><td>B9</td><td>B9 L24</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831031" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lasswell, Max Keith</td><td>Army</td><td>03/29/1930</td><td>07/20/1984</td><td>B9</td><td>B9 L18</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831032" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Law, Bethia Barnes</td><td>WW1, USNRF</td><td>02/09/1897</td><td>10/25/1969</td><td>5n</td><td>1328</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831033" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leeper, Cloyd Wesley</td><td>WW2, Army</td><td>08/08/1916</td><td>03/01/1990</td><td>6</td><td>1809</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831034" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leeper, James Alvern</td><td>Vietnam, USAF, TSgt</td><td>03/23/1947</td><td>02/09/2008</td><td>6</td><td>1825</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160058156" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leeper, Joe Edd</td><td>WW2</td><td>07/20/1914</td><td>11/19/1999</td><td>B10</td><td>B10 L92</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191677275" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leonard, Paul V.</td><td>WW2, Army Med Corps, Tec4</td><td>10/21/1921</td><td>03/22/2013</td><td>B8</td><td>B8 L82</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160060529" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leonard, Robert Raymond "Bob"</td><td>Korea</td><td>02/07/1929</td><td>09/05/2000</td><td>6</td><td>1679</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831035" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leverson, Norman Lawrence</td><td>WW2, Army, Pvt (DNB)</td><td>05/04/1912</td><td>06/14/1944</td><td>5n</td><td>1336</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831036" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Leverson, Vernon E.</td><td>WW2, Army</td><td>07/10/1924</td><td>04/24/1987</td><td>5n</td><td>1336</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/162963230" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lewis, Cordis Gerald "C.G."</td><td>Navy</td><td>03/13/1931</td><td>05/19/2016</td><td>B7</td><td>B7 L153</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/213234730" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Limric, Dean Walter</td><td>Korea, Army</td><td>08/30/1932</td><td>07/16/2020</td><td>B7</td><td>B7 L128</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160074051" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lingard, Christopher "Chris"</td><td>WW1, Army</td><td>12/25/1891</td><td>09/10/1988</td><td>3n</td><td>1178</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160074273" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lingard, Walter</td><td>WW1, Army</td><td>05/13/1895</td><td>07/18/1984</td><td>3n</td><td>1187</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831037" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lorance, Harry Allen</td><td>WW1, Army</td><td>05/27/1896</td><td>03/10/1967</td><td>6</td><td>1768</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/160096449" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lord, Kenneth</td><td>WW2</td><td>03/25/1914</td><td>08/__/1980</td><td>B8</td><td>B8 L37</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831038" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lysinger, Duane Jerome</td><td>WW2, Navy</td><td>04/15/1924</td><td>07/09/1990</td><td>5s</td><td>1447</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191795008" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Lysinger, Ned H.</td><td>USAF</td><td>06/07/1932</td><td>02/24/2005</td><td>5s</td><td>1447</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831039" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>MacDonald, Kyle Warrington</td><td>WW2, USMC, Sgt</td><td>09/15/1920</td><td>09/29/1988</td><td>1s</td><td>129</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159655443" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mader, Jacob</td><td>Civil War, Infantry</td><td>08/15/1840</td><td>04/03/1927</td><td>2</td><td>773</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159688447" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mann, Arlo Dan</td><td>WW2, Navy</td><td>06/25/1916</td><td>03/19/1971</td><td>1n</td><td>1082</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/43110766" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mann, Max Elwin</td><td>WW2, Navy</td><td>12/04/1925</td><td>10/13/2009</td><td>B9</td><td>B9 L23</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831043" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Marsh, William Arthur</td><td>WW1, Army</td><td>02/08/1897</td><td>01/30/1973</td><td>5n</td><td>1394</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/148585066" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Marshall, Erwin Dunkerson</td><td>WW2, Army, Cpl</td><td>04/11/1911</td><td>02/28/2005</td><td>6</td><td>1815</td><td>A</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831045" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Martin, Emory E.</td><td>WW1, Army, PFC</td><td>01/10/1895</td><td>11/21/1985</td><td>6</td><td>1616</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159711606" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mason, Loyd Raymond</td><td>WW1, Army (KIA)</td><td>11/14/1895</td><td>08/08/1918</td><td>2</td><td>813</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831047" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mayhew, Elisha Chandler Sr.</td><td>1856 Indian Wars (WA), Army, 1st Sgt</td><td>12/25/1831</td><td>09/12/1913</td><td>1s</td><td>163</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831049" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>McAninch, Joseph Eugene "Joe"</td><td>WW2/Korea/Vietnam, USAF/Army</td><td>05/28/1927</td><td>07/01/2004</td><td>1n</td><td>1057</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/72170012" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>McDaniel, Charles Herbert</td><td>Army</td><td>01/05/1936</td><td>11/15/1998</td><td>B10</td><td>B10 L96</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159756648" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>McElroy, John Henry</td><td>Civil War, Infantry, OH</td><td>01/31/1846</td><td>01/12/1922</td><td>4</td><td>520</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831051" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>McElroy, Vaughn William</td><td>WW1, Army</td><td>11/19/1896</td><td>12/26/1978</td><td>5s</td><td>1560</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/17006988" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>McFall, Raymond Byron</td><td>WW1</td><td>10/05/1891</td><td>08/26/1925</td><td>5s</td><td>1583</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159758922" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>McFarland, Douglas Farrell</td><td>Korea, USAF, A1C</td><td>02/22/1931</td><td>04/20/2007</td><td>5n</td><td>1380</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/190599352" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Meredith, Leslie Hugh "Les"</td><td>WW2, Army</td><td>10/23/1927</td><td>07/15/2015</td><td>2</td><td>858</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159799940" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Midgorden, Orville Heman</td><td>WW1, Army</td><td>02/09/1889</td><td>05/31/1963</td><td>6</td><td>1656</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159829916" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Miller, Harry Clifton</td><td>WW1, Army</td><td>01/17/1897</td><td>09/26/1948</td><td>5s</td><td>1470</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831052" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Minthorn, Maynard Lyman</td><td>WW1, Artillery, Pvt</td><td>02/08/1890</td><td>03/17/1973</td><td>5s</td><td>1460</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159832085" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mitchell, Leland Wesley</td><td>Korea, Navy</td><td>10/04/1928</td><td>02/01/2003</td><td>B9</td><td>B9 L32</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159881316" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Monroe, Donald Frazier</td><td>WW2, Army</td><td>08/18/1906</td><td>10/31/1988</td><td>B8</td><td>B8 L62</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150498611" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Monroe, Richard</td><td>Navy</td><td>09/21/1929</td><td>08/09/2015</td><td>B8</td><td>B8 L41</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159933502" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Moon, Dale Fredrick</td><td>WW2, Army, Navy</td><td>04/05/1922</td><td>04/09/2011</td><td>B9</td><td>B9 L94</td><td>Cx2</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159933881" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Moon, Frances Lucille</td><td>WW2, Army, 1st Lt</td><td>04/23/1921</td><td>03/16/2010</td><td>B9</td><td>B9 L94</td><td>Cx2</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/6747947" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Moon, John Orrin Sr.</td><td>Civil War, Infantry, Co G, 15th Reg, IN</td><td>01/28/1839</td><td>03/06/1924</td><td>4</td><td>402</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159931985" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Moon, Walter Allen</td><td>WW1</td><td>08/05/1895</td><td>01/24/1979</td><td>5s</td><td>1446</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159941951" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Morgan, David Thomas</td><td>WW2, Army</td><td>09/09/1919</td><td>06/07/1992</td><td>B8</td><td>B8 L57</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/67965560" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Morris, Russell Thomas</td><td>Korea, Army</td><td>06/05/1931</td><td>04/04/2011</td><td>B9</td><td>B9 L82</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831053" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mortimore, Morris Edmund</td><td>WW1, Army</td><td>11/17/1887</td><td>02/13/1982</td><td>B8</td><td>B8 L109</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/81500460" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mortimore, Ronald Nathan</td><td>WW2</td><td>04/09/1927</td><td>07/11/2003</td><td>6</td><td>C44</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831054" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mortimore, Roy Henry</td><td>WW1, Army</td><td>02/23/1893</td><td>10/28/1987</td><td>5s</td><td>1442</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159980560" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Mullins, Thomas O'Dea</td><td>WW2, Army, Tec5</td><td>12/21/1918</td><td>10/16/2009</td><td>1s</td><td>139</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/229797063" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Naylor, Gary Bruce</td><td>Vietnam, Army</td><td>01/07/1944</td><td>11/10/2020</td><td>B9</td><td>B9 L77</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157416814" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Neal, Herbert Oliver</td><td>WW2, Army</td><td>12/17/1918</td><td>10/08/1990</td><td>1n</td><td>1081</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157417605" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Neal, John Monroe</td><td>WW2, Army</td><td>04/12/1915</td><td>05/15/1960</td><td>1s</td><td>609</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157417646" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Neal, Juanita Edith</td><td>WW2, WAC</td><td>02/14/1915</td><td>05/25/1995</td><td>1s</td><td>609</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831055" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Neal, Victor Hale</td><td>WW2, USMC, TSgt</td><td>12/16/1916</td><td>03/24/1997</td><td>B8</td><td>B8 L59</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157417906" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Needham, George Windfield</td><td>Civil War, Infantry, Co G, 7th Reg, IN</td><td>09/25/1847</td><td>05/20/1917</td><td>1s</td><td>690</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831057" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Needham, Lehi Worth "Pete"</td><td>WW2, Army</td><td>02/19/1906</td><td>01/22/1985</td><td>3n</td><td>1198</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/225394587" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Nelms, Lawrence Edwin</td><td>WW2, AAF, Sgt</td><td>10/17/1922</td><td>11/30/1972</td><td>B10</td><td>B10 L17</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/198590749" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Nelson, Norman Meinecke, MD</td><td>WW2, Army Med Corps</td><td>08/20/1924</td><td>04/24/2019</td><td>6</td><td>1821</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150849278" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Nicholson, Kenneth Delos</td><td>WW2</td><td>12/21/1908</td><td>02/__/1987</td><td>2</td><td>432</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191794855" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Noble, Reginald Eugene</td><td>Korea, USAF</td><td>03/18/1928</td><td>12/13/1978</td><td>5s</td><td>1450</td><td>NB?</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191922019" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Noblitt, Harry Franklin Jr</td><td>WW2, AAF, Sgt</td><td>04/22/1922</td><td>11/21/2009</td><td>5s</td><td>1541</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159538930" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Noftsger, Arthur Yam</td><td>WW1, Army</td><td>02/27/1880</td><td>04/08/1944</td><td>4</td><td>254</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/119132347" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Noftsger, Oliver Raymond</td><td>WW2, Navy</td><td>12/22/1925</td><td>10/21/2013</td><td>B8</td><td>B8 L61</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159653431" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Omstead, Keith</td><td>Korea</td><td>10/19/1929</td><td>06/28/1988</td><td>B9</td><td>B9 L81</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157362993" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Omstead, Kenneth Billie</td><td>Korea</td><td>09/16/1928</td><td>10/23/1990</td><td>B9</td><td>B9 L81</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831063" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Omstead, Kevin Donald</td><td>Vietnam, Army</td><td>06/09/1944</td><td>07/11/2006</td><td>B9</td><td>B9 L88</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831064" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Paris, Arthur Edward</td><td>USAF</td><td>02/13/1938</td><td>09/11/2003</td><td>B9</td><td>B9 L20</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157388385" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Paris, George Howard</td><td>Korea, Navy</td><td>02/28/1932</td><td>07/29/1956</td><td>1s</td><td>695</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/170755873" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Payne, David Andrew</td><td>Desert Storm, Army</td><td>10/04/1967</td><td>09/30/2016</td><td>B9</td><td>B9 L51</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/144325818" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Perry, Earl E.</td><td>WW1, Army, Pvt</td><td>05/11/1892</td><td>03/04/1977</td><td>5s</td><td>1598</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/121996956" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Perry, Leo Ray</td><td>WW1</td><td>07/14/1894</td><td>12/03/1984</td><td>6</td><td>1666</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/126087239" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Pool, James William</td><td>Army</td><td>08/06/1836</td><td>03/11/1928</td><td>1s</td><td>726</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831066" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Porter, Charles Kelley</td><td>WW2, USNR, LT</td><td>05/30/1907</td><td>12/08/1961</td><td>5n</td><td>1325</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/242853047" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Prall, Gary Willard</td><td>Army</td><td>02/04/1934</td><td>08/21/2022</td><td>5s</td><td>1453</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/225380775" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Price, Larry Ray</td><td>Vietnam, Army, Sgt</td><td>08/25/1941</td><td>01/10/2021</td><td>B10</td><td>B10 L58</td><td>NB?</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/6932802" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Pyle, Cortez</td><td>Civil War, Pvt, Co H, 31st Reg, MO</td><td>02/14/1817</td><td>11/24/1896</td><td>4</td><td>253</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/158026304" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Randol, Willard Carl</td><td>WW2, Navy</td><td>01/04/1924</td><td>11/04/2000</td><td>B10</td><td>B10 L44</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/291243664" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Ranney, Delbert Grover "Del"</td><td>Vietnam, USMC, Col, Legion of Merit (V), Dist Flying Cross, Silver Star, Air Medal</td><td>10/14/1932</td><td>12/27/2025</td><td>B3</td><td>B3
+<tr><td><a href="http://FindAGrave.com/memorial/40595311" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Rardin, Paul Reeves</td><td>WW1, Army, Pvt</td><td>01/16/1893</td><td>03/09/1977</td><td>B3</td><td>B3 L133</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831069" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Rauch, Earl Herbert</td><td>WW1, Army, Sgt</td><td>06/18/1894</td><td>03/23/1972</td><td>B3</td><td>B3 L133</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191678933" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Reed, Jack Curtis</td><td>WW2/Korea, AAF</td><td>06/11/1921</td><td>04/05/2006</td><td>B8</td><td>B8 L101</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/188319479" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Reese, Frederick E., II</td><td>Vietnam, Navy</td><td>02/14/1949</td><td>09/30/2011</td><td>4</td><td>D27</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/158029300" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Reese, Frederick Edwin</td><td>WW2</td><td>02/10/1925</td><td>02/25/1998</td><td>4</td><td>D28</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/28981213" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Reneau, Orley Vincent</td><td>WW1, Army</td><td>08/23/1897</td><td>05/22/1921</td><td>2</td><td>542</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191784533" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Rew, Neil Wayne</td><td>Korea, Army, CPL</td><td>07/10/1930</td><td>01/16/2015</td><td>B9</td><td>G6</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157362122" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Reynard, John Emlin</td><td>WW1</td><td>04/22/1898</td><td>03/06/1972</td><td>B8</td><td>B8 L111</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/135785091" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Richards, Windsor</td><td>Civil War, Infantry, Co D, 153rd IL</td><td>10/11/1825</td><td>01/22/1906</td><td>4</td><td>370</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/76611529" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Richey, James Lawrence</td><td>Civil War, Infantry, Co H, 44th Reg, MO</td><td>02/12/1849</td><td>02/05/1942</td><td>1s</td><td>107</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831070" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Roberts, Floyd James</td><td>WW2, AAF, PFC</td><td>08/08/1912</td><td>10/19/1975</td><td>6</td><td>1701</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191938891" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Robinson, Rex Lester</td><td>WW2</td><td>03/14/1926</td><td>07/24/2012</td><td>6</td><td>1814</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157362779" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Ross, Martin</td><td>Civil War, Infantry/Cavalry, KY</td><td>11/30/1825</td><td>03/25/1902</td><td>3s</td><td>200</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831073" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Roth, John S.</td><td>Civil War</td><td>09/08/1842</td><td>11/25/1930</td><td>4</td><td>400</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156709510" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Sandage, Neil Roger</td><td>WW1</td><td>07/12/1895</td><td>01/08/1970</td><td>5s</td><td>1490</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156709569" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Sandy, Lynn Carol</td><td>WW2</td><td>12/25/1923</td><td>01/09/1996</td><td>6</td><td>C42</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156709631" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Scarcliff, William Briton</td><td>WW1, Army</td><td>08/24/1897</td><td>07/22/1974</td><td>6</td><td>1676</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/227283093" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Schall, Lawrence Roderick "Rod"</td><td>WW2/Korea, Army Signal Corps</td><td>12/02/1928</td><td>04/22/2019</td><td>B9</td><td>B9 L86</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831075" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Schenck, Walter Lavern</td><td>WW1, Navy, SC1</td><td>09/03/1892</td><td>11/27/1944</td><td>1s</td><td>122</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156709751" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Schofield, Melvin James</td><td>WW2, Marines</td><td>07/01/1915</td><td>04/28/1952</td><td>6</td><td>1684</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/30309646" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Scott, Edward Lewis</td><td>WW2, Navy</td><td>06/11/1923</td><td>11/22/1976</td><td>5n</td><td>1297</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/30309567" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Scott, Rothmer Albert</td><td>WW1, Army Air Corps</td><td>01/11/1895</td><td>01/08/1955</td><td>5s</td><td>1504</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831076" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Shakespeare, Joseph</td><td>WW1, Army</td><td>12/01/1893</td><td>01/15/1943</td><td>1n</td><td>1120</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831077" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Shank, Joseph Oscar</td><td>WW2, Navy</td><td>06/20/1909</td><td>03/02/1969</td><td>6</td><td>1662</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157085600" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Shippy, John Harold</td><td>WW2</td><td>03/29/1911</td><td>08/__/1972</td><td>6</td><td>1661</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191845056" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Shoemaker, Edgar Ellsworth "Ed"</td><td>WW1, Army, Pvt, 332nd Field Artillery</td><td>05/11/1888</td><td>12/25/1947</td><td>5s</td><td>1458</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/205515518" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Silsby, James Burnham Jr.</td><td>Navy</td><td>09/28/1935</td><td>11/27/2019</td><td>1n</td><td>1122</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/126472566" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Silver, Howard Maxwell</td><td>WW1, Army</td><td>09/24/1889</td><td>01/15/1981</td><td>B8</td><td>B8 L108</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/126470292" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Silver, Ralph Edison</td><td>WW1, Army</td><td>07/27/1893</td><td>01/09/1996</td><td>5n</td><td>1267</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/258756434" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Simpson, Ronald Dale "Ron"</td><td>Army</td><td>02/13/1936</td><td>08/26/2023</td><td>B10</td><td>B10 L84</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/133477572" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Smith, Delbert Deane</td><td>WW2, Navy</td><td>07/28/1922</td><td>04/02/2008</td><td>6</td><td>1829</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191300531" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Smith, Hugh Wardell</td><td>WW2, Navy</td><td>03/21/1924</td><td>06/07/2008</td><td>4</td><td>C29</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831081" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Smith, Peter Branum</td><td>Vietnam, Army</td><td>11/17/1943</td><td>01/05/2005</td><td>5s</td><td>1469</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/215244675" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Smith, Robert Wayne</td><td>Korea, USMC</td><td>03/23/1931</td><td>08/08/1999</td><td>1s</td><td>662</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191294606" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Smith, Rollie Willis</td><td>WW2, Army</td><td>11/07/1922</td><td>12/30/2004</td><td>5n</td><td>1269</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/150867522" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Smith, William Richard</td><td>Civil War, Infantry, Co E, 25th, IL</td><td>02/09/1839</td><td>01/19/1917</td><td>1s</td><td>117</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/105721978" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Snethen, Charles Oliver</td><td>Korea, Army</td><td>02/12/1932</td><td>02/19/2013</td><td>B10</td><td>G13</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/119504884" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Snethen, Frank Abner</td><td>WW2, Army</td><td>01/21/1910</td><td>09/17/1996</td><td>B9</td><td>B9 L95</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831087" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Snethen, Robert Carl</td><td>Vietnam, Army, PFC (KIA)</td><td>07/20/1948</td><td>06/25/1969</td><td>6</td><td>1625</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157294713" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Snively, Joseph Smith</td><td>Civil War</td><td>02/21/1840</td><td>08/11/1921</td><td>1s</td><td>730</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157294982" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Spaulding, Grover Morgan</td><td>WW1, Army, PFC</td><td>10/19/1894</td><td>05/16/1978</td><td>2</td><td>465</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/171710026" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Spillman, Thomas Harlan</td><td>WW2, Navy</td><td>10/24/1921</td><td>01/28/2007</td><td>B10</td><td>B10 L17</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/158504281" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Sprague, Harbert Roger</td><td>WW2, Army</td><td>03/31/1908</td><td>11/09/1999</td><td>5n</td><td>1318</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/6768782" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Spurrier, Ralph Cleary</td><td>Civil War, Infantry, 14th IA</td><td>03/05/1841</td><td>02/16/1916</td><td>2</td><td>836</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/147332383" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Staggers, Abraham S.</td><td>Civil War, Cavalry (at Siloh)</td><td>09/23/1832</td><td>11/08/1901</td><td>3s</td><td>91</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157296354" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Stebbins, Henry Alfred</td><td>Civil War, Infantry, Co B, 71st IN</td><td>01/28/1844</td><td>09/08/1920</td><td>2</td><td>280</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/105483516" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Stedman, Elias A. "Eli"</td><td>Civil War</td><td>11/07/1840</td><td>09/08/1910</td><td>1s</td><td>736</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/224131448" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Stevenson, Leo Vey</td><td>WW2, Navy</td><td>11/09/1924</td><td>03/09/2021</td><td>B9</td><td>B9 L71</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/250033813" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Stoll, Larry Francis [PENDING]</td><td>USAF, A2C</td><td>06/26/1937</td><td>11/18/2016</td><td>B9</td><td>B9 L42</td><td>NS CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157296725" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Straight, Donald Eugene Sr.</td><td>WW2, Navy, S1</td><td>05/21/1928</td><td>04/18/1989</td><td>B8</td><td>B8 L75</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831089" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Strait, James Douglas</td><td>Vietnam, USAF, 2D Lt</td><td>09/24/1944</td><td>03/03/1972</td><td>6</td><td>1634</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831090" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Strait, Ralph Leslie Jr.</td><td>Vietnam, Navy, SN</td><td>01/04/1939</td><td>03/03/1972</td><td>6</td><td>1634</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/158504618" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Strand, Randall Edward</td><td>USMC</td><td>03/11/1937</td><td>11/09/2010</td><td>B8</td><td>B8 L121</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191680361" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Strand, Rodney James</td><td>Vietnam, USMC, Cpl</td><td>06/19/1946</td><td>10/11/2012</td><td>B8</td><td>B8 L121</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/18788118" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Stuck, Robert Charles</td><td>WW2, USAF</td><td>11/05/1926</td><td>11/11/2001</td><td>6</td><td>1623</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/157296882" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Swanson, Enoch Carl</td><td>WW1</td><td>01/03/1889</td><td>03/19/1987</td><td>B9</td><td>B9 L96</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191682688" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Swanson, Gerald Walton, MD</td><td>WW2, Army Med Corps, Capt</td><td>10/10/1921</td><td>09/02/2006</td><td>B9</td><td>B9 L73</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/143227452" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Swigart, Kenneth Gene</td><td>WW2, Navy</td><td>02/22/1925</td><td>02/25/2015</td><td>B10</td><td>B10 L107</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/192055240" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tabor, Eugene Harold "Gene"</td><td>WW2, Army Air Corps</td><td>07/19/1925</td><td>04/12/2007</td><td>5n</td><td>1351</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831091" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Talley, Billy Lee</td><td>WW2, Coast Gd</td><td>11/11/1927</td><td>01/13/1991</td><td>5n</td><td>1298</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156704009" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tallman, Claude Edgar</td><td>Coast Artillery, 63rd Reg, Co C.A.C.</td><td>09/22/1891</td><td>03/19/1913</td><td>2</td><td>815</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831093" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tapscott, Jack Garold</td><td>WW2/Korea, USMC/Army (KIA)</td><td>04/17/1922</td><td>11/02/1952</td><td>6</td><td>1738</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831094" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tapscott, Joe Francis Junior</td><td>WW2, USMC, Silver Star</td><td>01/08/1925</td><td>03/12/2001</td><td>B10</td><td>B10 L110</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/149017597" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tarver, John L.</td><td>Civil War</td><td>03/26/1827</td><td>09/06/1907</td><td>3s</td><td>17</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156705331" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Teale, Herbert Barton</td><td>WW2, Army</td><td>10/03/1907</td><td>07/24/1977</td><td>5s</td><td>1578</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191334592" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thomas, Cecil James</td><td>WW2, Navy</td><td>08/11/1907</td><td>11/19/2002</td><td>B9</td><td>B9 L29</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156708086" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thomas, David W.</td><td>Civil War</td><td>11/12/1842</td><td>08/17/1910</td><td>2</td><td>859</td><td>NS</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/206156045" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thomas, James David [PENDING]</td><td>Coast Guard, 2nd Cook</td><td>03/05/1926</td><td>01/09/2020</td><td>4</td><td>532</td><td>NB CP</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156708418" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thomas, Roswell G.</td><td>Civil War, Cavalry, Co K, 6th OH</td><td>09/04/1823</td><td>03/06/1901</td><td>3s</td><td>190</td><td>NS</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831095" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thomas, Sharon Kay</td><td>USAF</td><td>10/05/1938</td><td>11/08/2006</td><td>B10</td><td>B10 L39</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831096" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thompson, Clifford Paul</td><td>WW2, Army</td><td>01/31/1927</td><td>11/14/2000</td><td>B10</td><td>B10 L65</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/263424540" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Thompson, Thomas Leo</td><td>USAF</td><td>09/18/1933</td><td>01/14/2024</td><td>B9</td><td>B9 L19</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/98424686" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tilford, Harold Dwayne "Bud"</td><td>WW2, Army</td><td>07/04/1938</td><td>12/09/2006</td><td>6</td><td>1796</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/231222718" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Titus, Thomas Richard "Dick"</td><td>Korea, Army</td><td>09/06/1928</td><td>09/20/2019</td><td>B10</td><td>B10 L65</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/115635202" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Toney, Jay Leroy</td><td>WW2, Navy</td><td>07/20/1920</td><td>08/03/1996</td><td>B8</td><td>B8 L132</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191772136" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Trammell, Leroy Oral</td><td>WW2, Navy</td><td>03/02/1922</td><td>03/01/2011</td><td>B8</td><td>B8 L94</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191682344" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Tripp, Darrell Vern</td><td>WW2, Navy</td><td>07/25/1922</td><td>02/14/2005</td><td>B9</td><td>G12</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/235537421" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Trullinger, Glen Edward</td><td>WW2, Navy</td><td>03/17/1926</td><td>01/02/2022</td><td>B8</td><td>B8 L74</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831097" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Truman, David Alfred</td><td>WW1, Army</td><td>09/13/1891</td><td>10/29/1949</td><td>1s</td><td>159</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/190614769" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Truman, Loren Frederick</td><td>WW2</td><td>01/22/1918</td><td>06/25/2010</td><td>6</td><td>1795</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831099" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Turner, Robert</td><td>Civil War</td><td>12/02/1835</td><td>01/18/1936</td><td>5s</td><td>1572</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/132531795" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>VanMeter, Joseph Beale</td><td>Civil War, Infantry, PVT, Co C, 106th, IL</td><td>11/07/1834</td><td>06/12/1901</td><td>3s</td><td>76</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/253173254" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Vitek, Gilbert Allen</td><td>USAF, Capt.</td><td>02/10/1935</td><td>07/02/2016</td><td>4</td><td>A7</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156508998" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Walling, Guy Benjamin</td><td>WW2, Navy</td><td>12/20/1882</td><td>05/01/1952</td><td>5n</td><td>1410</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156509257" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Walling, Vaughn LeRoy "Pete"</td><td>Army</td><td>04/15/1943</td><td>08/03/1973</td><td>5n</td><td>1389</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156509629" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Waltenbaugh, Jacob</td><td>Civil War</td><td>04/06/1840</td><td>09/21/1924</td><td>4</td><td>348</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/19296574" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Watt, Charles Edward</td><td>WW2, Navy</td><td>09/05/1918</td><td>05/05/2007</td><td>B8</td><td>B8 L99</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/38484775" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Watt, Frank Kenneth</td><td>WW2, AAF, Sgt (KIA)</td><td>02/14/1920</td><td>02/10/1944</td><td>5s</td><td>1454</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156695813" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Watts, Oscar Columbus</td><td>WW1</td><td>04/05/1899</td><td>12/24/1981</td><td>5s</td><td>1419</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/225412303" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Waugh, Doyle Edwin</td><td>Korea, USMC,</td><td>10/28/1930</td><td>04/02/2021</td><td>5n</td><td>1401</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831102" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Waugh, James Milton</td><td>WW2, Navy</td><td>05/27/1926</td><td>09/14/1993</td><td>B10</td><td>B10 L75</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/115831388" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Webb, Eugene</td><td>Vietnam, Navy</td><td>09/14/1934</td><td>08/19/2013</td><td>6</td><td>1621</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/221860399" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Wells, Milbert Allen</td><td>WW2, civil aviation</td><td>09/26/1920</td><td>01/24/2021</td><td>3s</td><td>F26</td><td>TM</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/232422682" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>White, James Warren "Jim"</td><td>Army</td><td>08/07/1929</td><td>12/29/2018</td><td>5s</td><td>1425</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/159122600" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>White, Kay Orlando</td><td>Army? (post WW1)</td><td>11/02/1905</td><td>08/18/1997</td><td>B9</td><td>B9 L7</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/148225275" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>White, Kenneth Charles</td><td>WW2</td><td>__/__/1910</td><td>__/__/1988</td><td>B3</td><td>B3 L156</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/111293520" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Wightman, William Chase</td><td>Civil War, Infantry, Co A, IL</td><td>07/22/1828</td><td>10/04/1913</td><td>4</td><td>248</td><td>NB</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/92893726" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Wiley, Thomas</td><td>Civil War</td><td>02/17/1819</td><td>06/29/1907</td><td>4</td><td>221</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/21068913" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Willey, James Archibald</td><td>WW1, Field Artillery, Pvt</td><td>11/07/1889</td><td>01/15/1951</td><td>5s</td><td>1548</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/193141406" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Williams, James Franklin "Jim"</td><td>Navy</td><td>06/10/1943</td><td>09/12/2018</td><td>B9</td><td>B9 L37</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/210699081" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Williams, Linyel "Linn"</td><td>WW2, Army</td><td>08/20/1924</td><td>08/23/2014</td><td>5s</td><td>1448</td><td>C</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52831113" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Wimer, William Joseph</td><td>WW1, Army, PFC</td><td>09/11/1892</td><td>09/24/1977</td><td>6</td><td>1779</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/239124724" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Woodard, Robert L. Sr.</td><td>WW2, Navy, 2D Lt</td><td>05/18/1917</td><td>05/25/2004</td><td>B8</td><td>B8 L131</td><td>Cx2</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156701426" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Wright, Glenn Perry</td><td>WW2, Army</td><td>01/14/1915</td><td>08/29/1986</td><td>6</td><td>1635</td><td></td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/156507127" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Young, Robert B.</td><td>Civil War</td><td>01/27/1837</td><td>04/__/1899</td><td>3s</td><td>212</td><td>NS</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/60982288" target="_blank"><img src="FG.png" alt="" width="16"></a></td>
+     <td>Youngs, Carlisle R. "Clyde"</td><td>WW2</td><td>11/25/1919</td><td>12/02/1991</td><td>B9</td><td>B9 L92</td><td></td></tr>
+</tbody>
+</table>

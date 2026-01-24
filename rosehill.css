@@ -1,0 +1,190 @@
+body {
+	background-color: #EEEEEE;
+	color: #666666;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+.notes {
+	font-size: smaller;
+	font-style: italic;
+}
+.notes > div {
+	margin-top: 8px;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;  
+	background-color: #99CCCC;
+	min-width: 960px;
+	-webkit-box-shadow: 5px 5px 5px #333333;
+	-moz-box-shadow: 5px 5px 5px #333333;
+	box-shadow: 5px 5px 5px #333333;
+}
+    
+#content {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 1px;
+	background-color: #FFFFFF;
+	margin-left: 160px;
+}
+
+#content img, #content video, #content embed {
+	float: left;
+	padding-right: 20px;
+	outline-style: none;
+}
+
+#content ul {
+	list-style-position: inside;
+}
+
+h1 {
+	background-color: #003300;
+	background-image: url(photos/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	color: #FFFFFF;
+	line-height: 200%;
+	height: 72px;
+	font-size: 22pt;
+	font-family: Georgia, serif;
+	padding-left: 10px;
+	margin-bottom: 0;
+}
+
+h2, h3, h4, h4 {
+	color: #003300;
+	font-family: Georgia, serif;
+}
+
+#nav {
+	font-weight: bold;
+	float: left;
+	width: 130px;
+	padding: 15px 0 0 20px;
+	position: sticky;
+	top:0;
+	
+}
+ 
+#nav a { text-decoration: none; }
+#nav a:link, #nav a:visited { color: #003300; }
+#nav a:hover { color: #FFFFFF; }
+
+#nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0; 
+}
+
+.list ul {
+	margin: 0;
+	padding-left: 5px; 
+}
+
+.list li {
+	margin-bottom: 6px;
+}
+
+dt {
+	color: #003300;
+}
+
+.resort {
+	color: #003300;
+	font-size: 1.2em;
+}
+
+#footer { 
+	font-size: .70em;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+table {
+	width: 600px;
+	margin: auto;
+	border: 1px solid #006600;
+	border-spacing: 0;
+}
+
+th, td {
+	padding: 5px;
+	border: 1px solid #006600;
+}
+
+td {
+	text-align: center;
+}
+
+.text {
+	text-align: left;
+}
+
+tr:nth-of-type(even) {
+	background-color: #EEFFEE; 
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 10px;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#mySubmit {
+	margin-left: 130px;
+}
+
+#gallery {
+	position: relative;
+}
+
+#gallery ul {
+	width: 300px; 
+	list-style-type: none;
+}
+
+#gallery li {
+	display: inline; 
+	float: left; 
+	padding: 10px;
+}
+
+#gallery img {
+	border-style: none;
+	float: none;
+}
+
+#gallery a {
+	text-decoration: none; 
+	color: #333; 
+	font-style: italic;
+}
+
+#gallery span {
+	display: none;
+}
+
+#gallery a:hover span {
+	display: block; 
+	position: absolute;
+	top: 10px; 
+	left: 340px; 
+	text-align: center;
+}

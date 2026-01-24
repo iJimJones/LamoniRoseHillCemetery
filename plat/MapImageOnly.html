@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lamoni Rose Hill Map</title>
+<meta charset="utf-8">
+<style>
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family:sans-serif;
+}
+.center {
+	text-align: center;
+}
+.mapbox {
+	position:relative;
+	margin:auto;
+	min-width:450px;
+	max-width:800px;
+}
+.mapbox>img{
+	width:100%;
+	height:auto;
+}
+.used {
+	position:absolute;
+	color:yellow;
+	border: yellow .0vw solid;
+	font:bold 150% Arial, sans-serif;
+	text-align: center;
+	padding-top: .5vw;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.unused {
+	position:absolute;
+	color:yellow;
+	border: none;
+	font:italic 100% Arial, sans-serif;
+	text-align: center;
+	padding-top: .5vw;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+</style>
+</head>
+<body>
+
+
+<h1 class="center">Lamoni Rose Hill Cemetery Map </h1>
+
+<div class="mapbox">
+   <!-- 960x612 pixel image of cemetery -->
+   <img src="pics/LRHC-droneMap.jpg" alt="Cemetery Map">
+   <div class="used"   style="width:18.4%; height:13.2%; top:14%; left:1%;" onclick='openInNewTab("pics/1n.jpg");'>1n</div>
+   <div class="used"   style="width:18.4%; height:17.6%; top:30%; left:1%;" onclick='openInNewTab("pics/1s.jpg");'>1s</div>
+   <div class="used"   style="width:18.4%; height:27.5%; top:50%; left:1%;" onclick='openInNewTab("pics/2.jpg");'>2</div>
+   
+   <div class="used"   style="width:11.1%; height:13.2%; top:14%; left:21%;" onclick='openInNewTab("pics/3n.jpg");'>3n</div>
+   <div class="used"   style="width:11.1%; height:17.6%; top:30%; left:21%;" onclick='openInNewTab("pics/3s.jpg");'>3s</div>
+   <div class="used"   style="width:11.1%; height:27.5%; top:50%; left:21%;" onclick='openInNewTab("pics/4.jpg");'>4</div>
+   
+   <div class="used"   style="width:15.2%; height:13.2%; top:14%; left:33.5%;" onclick='openInNewTab("pics/5n.jpg");'>5n</div>
+   <div class="used"   style="width:15.2%; height:17.3%; top:30%; left:33.5%;" onclick='openInNewTab("pics/5s.jpg");'>5s</div>
+   <div class="used"   style="width:15.2%; height:22.0%; top:50%; left:33.5%;" onclick='openInNewTab("pics/6.jpg");'>6</div>
+   
+   <div class="used"   style="width:12.8%; height:13.2%; top:14%; left:52.5%;" onclick='openInNewTab("pics/B9.jpg");'>B9</div>
+   <div class="used"   style="width:12.8%; height:17.0%; top:30%; left:52.5%;" onclick='openInNewTab("pics/B8.jpg");'>B8</div>
+   <div class="used"   style="width:12.8%; height:21.8%; top:50%; left:52.5%;" onclick='openInNewTab("pics/B3.jpg");'>B3</div>
+   <div class="unused" style="width:12.8%; height:19.3%; top:68%; left:52.5%;" onclick='openInNewTab("pics/B2.jpg");'>B2<br>grass</div>
+   
+   <div class="used"   style="width:13.5%; height:13.2%; top:14%; left:67.0%;" onclick='openInNewTab("pics/B10.jpg");'>B10</div>
+   <div class="used"   style="width:13.5%; height:17.0%; top:30%; left:67.0%;" onclick='openInNewTab("pics/B7.jpg");'>B7</div>
+   <div class="unused" style="width:13.5%; height:21.8%; top:49%; left:67.0%;" onclick='openInNewTab("pics/B4.jpg");'>B4<br>grass</div>
+   <div class="unused" style="width:13.5%; height:19.3%; top:68%; left:67.0%;" onclick='openInNewTab("pics/B1.jpg");'>B1<br>grass</div>
+   
+   <div class="unused" style="width:13.0%; height:13.2%; top:13%; left:81.8%;" onclick='openInNewTab("pics/B11.jpg");'>B11<br>grass</div>
+   <div class="unused" style="width:13.0%; height:17.0%; top:29%; left:81.8%;" onclick='openInNewTab("pics/B6.jpg");'>B6<br>grass</div>
+   <div class="unused" style="width:13.0%; height:17.6%; top:49%; left:81.8%;" onclick='openInNewTab("pics/B5.jpg");'>B5<br>grass</div>
+</div>
+
+<script type="text/javascript">
+function openInNewTab(url){
+	var win= window.open(url,'_blank');
+	win.focus();
+};
+</script>
+
+
+</body>
+</head>
