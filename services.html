@@ -4,42 +4,12 @@
 <title>Lamoni Rose Hill Cemetery</title>
 <meta charset="utf-8">
 <link href="rosehill.css" rel="stylesheet">
-<style>
-.phone * {display: inline-block;}
-table * {text-align: left;}
-
-summary {
-	font-family: serif;
-	font-size: 150%;
-	font-weight: bold;
-	padding: 9px 0;
-}
-details > div {
-	padding: 0 0 18px 18px;
-}
-</style>
+<script src="js/includes.js"></script>
 </head>
 <body>
 <div id="wrapper">
-<h1>
-<img src="icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80" alt="" title="icon by Mark Jones">
-&nbsp;
-Lamoni Rose Hill Cemetery
-</h1>
-<div id="nav">
-<ul>
- <li><a href="index.html">Home</a></li>
- <li><a href="history.html">History</a></li>
- <li><a href="map.html">Map</a></li>
- <li><a href="search.html">Search</a></li>
- <li><a href="policies.html">Policies</a></li>
- <li><a href="prices.html">Prices</a></li>
- <li><a href="lots4sale.html" target="_blank">Lots for Sale</a></li>
- <li><a href="contacts.html">Contacts</a></li>
- <li><a href="services.html">Services</a></li>
- <li><a href="donate.html">Donate</a></li>
-</ul> 
-</div>
+<div data-include="includes/header.html"></div>
+<div data-include="includes/nav.html"></div>
 
 <div id="content">
 
@@ -52,7 +22,7 @@ Lamoni Rose Hill Cemetery
 <summary>Funeral Homes Servicing Our Area</summary>
 <div>
 
-<table style="margin-left:0; font-size:10pt;">
+<table class="left-align left-margin small-font">
 	<tr>
 	<td>
 		<b>Slade-O’Donnell Funeral Home<sup>1</sup></b><br>
@@ -124,7 +94,7 @@ respectable and safe. If you need to purchase a lot, we can assist.
 <details>
 <summary>Monument Companies</summary>
 
-<table style="margin-left:0; font-size:10pt;">	
+<table class="left-align left-margin small-font">	
 	<tr>
 	<td>
 		<b>Des Moines-Winterset Memorials</b><br>
@@ -283,8 +253,7 @@ so we can stay informed and update our records.
 
 </details>
 
-<div id="footer">Copyright &copy; 2025 Lamoni Rose Hill Cemetery<br>
-<a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a></div>
+<div data-include="includes/footer.html"></div>
 </div>
 </div>
 </body>
