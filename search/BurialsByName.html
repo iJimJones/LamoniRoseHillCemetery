@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>List of Burials - By Name</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+<script src="../js/cemetery-db.js"></script>
+<meta charset="utf-8">
+<style>
+    body{font-family: serif;}
+    p{font-size: 12pt;}
+	tr:nth-child(even){background-color: #f2f2e2;}
+	tr:nth-child(odd) {background-color: #ffffff;}
+	
+	th:nth-child(1), td:nth-child(1) {width:22px; text-align: center;}      /* FindAGrave */
+	th:nth-child(2), td:nth-child(2) {width:22px; text-align: center;}      /* veteran    */
+	th:nth-child(3), td:nth-child(3) {width:210px; text-align: left;}       /* name       */
+	th:nth-child(4), td:nth-child(4) {width:35px; text-align: center;}      /* Sect       */
+	th:nth-child(5), td:nth-child(5) {width:20px; text-align: center;}      /* row/X      */
+	th:nth-child(6), td:nth-child(6) {width:20px; text-align: center;}      /* Y          */
+	th:nth-child(7), td:nth-child(7) {width:65px; text-align: center;}      /* lot ID     */
+	th:nth-child(8), td:nth-child(8) {width:62px; text-align: center;}      /* space      */
+	th:nth-child(9), td:nth-child(9) {width:38px; text-align: center;}      /* code       */
+	th:nth-child(10),td:nth-child(10){width:68px; text-align: right;}       /* birthdate  */
+	th:nth-child(11),td:nth-child(11){width:70px; text-align: right;}       /* deathdate  */
+	
+	th    {font-size:10pt; font-family: arial, sans-serif; height:20pt; vertical-align:bottom; background-color:#e0e0d0;}
+	tbody {font-size:12pt;}
+	
+	table,th,td {border:0;}
+	#top, #bottom, #burialList, #colHeaders {width:90%; min-width:660px; margin:auto;}
+	#footer { 
+		font-size: .90em;
+		font-style: italic;
+		text-align: center;
+		padding: 10px;
+		clear: both;
+	}
+	#colHeaders, #colHeaders th {
+		position: sticky;
+		top: 0;
+	}
+	.ctitle {font-weight: bold; font-family: arial, sans-serif; font-size:11pt;}
+	#loading {text-align: center; padding: 20px; font-size: 14pt;}
+	#error {color: red; text-align: center; padding: 20px; font-size: 14pt;}
+	
+</style>
+</head>
+
+<body>
+<div id="top">
+
+<div style="text-align:center; font-size:22pt; font-weight: bold;">
+  <img src="../icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80"  
+  alt="" title="icon by Mark Jones"> Burials at Lamoni Rose Hill Cemetery
+</div>
+
+<div style="text-align:center; font-size:14pt; font-weight: bold; margin:6pt 0 12pt 0;" id="asOfDate">
+  Loading...
+</div>
+
+<div id="loading">Loading database...</div>
+<div id="error" style="display:none;"></div>
+
+<div id="content" style="display:none;">
+<div> 
+  This is an alphabetical list of all who are deceased and were buried or have a monument here.
+  A <img src="FG.png" width="16" alt="FG"> icon under <b class="ctitle">FG</b> is a
+  link to their FindAGrave page.
+  An "X" in the <b class="ctitle">Vet</b> column tags each veteran
+  (see <a href="VeteransByNameTable.html">Veterans&nbsp;List</a> for details).
+  The <b class="ctitle">Sect</b> column gives the sectional ID, known as Sections
+  on the west side and Blocks on the east&ndash; Block numbers begin with "B".
+  The <b class="ctitle">X</b>&nbsp;&amp;&nbsp;<b class="ctitle">Y</b> columns give lot coordinates within its section. 
+  <b class="ctitle">X</b> is the headstone row number W&rarr;E, and 
+  <b class="ctitle">Y</b> is the lot within that row N&nbsp;&darr;&nbsp;S. 
+  It's approximately 5&nbsp;paces per lot, so Y=10 takes about 50 paces down that row to reach the lot.
+  A <a href="RoseHillGrid.pdf" target="_blank">Grid&nbsp;Map</a> shows lots and their
+  XY-coordinates. The burial list is available ordered
+  <a href="BurialsByName.html" target="_blank">by&nbsp;name</a> and
+  <a href="BurialsByLocation.html" target="_blank">by&nbsp;location</a>.
+  Report errors to 
+  <a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a>.
+</div>
+
+<div style="display:flex; flex-direction:row; margin-top:6pt;">
+  <div><b>Codes</b>:<br>
+     &nbsp; &nbsp; &nbsp; &nbsp;C&nbsp;&#8211;&nbsp;cremains burial<br>
+	 &nbsp; &nbsp; &nbsp; &nbsp;A&nbsp;&#8211;&nbsp;ashes&nbsp;scattered&nbsp;locally<br>
+  </div>
+  <div>
+     <br>
+	 &nbsp; &nbsp; &nbsp; &nbsp;CP&nbsp;&#8211;&nbsp;cremains&nbsp;pending<br>
+     &nbsp; &nbsp; &nbsp; &nbsp;x2&nbsp;&#8211;&nbsp;2-in-1&nbsp;burial<br>
+  </div>
+  <div>
+	<br>
+     &nbsp; &nbsp; &nbsp; &nbsp;NB&nbsp;&#8211;&nbsp;no&nbsp;burial&nbsp;(monument only)<br>
+	 &nbsp; &nbsp; &nbsp; &nbsp;NS&nbsp;&#8211;&nbsp;no&nbsp;stone&nbsp;(unmarked grave)<br>
+	 &nbsp; &nbsp; &nbsp; &nbsp;TM&nbsp;&#8211;&nbsp;Temporary&nbsp;marker&nbsp;(no&nbsp;stone)
+  </div>
+</div>
+
+<div style="margin-top:8px;">
+<img src="../icons/new.gif" alt="" width="40">
+Show lines containing <input id="searchValue" type="text" placeholder="Anything (search text)">
+in
+	<select id="columnSelect">
+		<option value="Anywhere">Anywhere</option>
+		<option value="Name">Name</option>
+		<option value="Section">Section</option>
+		<option value="Lot ID">Lot ID</option>
+		<option value="Code">Code</option>
+		<option value="Birthdate">Birthdate</option>
+		<option value="Deathdate">Deathdate</option>
+	</select> 
+	
+	<!-- The Show All button merely refreshes the page (the fastest way to show all) -->
+	<button onClick="window.location.href=window.location.href">Show All</button>
+</div>	
+
+<div style="margin-top:6px;">
+  <div id="count" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
+</div>
+
+</div> <!-- end of top -->
+
+<table id="burialList" style="clear:both;">
+<thead id="colHeaders">
+<tr id="headings"><th>FG</th><th>Vet</th>
+<th>Name</th><th>Sect</th><th>row<br>X&rarr;</th><th>lot<br>Y&nbsp;&darr;</th><th>Lot ID</th><th>Space</th><th>Code</th><th>Birthdate</th><th>Deathdate</th></tr>
+</thead>
+<tbody id="geeks">
+</tbody>
+</table>
+
+<div id="bottom" style="margin-top:6px;">
+  &nbsp; <img src="FG.png" width="16" alt="FG"> icon created by 
+  <a href="https://www.flaticon.com/free-icons/link" title="link icons">Creaticca-Flaticon</a>
+  <div id="count2" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
+</div>
+
+<p id="footer" style="text-align:center">
+Copyright &copy; 2026 Lamoni Rose Hill Cemetery<br>
+<a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a>
+</p>
+
+</div> <!-- end of content -->
+
+<br>
+<br>
+
+<script>
+async function loadData() {
+    try {
+        await loadDatabase();
+        const metadata = await getDatabaseMetadata();
+        document.getElementById('asOfDate').textContent = `as of ${metadata.lastUpdated}`;
+        
+        const burials = await getBurialsByName();
+        renderTable(burials);
+        
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        
+        // Initialize search functionality
+        initializeSearch();
+    } catch (error) {
+        console.error('Error loading data:', error);
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('error').style.display = 'block';
+        document.getElementById('error').textContent = 'Error loading database: ' + error.message;
+    }
+}
+
+function renderTable(burials) {
+    const tbody = document.getElementById('geeks');
+    tbody.innerHTML = '';
+    
+    burials.forEach(burial => {
+        const row = document.createElement('tr');
+        
+        // FindAGrave icon
+        const fgCell = document.createElement('td');
+        if (burial.findagrave_url || burial.findagrave) {
+            const fgUrl = burial.findagrave_url || burial.findagrave || '';
+            if (fgUrl) {
+                fgCell.innerHTML = `<a href="${fgUrl}" target="_blank"><img src="FG.png" alt="" width="16"></a>`;
+            }
+        }
+        row.appendChild(fgCell);
+        
+        // Veteran flag
+        const vetCell = document.createElement('td');
+        if (burial.veteran === 'X' || burial.veteran === 1 || burial.veteran === true || burial.veteran === '1') {
+            vetCell.textContent = 'X';
+        }
+        row.appendChild(vetCell);
+        
+        // Name
+        const nameCell = document.createElement('td');
+        nameCell.textContent = burial.name || '';
+        row.appendChild(nameCell);
+        
+        // Section
+        const sectCell = document.createElement('td');
+        sectCell.textContent = burial.section || burial.sect || '';
+        row.appendChild(sectCell);
+        
+        // X (row)
+        const xCell = document.createElement('td');
+        xCell.textContent = burial.x || burial.row || '';
+        row.appendChild(xCell);
+        
+        // Y (lot)
+        const yCell = document.createElement('td');
+        yCell.textContent = burial.y || burial.lot || '';
+        row.appendChild(yCell);
+        
+        // Lot ID
+        const lotIdCell = document.createElement('td');
+        lotIdCell.textContent = burial.lot_id || '';
+        row.appendChild(lotIdCell);
+        
+        // Space
+        const spaceCell = document.createElement('td');
+        spaceCell.textContent = burial.space || '';
+        row.appendChild(spaceCell);
+        
+        // Code
+        const codeCell = document.createElement('td');
+        codeCell.textContent = burial.code || '';
+        row.appendChild(codeCell);
+        
+        // Birthdate
+        const birthCell = document.createElement('td');
+        birthCell.textContent = burial.birthdate || '';
+        row.appendChild(birthCell);
+        
+        // Deathdate
+        const deathCell = document.createElement('td');
+        deathCell.textContent = burial.deathdate || '';
+        row.appendChild(deathCell);
+        
+        tbody.appendChild(row);
+    });
+    
+    // Update count
+    const totalCount = burials.length;
+    document.getElementById('count').textContent = `all ${totalCount} records displayed`;
+    if (totalCount > 20) {
+        document.getElementById('count2').textContent = `all ${totalCount} records displayed`;
+    }
+}
+
+function initializeSearch() {
+    const searchValue = document.getElementById('searchValue');
+    const columnSelect = document.getElementById('columnSelect');
+    const tbody = document.getElementById('geeks');
+    const countDiv = document.getElementById('count');
+    const count2Div = document.getElementById('count2');
+    
+    function filterRows() {
+        const searchText = searchValue.value.toLowerCase();
+        const selectedColumn = columnSelect.value;
+        let displayCount = 0;
+        
+        Array.from(tbody.rows).forEach(row => {
+            let shouldShow = false;
+            
+            if (searchText === '' && selectedColumn === 'Anywhere') {
+                shouldShow = true;
+            } else {
+                if (selectedColumn === 'Anywhere') {
+                    shouldShow = Array.from(row.cells).some(cell => 
+                        cell.textContent.toLowerCase().includes(searchText)
+                    );
+                } else {
+                    const columnMap = {
+                        'Name': 2,
+                        'Section': 3,
+                        'Lot ID': 6,
+                        'Code': 8,
+                        'Birthdate': 9,
+                        'Deathdate': 10
+                    };
+                    const colIndex = columnMap[selectedColumn];
+                    if (colIndex !== undefined && row.cells[colIndex]) {
+                        shouldShow = row.cells[colIndex].textContent.toLowerCase().includes(searchText);
+                    }
+                }
+            }
+            
+            row.style.display = shouldShow ? '' : 'none';
+            if (shouldShow) displayCount++;
+        });
+        
+        countDiv.textContent = `${displayCount} of ${tbody.rows.length} records displayed`;
+        if (tbody.rows.length > 20) {
+            count2Div.textContent = `${displayCount} of ${tbody.rows.length} records displayed`;
+        }
+    }
+    
+    searchValue.addEventListener('input', filterRows);
+    columnSelect.addEventListener('change', filterRows);
+}
+
+// Load data when page is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadData);
+} else {
+    loadData();
+}
+</script>
+
+</body>
+</html>
