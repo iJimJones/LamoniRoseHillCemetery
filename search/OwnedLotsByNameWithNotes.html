@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Flags and Crosses</title>
+<title>Lot Owners - By Name (With Notes)</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
 <script src="../js/cemetery-db.js"></script>
@@ -12,19 +12,16 @@
 	tr:nth-child(even){background-color: #f2f2e2;}
 	tr:nth-child(odd) {background-color: #ffffff;}
 	
-	th:nth-child(1), td:nth-child(1) {width:200px; text-align:left;}   /* Name       */
-	th:nth-child(2), td:nth-child(2) {width:70px;  text-align:left;}   /* War        */
-	th:nth-child(3), td:nth-child(3) {width:70px;  text-align:left;}   /* Branch     */
-	th:nth-child(4), td:nth-child(4) {width:40px;  text-align:center;} /* Flag       */
-	th:nth-child(5), td:nth-child(5) {width:40px;  text-align:center;} /* Cross      */
-	th:nth-child(6), td:nth-child(6) {width:40px;  text-align:center;} /* Buried here*/
-	th:nth-child(7), td:nth-child(7) {width:380px; text-align:left;}   /* Notes      */
+	th:nth-child(1), td:nth-child(1) {width:250px; text-align: left;}       /* name       */
+	th:nth-child(2), td:nth-child(2) {width:50px; text-align: center;}      /* Sect       */
+	th:nth-child(3), td:nth-child(3) {width:100px; text-align: center;}    /* lot ID     */
+	th:nth-child(4), td:nth-child(4) {width:300px; text-align: left;}       /* notes      */
 	
 	th    {font-size:10pt; font-family: arial, sans-serif; height:20pt; vertical-align:bottom; background-color:#e0e0d0;}
-	tbody {font-size:11pt;}
-
+	tbody {font-size:12pt;}
+	
 	table,th,td {border:0;}
-	#top, #bottom, #vetList, #colHeaders {width:90%; min-width:660px; margin:auto;}
+	#top, #bottom, #lotList, #colHeaders {width:90%; min-width:700px; margin:auto;}
 	#footer { 
 		font-size: .90em;
 		font-style: italic;
@@ -36,9 +33,10 @@
 		position: sticky;
 		top: 0;
 	}
+	.ctitle {font-weight: bold; font-family: arial, sans-serif; font-size:11pt;}
 	#loading {text-align: center; padding: 20px; font-size: 14pt;}
 	#error {color: red; text-align: center; padding: 20px; font-size: 14pt;}
-
+	
 </style>
 </head>
 
@@ -47,7 +45,7 @@
 
 <div style="text-align:center; font-size:22pt; font-weight: bold;">
   <img src="../icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80"  
-  alt="" title="icon by Mark Jones"> Veteran Flags &amp; Crosses at Rose Hill
+  alt="" title="icon by Mark Jones"> Lot Owners at Lamoni Rose Hill Cemetery
 </div>
 
 <div style="text-align:center; font-size:14pt; font-weight: bold; margin:6pt 0 12pt 0;" id="asOfDate">
@@ -58,33 +56,28 @@
 <div id="error" style="display:none;"></div>
 
 <div id="content" style="display:none;">
-<div>
-  This lists all veterans with a flag or cross displayed on Memorial Day weekends,
-  including many who are not buried here but grew up or had connections to Lamoni.
-  This list is maintained by 
-  <a href="mailto:westsideacres@yahoo.com">Gary &amp; Shelly Waugh</a>, who make 
-  and maintain the crosses. The Lamoni Lions Club puts the flags and crosses up
-  each year for Memorial Day, and repair or replace damaged flags.
-  Rose Hill publishes its own <a href="VeteransByNameTable.html">Veterans&nbsp;List</a>
-  of veterans who are buried or have a monument here.
+<div> 
+  This is an alphabetical list of lot owners sorted by name, including notes.
+  The <b class="ctitle">Sect</b> column gives the sectional ID, known as Sections
+  on the west side and Blocks on the east&ndash; Block numbers begin with "B".
+  Report errors to 
+  <a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a>.
 </div>
 
 <div style="margin-top:8px;">
-<img src="../icons/new.gif" alt="" width="40px">
+<img src="../icons/new.gif" alt="" width="40">
 Show lines containing <input id="searchValue" type="text" placeholder="Anything (search text)">
 in
 	<select id="columnSelect">
 		<option value="Anywhere">Anywhere</option>
 		<option value="Name">Name</option>
-		<option value="War">War</option>
-		<option value="Branch">Branch</option>
-		<option value="Flag">Flag</option>
-		<option value="buried here">buried here</option>
+		<option value="Section">Section</option>
+		<option value="Lot ID">Lot ID</option>
 		<option value="Notes">Notes</option>
 	</select> 
 	
 	<button onClick="window.location.href=window.location.href">Show All</button>
-</div>
+</div>	
 
 <div style="margin-top:6px;">
   <div id="count" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
@@ -92,9 +85,9 @@ in
 
 </div> <!-- end of top -->
 
-<table id="vetList" style="clear:both;">
+<table id="lotList" style="clear:both;">
 <thead id="colHeaders">
-<tr id="headings"><th>Name</th><th>War</th><th>Branch</th><th>Flag</th><th>Cross</th><th>buried<br>here</th><th>Notes</th></tr>
+<tr id="headings"><th>Name</th><th>Sect</th><th>Lot ID</th><th>Notes</th></tr>
 </thead>
 <tbody id="geeks">
 </tbody>
@@ -121,8 +114,8 @@ async function loadData() {
         const metadata = await getDatabaseMetadata();
         document.getElementById('asOfDate').textContent = `as of ${metadata.lastUpdated}`;
         
-        const veterans = await getVeteranFlagsCrosses();
-        renderTable(veterans);
+        const lots = await getOwnedLotsByName();
+        renderTable(lots);
         
         document.getElementById('loading').style.display = 'none';
         document.getElementById('content').style.display = 'block';
@@ -136,58 +129,33 @@ async function loadData() {
     }
 }
 
-function renderTable(veterans) {
+function renderTable(lots) {
     const tbody = document.getElementById('geeks');
     tbody.innerHTML = '';
     
-    veterans.forEach(vet => {
+    lots.forEach(lot => {
         const row = document.createElement('tr');
         
-        // Name
         const nameCell = document.createElement('td');
-        nameCell.textContent = vet.full_name || '';
+        nameCell.textContent = lot.name || '';
         row.appendChild(nameCell);
         
-        // War
-        const warCell = document.createElement('td');
-        warCell.textContent = vet.war || '';
-        row.appendChild(warCell);
+        const sectCell = document.createElement('td');
+        sectCell.textContent = lot.section || lot.sect || '';
+        row.appendChild(sectCell);
         
-        // Branch
-        const branchCell = document.createElement('td');
-        branchCell.textContent = vet.branch || '';
-        row.appendChild(branchCell);
+        const lotIdCell = document.createElement('td');
+        lotIdCell.textContent = lot.lot_id || '';
+        row.appendChild(lotIdCell);
         
-        // Flag
-        const flagCell = document.createElement('td');
-        flagCell.textContent = vet.has_flag || '';
-        row.appendChild(flagCell);
-        
-        // Cross
-        const crossCell = document.createElement('td');
-        crossCell.textContent = vet.has_cross || '';
-        row.appendChild(crossCell);
-        
-        // Buried here
-        const buriedCell = document.createElement('td');
-        buriedCell.textContent = vet.buried_at_rose_hill || '';
-        row.appendChild(buriedCell);
-        
-        // Notes
         const notesCell = document.createElement('td');
-        let notesText = '';
-        if (vet.notes) notesText += vet.notes;
-        if (vet.other_notes) {
-            if (notesText) notesText += ' ';
-            notesText += vet.other_notes;
-        }
-        notesCell.innerHTML = notesText ? ` <i>${notesText}</i> ` : ' <i> </i> ';
+        notesCell.textContent = lot.notes || '';
         row.appendChild(notesCell);
         
         tbody.appendChild(row);
     });
     
-    const totalCount = veterans.length;
+    const totalCount = lots.length;
     document.getElementById('count').textContent = `all ${totalCount} records displayed`;
     if (totalCount > 20) {
         document.getElementById('count2').textContent = `all ${totalCount} records displayed`;
@@ -219,11 +187,9 @@ function initializeSearch() {
                 } else {
                     const columnMap = {
                         'Name': 0,
-                        'War': 1,
-                        'Branch': 2,
-                        'Flag': 3,
-                        'buried here': 5,
-                        'Notes': 6
+                        'Section': 1,
+                        'Lot ID': 2,
+                        'Notes': 3
                     };
                     const colIndex = columnMap[selectedColumn];
                     if (colIndex !== undefined && row.cells[colIndex]) {

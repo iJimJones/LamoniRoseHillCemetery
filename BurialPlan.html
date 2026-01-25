@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Burial Plan for Interment - Lamoni Rose Hill Cemetery</title>
+<meta charset="utf-8">
+<link href="rosehill.css" rel="stylesheet">
+<link href="burialplan.css" rel="stylesheet">
+<script src="js/includes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div data-include="includes/header.html"></div>
+<div data-include="includes/nav.html"></div>
+
+<div id="content">
+
+<h2>Burial Plan for Interment<br>Lamoni Rose Hill Cemetery</h2>
+
+<div class="pdf-link">
+    <p><strong>Prefer to use the PDF version?</strong></p>
+    <p><a href="BurialPlan.pdf" target="_blank">Download/Print PDF Version</a></p>
+</div>
+
+<div class="info-box">
+    <p><strong>Instructions:</strong> Complete and send to <a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a> or Rose Hill Cemetery, 531 W. Main, Lamoni, IA 50140.</p>
+    <p>For cremains burials that are handled by Rose Hill directly (not through a funeral home) the sexton can confirm the price based on container size and day of burial and check can be written to Rose Hill Cemetery (see <a href="prices.html">http://LamoniRoseHill.org/prices.html</a>).</p>
+    <p>Fill in this form as best as you can, with "not applicable", "unknown", or "see obituary" if applicable. Rose Hill keeps lot ownership records, but your information insures that it is not in conflict with your understanding or expectations.</p>
+</div>
+
+<form id="burialPlanForm" onsubmit="return handleSubmit(event)">
+
+<div class="form-section">
+    <h3>1. Lot usage information</h3>
+    <p class="help-text">(if possible, send a photo or scan of the lot certificate)</p>
+    
+    <div class="form-group">
+        <label for="lotNumber">a. The lot number (and part thereof, e.g., S ½, N ½, space 2):</label>
+        <input type="text" id="lotNumber" name="lotNumber" placeholder="e.g., S ½, N ½, space 2">
+    </div>
+    
+    <div class="form-group">
+        <label for="lotOwner">b. The owner name(s) of the lot:</label>
+        <input type="text" id="lotOwner" name="lotOwner" placeholder="Owner name(s)">
+    </div>
+    
+    <div class="form-group">
+        <label for="burialLocation">c. Where in this lot should the burial be placed (S ½, N ¼, space 3):</label>
+        <input type="text" id="burialLocation" name="burialLocation" placeholder="e.g., S ½, N ¼, space 3">
+    </div>
+    
+    <div class="form-group">
+        <label for="futureBurials">d. What future burials do we need to reserve space for (spouse, other):</label>
+        <input type="text" id="futureBurials" name="futureBurials" placeholder="e.g., spouse, other family members">
+    </div>
+    
+    <div class="form-group">
+        <label for="headstoneInfo">e. Will a headstone be installed for this person only, a couple, or more?</label>
+        <input type="text" id="headstoneInfo" name="headstoneInfo" placeholder="e.g., this person only, couple, family">
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>2. Information for the person whose remains are to be buried</h3>
+    <p class="help-text">(if possible, send copy of obituary)</p>
+    
+    <div class="form-group">
+        <label for="deceasedName">a. Name (full, possibly with maiden name and other names by which known):</label>
+        <textarea id="deceasedName" name="deceasedName" placeholder="Full name, including maiden name and other names"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="birthDeathDates">b. Dates of Birth and Death:</label>
+        <input type="text" id="birthDeathDates" name="birthDeathDates" placeholder="e.g., Born: 01/15/1940, Died: 12/20/2023">
+    </div>
+    
+    <div class="form-group">
+        <label for="mother">c. Mother:</label>
+        <input type="text" id="mother" name="mother" placeholder="Mother's name">
+    </div>
+    
+    <div class="form-group">
+        <label for="father">d. Father:</label>
+        <input type="text" id="father" name="father" placeholder="Father's name">
+    </div>
+    
+    <div class="form-group">
+        <label for="spouse">e. Spouse:</label>
+        <input type="text" id="spouse" name="spouse" placeholder="Spouse's name">
+    </div>
+    
+    <div class="form-group">
+        <label for="funeralHome">f. Funeral Home (if any):</label>
+        <input type="text" id="funeralHome" name="funeralHome" placeholder="Funeral home name">
+    </div>
+    
+    <div class="form-group">
+        <label for="monumentCompany">g. Monument company (if known):</label>
+        <input type="text" id="monumentCompany" name="monumentCompany" placeholder="Monument company name">
+    </div>
+    
+    <div class="form-group">
+        <label for="militaryRecord">h. Military record:</label>
+        <input type="text" id="militaryRecord" name="militaryRecord" placeholder="Branch, rank, service dates, etc.">
+    </div>
+    
+    <div class="form-group">
+        <label for="containerSize">i. [cremains burial only] container size/shape (e.g., dimensions, widest measure corner to corner):</label>
+        <textarea id="containerSize" name="containerSize" placeholder="e.g., 10\" x 12\" x 8\", or dimensions and shape"></textarea>
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>3. Information relating to the burial service</h3>
+    <p class="help-text">(please provide at least 5 days' notice)</p>
+    
+    <div class="form-group">
+        <label for="burialDate">a. Date (please provide at least 5 days' advance notice):</label>
+        <input type="date" id="burialDate" name="burialDate">
+    </div>
+    
+    <div class="form-group">
+        <label for="burialTime">b. Approximate time of graveside burial:</label>
+        <input type="time" id="burialTime" name="burialTime">
+    </div>
+</div>
+
+<div class="form-section">
+    <h3>4. Contact information of family representative:</h3>
+    
+    <div class="form-group">
+        <label for="contactName">a. Name and relationship:</label>
+        <input type="text" id="contactName" name="contactName" placeholder="Name and relationship to deceased">
+    </div>
+    
+    <div class="form-group">
+        <label for="contactPhone">b. Phone number(s):</label>
+        <input type="tel" id="contactPhone" name="contactPhone" placeholder="Phone number">
+    </div>
+    
+    <div class="form-group">
+        <label for="contactEmail">c. Email address:</label>
+        <input type="email" id="contactEmail" name="contactEmail" placeholder="email@example.com">
+    </div>
+    
+    <div class="form-group">
+        <label for="contactAddress">d. Home address:</label>
+        <textarea id="contactAddress" name="contactAddress" placeholder="Street address, City, State, ZIP"></textarea>
+    </div>
+</div>
+
+<div class="info-box">
+    <p><strong>The following items may also be of help to you in your planning for a cremains burial:</strong></p>
+    <ul>
+        <li>The cemetery does not provide a tent or chairs for cremains graveside services. Tents and chairs are commonly provided by the vault company for a traditional burial.</li>
+        <li>Some families choose to bring a small table on which to place the container and other items for display during the services.</li>
+        <li>The grave opening will be prepared prior to the scheduled services. It will be covered with plywood to prevent accidents. The plywood and the dirt removed will be covered. There will also be a small amount of additional space in the surrounding grounds that will be covered.</li>
+        <li>There will be someone standing by so that, following the graveside service, that person can place the remains in the grave and close it after mourners begin to disperse (unless family members choose to remain or ask to be involved).</li>
+    </ul>
+</div>
+
+<div class="form-actions">
+    <button type="button" class="btn btn-secondary" onclick="window.print()">Print Form</button>
+    <button type="button" class="btn" onclick="handleEmailWithPDF()">Send Email (with PDF & All Form Data)</button>
+    <button type="button" class="btn btn-secondary" onclick="handleEmail()">Send Email (Form Data Only)</button>
+    <button type="button" class="btn btn-secondary" onclick="handleReset()">Clear Form</button>
+</div>
+
+<div id="emailStatus" style="display:none; margin:20px 0; padding:15px; background-color:#d4edda; border:1px solid #c3e6cb; border-radius:5px; color:#155724;">
+    <strong>Ready to send!</strong> Your email client should open with all form data included. A PDF has also been saved (optional to attach).
+</div>
+
+</form>
+
+<br><br>
+
+<div data-include="includes/footer.html"></div>
+</div>
+</div>
+
+<script>
+function handleSubmit(event) {
+    event.preventDefault();
+    handleEmail();
+    return false;
+}
+
+function handleEmail() {
+    const form = document.getElementById('burialPlanForm');
+    const formData = new FormData(form);
+    
+    // Build email body with all form data
+    let emailBody = "BURIAL PLAN FOR INTERMENT - LAMONI ROSE HILL CEMETERY\n\n";
+    emailBody += "=".repeat(60) + "\n\n";
+    
+    // Section 1
+    emailBody += "1. LOT USAGE INFORMATION\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Lot number: " + (formData.get('lotNumber') || '(not provided)') + "\n";
+    emailBody += "b. Owner name(s): " + (formData.get('lotOwner') || '(not provided)') + "\n";
+    emailBody += "c. Burial location in lot: " + (formData.get('burialLocation') || '(not provided)') + "\n";
+    emailBody += "d. Future burials to reserve: " + (formData.get('futureBurials') || '(not provided)') + "\n";
+    emailBody += "e. Headstone info: " + (formData.get('headstoneInfo') || '(not provided)') + "\n\n";
+    
+    // Section 2
+    emailBody += "2. INFORMATION FOR THE PERSON TO BE BURIED\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Name: " + (formData.get('deceasedName') || '(not provided)') + "\n";
+    emailBody += "b. Dates of Birth and Death: " + (formData.get('birthDeathDates') || '(not provided)') + "\n";
+    emailBody += "c. Mother: " + (formData.get('mother') || '(not provided)') + "\n";
+    emailBody += "d. Father: " + (formData.get('father') || '(not provided)') + "\n";
+    emailBody += "e. Spouse: " + (formData.get('spouse') || '(not provided)') + "\n";
+    emailBody += "f. Funeral Home: " + (formData.get('funeralHome') || '(not provided)') + "\n";
+    emailBody += "g. Monument company: " + (formData.get('monumentCompany') || '(not provided)') + "\n";
+    emailBody += "h. Military record: " + (formData.get('militaryRecord') || '(not provided)') + "\n";
+    emailBody += "i. Container size/shape: " + (formData.get('containerSize') || '(not provided)') + "\n\n";
+    
+    // Section 3
+    emailBody += "3. BURIAL SERVICE INFORMATION\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Date: " + (formData.get('burialDate') || '(not provided)') + "\n";
+    emailBody += "b. Approximate time: " + (formData.get('burialTime') || '(not provided)') + "\n\n";
+    
+    // Section 4
+    emailBody += "4. CONTACT INFORMATION\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Name and relationship: " + (formData.get('contactName') || '(not provided)') + "\n";
+    emailBody += "b. Phone: " + (formData.get('contactPhone') || '(not provided)') + "\n";
+    emailBody += "c. Email: " + (formData.get('contactEmail') || '(not provided)') + "\n";
+    emailBody += "d. Address: " + (formData.get('contactAddress') || '(not provided)') + "\n";
+    
+    // Create mailto link
+    const subject = encodeURIComponent("Burial Plan for Interment");
+    const body = encodeURIComponent(emailBody);
+    const email = "LamoniRoseHill@gmail.com";
+    
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+}
+
+function handleReset() {
+    if (confirm('Are you sure you want to clear all form data?')) {
+        document.getElementById('burialPlanForm').reset();
+    }
+}
+
+function handleEmailWithPDF() {
+    const form = document.getElementById('burialPlanForm');
+    const formData = new FormData(form);
+    
+    // Generate PDF
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    
+    let yPos = 20;
+    const pageHeight = doc.internal.pageSize.height;
+    const margin = 20;
+    const lineHeight = 7;
+    
+    // Title
+    doc.setFontSize(16);
+    doc.setFont(undefined, 'bold');
+    doc.text("BURIAL PLAN FOR INTERMENT", margin, yPos);
+    yPos += 10;
+    doc.text("LAMONI ROSE HILL CEMETERY", margin, yPos);
+    yPos += 15;
+    
+    doc.setFontSize(10);
+    doc.setFont(undefined, 'normal');
+    
+    // Helper function to add text with word wrap
+    function addText(label, value, indent = 0) {
+        if (yPos > pageHeight - 30) {
+            doc.addPage();
+            yPos = 20;
+        }
+        const text = `${label}: ${value || ''}`;
+        const lines = doc.splitTextToSize(text, 170 - indent);
+        doc.text(lines, margin + indent, yPos);
+        yPos += lines.length * lineHeight + 2;
+    }
+    
+    // Section 1
+    doc.setFont(undefined, 'bold');
+    doc.text("1. LOT USAGE INFORMATION", margin, yPos);
+    yPos += lineHeight + 2;
+    doc.setFont(undefined, 'normal');
+    addText("a. Lot number", formData.get('lotNumber') || '', 5);
+    addText("b. Owner name(s)", formData.get('lotOwner') || '', 5);
+    addText("c. Burial location in lot", formData.get('burialLocation') || '', 5);
+    addText("d. Future burials to reserve", formData.get('futureBurials') || '', 5);
+    addText("e. Headstone info", formData.get('headstoneInfo') || '', 5);
+    yPos += 5;
+    
+    // Section 2
+    if (yPos > pageHeight - 40) {
+        doc.addPage();
+        yPos = 20;
+    }
+    doc.setFont(undefined, 'bold');
+    doc.text("2. INFORMATION FOR THE PERSON TO BE BURIED", margin, yPos);
+    yPos += lineHeight + 2;
+    doc.setFont(undefined, 'normal');
+    addText("a. Name", formData.get('deceasedName') || '', 5);
+    addText("b. Dates of Birth and Death", formData.get('birthDeathDates') || '', 5);
+    addText("c. Mother", formData.get('mother') || '', 5);
+    addText("d. Father", formData.get('father') || '', 5);
+    addText("e. Spouse", formData.get('spouse') || '', 5);
+    addText("f. Funeral Home", formData.get('funeralHome') || '', 5);
+    addText("g. Monument company", formData.get('monumentCompany') || '', 5);
+    addText("h. Military record", formData.get('militaryRecord') || '', 5);
+    addText("i. Container size/shape", formData.get('containerSize') || '', 5);
+    yPos += 5;
+    
+    // Section 3
+    if (yPos > pageHeight - 30) {
+        doc.addPage();
+        yPos = 20;
+    }
+    doc.setFont(undefined, 'bold');
+    doc.text("3. BURIAL SERVICE INFORMATION", margin, yPos);
+    yPos += lineHeight + 2;
+    doc.setFont(undefined, 'normal');
+    addText("a. Date", formData.get('burialDate') || '', 5);
+    addText("b. Approximate time", formData.get('burialTime') || '', 5);
+    yPos += 5;
+    
+    // Section 4
+    if (yPos > pageHeight - 40) {
+        doc.addPage();
+        yPos = 20;
+    }
+    doc.setFont(undefined, 'bold');
+    doc.text("4. CONTACT INFORMATION", margin, yPos);
+    yPos += lineHeight + 2;
+    doc.setFont(undefined, 'normal');
+    addText("a. Name and relationship", formData.get('contactName') || '', 5);
+    addText("b. Phone", formData.get('contactPhone') || '', 5);
+    addText("c. Email", formData.get('contactEmail') || '', 5);
+    addText("d. Address", formData.get('contactAddress') || '', 5);
+    
+    // Generate PDF as data URL
+    const pdfBlob = doc.output('blob');
+    const pdfDataUrl = doc.output('dataurlstring');
+    
+    // Build comprehensive email body with all form data
+    let emailBody = "BURIAL PLAN FOR INTERMENT - LAMONI ROSE HILL CEMETERY\n\n";
+    emailBody += "A PDF attachment is also included with this form.\n\n";
+    emailBody += "=".repeat(60) + "\n\n";
+    
+    // Section 1
+    emailBody += "1. LOT USAGE INFORMATION\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Lot number: " + (formData.get('lotNumber') || '(not provided)') + "\n";
+    emailBody += "b. Owner name(s): " + (formData.get('lotOwner') || '(not provided)') + "\n";
+    emailBody += "c. Burial location in lot: " + (formData.get('burialLocation') || '(not provided)') + "\n";
+    emailBody += "d. Future burials to reserve: " + (formData.get('futureBurials') || '(not provided)') + "\n";
+    emailBody += "e. Headstone info: " + (formData.get('headstoneInfo') || '(not provided)') + "\n\n";
+    
+    // Section 2
+    emailBody += "2. INFORMATION FOR THE PERSON TO BE BURIED\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Name: " + (formData.get('deceasedName') || '(not provided)') + "\n";
+    emailBody += "b. Dates of Birth and Death: " + (formData.get('birthDeathDates') || '(not provided)') + "\n";
+    emailBody += "c. Mother: " + (formData.get('mother') || '(not provided)') + "\n";
+    emailBody += "d. Father: " + (formData.get('father') || '(not provided)') + "\n";
+    emailBody += "e. Spouse: " + (formData.get('spouse') || '(not provided)') + "\n";
+    emailBody += "f. Funeral Home: " + (formData.get('funeralHome') || '(not provided)') + "\n";
+    emailBody += "g. Monument company: " + (formData.get('monumentCompany') || '(not provided)') + "\n";
+    emailBody += "h. Military record: " + (formData.get('militaryRecord') || '(not provided)') + "\n";
+    emailBody += "i. Container size/shape: " + (formData.get('containerSize') || '(not provided)') + "\n\n";
+    
+    // Section 3
+    emailBody += "3. BURIAL SERVICE INFORMATION\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Date: " + (formData.get('burialDate') || '(not provided)') + "\n";
+    emailBody += "b. Approximate time: " + (formData.get('burialTime') || '(not provided)') + "\n\n";
+    
+    // Section 4
+    emailBody += "4. CONTACT INFORMATION\n";
+    emailBody += "-".repeat(40) + "\n";
+    emailBody += "a. Name and relationship: " + (formData.get('contactName') || '(not provided)') + "\n";
+    emailBody += "b. Phone: " + (formData.get('contactPhone') || '(not provided)') + "\n";
+    emailBody += "c. Email: " + (formData.get('contactEmail') || '(not provided)') + "\n";
+    emailBody += "d. Address: " + (formData.get('contactAddress') || '(not provided)') + "\n";
+    
+    // Create mailto link
+    const subject = encodeURIComponent("Burial Plan for Interment");
+    const body = encodeURIComponent(emailBody);
+    const email = "LamoniRoseHill@gmail.com";
+    
+    // Generate PDF filename
+    const fileName = `BurialPlan_${(formData.get('contactName') || 'Form').replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
+    
+    // Convert PDF to File object for form submission
+    const pdfBlob = doc.output('blob');
+    const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
+    
+    // Hide previous status
+    document.getElementById('emailStatus').style.display = 'none';
+    document.getElementById('emailError').style.display = 'none';
+    
+    // Check if Formspree is configured (you'll need to set FORMSPREE_ENDPOINT)
+    const formspreeEndpoint = window.FORMSPREE_ENDPOINT || null;
+    
+    if (formspreeEndpoint) {
+        // Use Formspree to send email with PDF attachment automatically
+        const formDataToSend = new FormData();
+        formDataToSend.append('email', formData.get('contactEmail') || '');
+        formDataToSend.append('_subject', 'Burial Plan for Interment');
+        formDataToSend.append('message', emailBody);
+        formDataToSend.append('contact_name', formData.get('contactName') || '');
+        formDataToSend.append('contact_phone', formData.get('contactPhone') || '');
+        formDataToSend.append('burial_date', formData.get('burialDate') || '');
+        formDataToSend.append('deceased_name', formData.get('deceasedName') || '');
+        formDataToSend.append('attachment', pdfFile);
+        
+        fetch(formspreeEndpoint, {
+            method: 'POST',
+            body: formDataToSend,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('emailStatus').style.display = 'block';
+                document.getElementById('emailStatus').innerHTML = 
+                    '<strong>Email sent successfully!</strong> The form has been sent to LamoniRoseHill@gmail.com with the PDF attachment.';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('emailError').style.display = 'block';
+            // Fallback to manual method
+            doc.save(fileName);
+            const bodyWithInstructions = emailBody + "\n\n" + 
+                "IMPORTANT: Please attach the PDF file that was just downloaded.\n" +
+                "Filename: " + fileName;
+            window.location.href = `mailto:${email}?subject=${subject}&body=${encodeURIComponent(bodyWithInstructions)}`;
+        });
+    } else {
+        // Fallback: Save PDF and open email client with instructions
+        doc.save(fileName);
+        
+        document.getElementById('emailStatus').style.display = 'block';
+        document.getElementById('emailStatus').innerHTML = 
+            '<strong>PDF generated!</strong> Your email client should open. Please attach the downloaded PDF file (' + fileName + ') before sending.';
+        
+        // The email body already contains all form data, so the PDF is optional
+        // But we'll remind them to attach it
+        const bodyWithInstructions = emailBody + "\n\n" + 
+            "NOTE: A PDF version of this form has been saved to your computer.\n" +
+            "Filename: " + fileName + "\n" +
+            "You may attach it if you prefer, but all information is already included in this email.";
+        
+        const bodyEncoded = encodeURIComponent(bodyWithInstructions);
+        
+        // Small delay to ensure PDF download starts
+        setTimeout(() => {
+            window.location.href = `mailto:${email}?subject=${subject}&body=${bodyEncoded}`;
+        }, 500);
+    }
+}
+</script>
+
+</body>
+</html>

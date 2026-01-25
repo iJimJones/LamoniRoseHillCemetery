@@ -1,0 +1,53 @@
+/* Search Pages Stylesheet */
+
+.search-page body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-page h1 {
+    color: #333;
+    border-bottom: 2px solid #666;
+    padding-bottom: 10px;
+}
+
+.search-page h2 {
+    color: #555;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.search-page .note {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.search-page .link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.search-page .link:hover {
+    color: #004499;
+}
+
+.search-page ul {
+    margin: 10px 0;
+    padding-left: 30px;
+}
+
+.search-page li {
+    margin: 5px 0;
+}
+
+.search-page .date {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+}

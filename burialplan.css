@@ -1,0 +1,168 @@
+/* Burial Plan Form Stylesheet */
+
+#content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #666;
+    padding-bottom: 10px;
+}
+
+.pdf-link {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e8f4f8;
+    border: 2px solid #0066cc;
+    border-radius: 5px;
+}
+
+.pdf-link a {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0066cc;
+}
+
+.form-section {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #666;
+}
+
+.form-section h3 {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.form-group .help-text {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-group .checkbox-label {
+    display: inline;
+    font-weight: normal;
+}
+
+.submit-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #0052a3;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0052a3;
+}
+
+.btn-secondary {
+    background-color: #666;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+.info-box {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff9e6;
+    border-left: 4px solid #ff9900;
+    font-size: 0.95em;
+}
+
+.info-box ul {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.info-box li {
+    margin: 8px 0;
+}
+
+@media print {
+    .pdf-link, .form-actions, .btn {
+        display: none;
+    }
+    .form-group input, .form-group textarea {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+    }
+}
