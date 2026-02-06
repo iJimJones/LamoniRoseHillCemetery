@@ -171,6 +171,10 @@
     <strong>Ready to send!</strong> Your email client should open with all form data included. A PDF has also been saved (optional to attach).
 </div>
 
+<div id="emailError" style="display:none; margin:20px 0; padding:15px; background-color:#f8d7da; border:1px solid #f5c6cb; border-radius:5px; color:#721c24;">
+    <strong>Error!</strong> There was a problem sending the email automatically. Please try the manual method.
+</div>
+
 </form>
 
 <br><br>
@@ -339,9 +343,12 @@ function handleEmailWithPDF() {
     addText("c. Email", formData.get('contactEmail') || '', 5);
     addText("d. Address", formData.get('contactAddress') || '', 5);
     
-    // Generate PDF as data URL
+    // Generate PDF filename
+    const fileName = `BurialPlan_${(formData.get('contactName') || 'Form').replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
+    
+    // Convert PDF to File object
     const pdfBlob = doc.output('blob');
-    const pdfDataUrl = doc.output('dataurlstring');
+    const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
     
     // Build comprehensive email body with all form data
     let emailBody = "BURIAL PLAN FOR INTERMENT - LAMONI ROSE HILL CEMETERY\n\n";
@@ -389,12 +396,7 @@ function handleEmailWithPDF() {
     const body = encodeURIComponent(emailBody);
     const email = "LamoniRoseHill@gmail.com";
     
-    // Generate PDF filename
-    const fileName = `BurialPlan_${(formData.get('contactName') || 'Form').replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.pdf`;
-    
-    // Convert PDF to File object for form submission
-    const pdfBlob = doc.output('blob');
-    const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
+
     
     // Hide previous status
     document.getElementById('emailStatus').style.display = 'none';
