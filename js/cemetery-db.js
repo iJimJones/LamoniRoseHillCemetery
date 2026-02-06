@@ -138,10 +138,13 @@ function formatDate(dateStr) {
 
 /**
  * Format FindAGrave URL from ID
+ * Security: Use HTTPS to prevent mixed content warnings and ensure secure connections
  */
 function formatFindAGraveUrl(fgId) {
     if (!fgId) return null;
-    return `http://FindAGrave.com/memorial/${fgId}`;
+    // Security: Use HTTPS and escape the ID to prevent injection
+    const safeId = String(fgId).replace(/[^0-9]/g, ''); // Only allow numeric IDs
+    return `https://www.findagrave.com/memorial/${safeId}`;
 }
 
 /**

@@ -65,6 +65,52 @@
         // Note: includes.js script is already loaded, so we don't need to inject it
     }
     
+    function sanitizeHTML(html) {
+        // Enhanced XSS protection: Remove script tags and event handlers to prevent XSS
+        // Use DOMParser to safely parse HTML
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        
+        // Remove all script tags
+        const scripts = doc.querySelectorAll('script');
+        scripts.forEach(script => script.remove());
+        
+        // Remove all style tags (can contain XSS via @import or expression())
+        const styles = doc.querySelectorAll('style');
+        styles.forEach(style => style.remove());
+        
+        // Remove event handlers from all elements (onclick, onerror, etc.)
+        const allElements = doc.querySelectorAll('*');
+        allElements.forEach(el => {
+            // Remove all attributes that start with 'on'
+            Array.from(el.attributes).forEach(attr => {
+                if (attr.name.startsWith('on')) {
+                    el.removeAttribute(attr.name);
+                }
+                // Also remove javascript: protocol from href/src
+                if (attr.name === 'href' || attr.name === 'src') {
+                    const value = attr.value ? attr.value.toLowerCase().trim() : '';
+                    if (value.startsWith('javascript:') || 
+                        value.startsWith('data:') && value.includes('text/html') ||
+                        value.startsWith('vbscript:')) {
+                        el.removeAttribute(attr.name);
+                    }
+                }
+                // Remove iframe and object tags (potential XSS vectors)
+                if (el.tagName === 'IFRAME' || el.tagName === 'OBJECT' || el.tagName === 'EMBED') {
+                    el.remove();
+                }
+            });
+        });
+        
+        // Remove any remaining iframe, object, embed elements
+        const dangerousElements = doc.querySelectorAll('iframe, object, embed, form');
+        dangerousElements.forEach(el => el.remove());
+        
+        // Return sanitized HTML
+        return doc.body.innerHTML;
+    }
+    
     function fixPaths(html, basePath) {
         // Fix paths in included content to be relative to the current page
         // This handles cases where includes have paths like "icons/" or "../icons/"
@@ -144,6 +190,21 @@
         includes.forEach(function(element) {
             const file = element.getAttribute('data-include');
             const showPolicyNav = element.hasAttribute('data-show-policy-nav');
+            
+            // Security: Validate file path to prevent directory traversal attacks
+            // Only allow paths that contain 'includes/' and end with .html
+            if (!file || (!file.includes('includes/') && !file.includes('\\includes\\')) || 
+                (!file.endsWith('.html') && !file.endsWith('.htm'))) {
+                console.error('Invalid include file path: ' + file);
+                return;
+            }
+            
+            // Prevent directory traversal (../ attacks)
+            if (file.includes('..') && !file.match(/^\.\.\/includes\/[^\/]+\.html?$/)) {
+                console.error('Invalid include file path (directory traversal detected): ' + file);
+                return;
+            }
+            
             const xhr = new XMLHttpRequest();
             
             xhr.open('GET', file, true);
@@ -153,6 +214,9 @@
                         let content = xhr.responseText;
                         // Fix paths in the included content to be relative to current page
                         content = fixPaths(content, basePath);
+                        // Sanitize HTML to prevent XSS attacks
+                        content = sanitizeHTML(content);
+                        // Use insertAdjacentHTML instead of innerHTML for better security
                         element.innerHTML = content;
                         
                         // If this is nav.html and we need to show policy nav, make it visible
