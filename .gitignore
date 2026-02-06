@@ -55,12 +55,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Database files (keep structure, ignore data if sensitive)
-*.db
-*.sqlite
-*.sqlite3
-*.accdb
-CurrentDB/
+
 
 # Logs
 *.log
