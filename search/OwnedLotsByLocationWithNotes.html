@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lot Owners - By Location (With Notes)</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+<script src="../js/cemetery-db.js"></script>
+<meta charset="utf-8">
+<style>
+    body{font-family: serif;}
+    p{font-size: 12pt;}
+	tr:nth-child(even){background-color: #f2f2e2;}
+	tr:nth-child(odd) {background-color: #ffffff;}
+	
+	th:nth-child(1), td:nth-child(1) {width:250px; text-align: left;}       /* name       */
+	th:nth-child(2), td:nth-child(2) {width:50px; text-align: center;}      /* Sect       */
+	th:nth-child(3), td:nth-child(3) {width:100px; text-align: center;}    /* lot ID     */
+	th:nth-child(4), td:nth-child(4) {width:300px; text-align: left;}       /* notes      */
+	
+	th    {font-size:10pt; font-family: arial, sans-serif; height:20pt; vertical-align:bottom; background-color:#e0e0d0;}
+	tbody {font-size:12pt;}
+	
+	table,th,td {border:0;}
+	#top, #bottom, #lotList, #colHeaders {width:90%; min-width:700px; margin:auto;}
+	#footer { 
+		font-size: .90em;
+		font-style: italic;
+		text-align: center;
+		padding: 10px;
+		clear: both;
+	}
+	#colHeaders, #colHeaders th {
+		position: sticky;
+		top: 0;
+	}
+	.ctitle {font-weight: bold; font-family: arial, sans-serif; font-size:11pt;}
+	#loading {text-align: center; padding: 20px; font-size: 14pt;}
+	#error {color: red; text-align: center; padding: 20px; font-size: 14pt;}
+	
+</style>
+</head>
+
+<body>
+<div id="top">
+
+<div style="text-align:center; font-size:22pt; font-weight: bold;">
+  <img src="../icons/RoseHill_RoseOnly_Transparent_WhiteBorder_1K.png" width="80"  
+  alt="" title="icon by Mark Jones"> Lot Owners at Lamoni Rose Hill Cemetery
+</div>
+
+<div style="text-align:center; font-size:14pt; font-weight: bold; margin:6pt 0 12pt 0;" id="asOfDate">
+  Loading...
+</div>
+
+<div id="loading">Loading database...</div>
+<div id="error" style="display:none;"></div>
+
+<div id="content" style="display:none;">
+<div> 
+  This is a list of lot owners sorted by location (section, lot ID), including notes.
+  The <b class="ctitle">Sect</b> column gives the sectional ID, known as Sections
+  on the west side and Blocks on the east&ndash; Block numbers begin with "B".
+  Report errors to 
+  <a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a>.
+</div>
+
+<div style="margin-top:8px;">
+<img src="../icons/new.gif" alt="" width="40">
+Show lines containing <input id="searchValue" type="text" placeholder="Anything (search text)">
+in
+	<select id="columnSelect">
+		<option value="Anywhere">Anywhere</option>
+		<option value="Name">Name</option>
+		<option value="Section">Section</option>
+		<option value="Lot ID">Lot ID</option>
+		<option value="Notes">Notes</option>
+	</select> 
+	
+	<button onClick="window.location.href=window.location.href">Show All</button>
+</div>	
+
+<div style="margin-top:6px;">
+  <div id="count" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
+</div>
+
+</div> <!-- end of top -->
+
+<table id="lotList" style="clear:both;">
+<thead id="colHeaders">
+<tr id="headings"><th>Name</th><th>Sect</th><th>Lot ID</th><th>Notes</th></tr>
+</thead>
+<tbody id="geeks">
+</tbody>
+</table>
+
+<div id="bottom" style="margin-top:6px;">
+  <div id="count2" style="margin-right:4px; display:inline-block; float:right;"> &nbsp; </div>
+</div>
+
+<p id="footer" style="text-align:center">
+Copyright &copy; 2026 Lamoni Rose Hill Cemetery<br>
+<a href="mailto:LamoniRoseHill@gmail.com">LamoniRoseHill@gmail.com</a>
+</p>
+
+</div> <!-- end of content -->
+
+<br>
+<br>
+
+<script>
+async function loadData() {
+    try {
+        await loadDatabase();
+        const metadata = await getDatabaseMetadata();
+        document.getElementById('asOfDate').textContent = `as of ${metadata.lastUpdated}`;
+        
+        const lots = await getOwnedLotsByLocation();
+        renderTable(lots);
+        
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        
+        initializeSearch();
+    } catch (error) {
+        console.error('Error loading data:', error);
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('error').style.display = 'block';
+        document.getElementById('error').textContent = 'Error loading database: ' + error.message;
+    }
+}
+
+function renderTable(lots) {
+    const tbody = document.getElementById('geeks');
+    tbody.innerHTML = '';
+    
+    lots.forEach(lot => {
+        const row = document.createElement('tr');
+        
+        const nameCell = document.createElement('td');
+        nameCell.textContent = lot.name || '';
+        row.appendChild(nameCell);
+        
+        const sectCell = document.createElement('td');
+        sectCell.textContent = lot.section || lot.sect || '';
+        row.appendChild(sectCell);
+        
+        const lotIdCell = document.createElement('td');
+        lotIdCell.textContent = lot.lot_id || '';
+        row.appendChild(lotIdCell);
+        
+        const notesCell = document.createElement('td');
+        notesCell.textContent = lot.notes || '';
+        row.appendChild(notesCell);
+        
+        tbody.appendChild(row);
+    });
+    
+    const totalCount = lots.length;
+    document.getElementById('count').textContent = `all ${totalCount} records displayed`;
+    if (totalCount > 20) {
+        document.getElementById('count2').textContent = `all ${totalCount} records displayed`;
+    }
+}
+
+function initializeSearch() {
+    const searchValue = document.getElementById('searchValue');
+    const columnSelect = document.getElementById('columnSelect');
+    const tbody = document.getElementById('geeks');
+    const countDiv = document.getElementById('count');
+    const count2Div = document.getElementById('count2');
+    
+    function filterRows() {
+        const searchText = searchValue.value.toLowerCase();
+        const selectedColumn = columnSelect.value;
+        let displayCount = 0;
+        
+        Array.from(tbody.rows).forEach(row => {
+            let shouldShow = false;
+            
+            if (searchText === '' && selectedColumn === 'Anywhere') {
+                shouldShow = true;
+            } else {
+                if (selectedColumn === 'Anywhere') {
+                    shouldShow = Array.from(row.cells).some(cell => 
+                        cell.textContent.toLowerCase().includes(searchText)
+                    );
+                } else {
+                    const columnMap = {
+                        'Name': 0,
+                        'Section': 1,
+                        'Lot ID': 2,
+                        'Notes': 3
+                    };
+                    const colIndex = columnMap[selectedColumn];
+                    if (colIndex !== undefined && row.cells[colIndex]) {
+                        shouldShow = row.cells[colIndex].textContent.toLowerCase().includes(searchText);
+                    }
+                }
+            }
+            
+            row.style.display = shouldShow ? '' : 'none';
+            if (shouldShow) displayCount++;
+        });
+        
+        countDiv.textContent = `${displayCount} of ${tbody.rows.length} records displayed`;
+        if (tbody.rows.length > 20) {
+            count2Div.textContent = `${displayCount} of ${tbody.rows.length} records displayed`;
+        }
+    }
+    
+    searchValue.addEventListener('input', filterRows);
+    columnSelect.addEventListener('change', filterRows);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadData);
+} else {
+    loadData();
+}
+</script>
+
+</body>
+</html>
