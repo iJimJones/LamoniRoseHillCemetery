@@ -188,3 +188,154 @@ input, textarea {
 	left: 340px; 
 	text-align: center;
 }
+
+/* Consolidated styles from inline style blocks */
+
+.notebox {
+	font-size: 80%;
+	background: #DEF;
+	width: 350px; 
+	border: 2px solid black; 
+	float: right;
+	margin: 0 30px 0 0;
+}
+
+.caution {
+	display: inline-block;
+	background-color: yellow;
+	float: right;
+	font-family: sans-serif;
+	margin: -30px 50px 0 0;
+	padding: 5px 15px;
+	font-size: 14pt;
+}
+
+.caution a:link, .caution a:visited {
+	color: red;
+}
+
+.caution a:hover, .caution a:active {
+	color: black;
+}
+
+.phone * {
+	display: inline-block;
+}
+
+/* Tables with left-aligned text (for contacts/services pages) */
+table.left-align * {
+	text-align: left;
+}
+
+table.left-margin {
+	margin-left: 0;
+}
+
+table.small-font {
+	font-size: 10pt;
+}
+
+summary {
+	font-family: serif;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 9px 0;
+}
+
+details > div {
+	padding: 0 0 18px 18px;
+}
+
+/* FAQ page specific styles */
+.faq-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	width: 80%;  
+	background-color: #FFFDDD;
+	min-width: 200px;
+	border: black 1px solid;
+	-webkit-box-shadow: 5px 5px 5px #333333;
+	-moz-box-shadow: 5px 5px 5px #333333;
+	box-shadow: 5px 5px 5px #333333;
+}
+
+.faq-wrapper dt {
+	margin: 12px 0 3px 8px;
+	font-weight: bold;
+}
+
+.faq-wrapper details {
+	margin: 8pt 0;
+}
+
+.faq-wrapper summary {
+	font-weight: normal;
+	margin: 8pt 0 0 10pt;
+}
+
+.faq-wrapper details div {
+	margin: 6pt 24pt;
+}
+
+/* Lots for Sale page styles */
+.lots-page {
+	box-sizing: border-box;
+}
+
+.lots-page body {
+	font-family: sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+.mapbox {
+	position: relative;
+	margin: auto;
+	min-width: 450px;
+	max-width: 800px;
+}
+
+.mapbox > img {
+	width: 100%;
+	height: auto;
+}
+
+.used {
+	position: absolute;
+	color: yellow;
+	border: yellow .3vw solid;
+	font: bold 150% Arial, sans-serif;
+	text-align: center;
+	padding-top: .5vw;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.unused {
+	position: absolute;
+	color: yellow;
+	border: none;
+	font: italic 100% Arial, sans-serif;
+	text-align: center;
+	padding-top: .5vw;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Plat map specific styles */
+.mapbox {
+	position: relative;
+	margin: auto;
+	min-width: 450px;
+	max-width: 800px;
+}
+
+.mapbox > img {
+	width: 100%;
+	height: auto;
+}
