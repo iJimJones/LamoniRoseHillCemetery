@@ -1,0 +1,169 @@
+/* Policy Pages Stylesheet */
+
+/* Common Typography */
+.policy-page h2 {
+    color: #333;
+    border-bottom: 2px solid #666;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.policy-page h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.policy-page h4 {
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.policy-page p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Common Elements */
+.policy-page .description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.policy-page .approval-note,
+.policy-page .date-note {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.policy-page .revision-note {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Policy Items */
+.policy-page .policy-item {
+    margin: 20px 0;
+}
+
+.policy-page .policy-number {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.policy-page .policy-subitem {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+/* Rules */
+.policy-page .rule {
+    margin: 15px 0;
+}
+
+.policy-page .rule-number {
+    font-weight: bold;
+    color: #333;
+}
+
+.policy-page .rule-item {
+    margin: 15px 0;
+}
+
+.policy-page .rule-item {
+    padding-left: 20px;
+}
+
+.policy-page .rule-item::before {
+    content: "•";
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -20px;
+}
+
+/* Sections */
+.policy-page .section {
+    margin: 15px 0;
+}
+
+.policy-page .section-number {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Q&A Items */
+.policy-page .qa-item {
+    margin: 20px 0;
+}
+
+.policy-page .question {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.policy-page .answer {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Notes and Info Boxes */
+.policy-page .note {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-left: 4px solid #666;
+    font-size: 0.95em;
+}
+
+.policy-page .rationale {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-left: 4px solid #666;
+    font-style: italic;
+}
+
+.policy-page .contact-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f4f8;
+    border-left: 4px solid #0066cc;
+}
+
+.policy-page .footer-note {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff9e6;
+    border-left: 4px solid #ff9900;
+    font-size: 0.95em;
+}
+
+/* Article Header */
+.policy-page .article-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.policy-page .article-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Superscript */
+.policy-page sup {
+    font-size: 0.7em;
+    vertical-align: super;
+}
