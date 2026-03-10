@@ -6,7 +6,7 @@ You must EXPORT this report as a Windows text file (See the External Data menu).
    4. Save the HTML file, check it out for errors, and upload it to the website to replace the old one.
 NOTE: This generated code assumes that "FG.png" is a square image icon for Find-A-Grave that is in the same directory as the html file that contains this
 -->
-<h1> Wednesday, January 21, 2026                        </h1>
+<h1> Friday, February 13, 2026                          </h1>
 <table  id="bottom">
 <thead>
 <tr><th>FG</th><th>Vet</th><th>Name</th><th>Sect.</th><th>X</th><th>Y</th><th>Lot</th><th>Space</th><th>Code</th><th>Birthdate</th><th>Deat
@@ -2795,7 +2795,7 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/161681747" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Gamet, Peggy Charlene</td><td>6</td><td>6</td><td>7</td><td>1660</td><td>1</td><td>C</td><td>05/05/1932</td><td>04/02/1996</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/161681611" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Gamet, Treva Bernice</td><td>6</td><td>14</td><td>16</td><td>1756</td><td>2</td><td></td><td>01/24/1909</td><td>09/15/2002</td></tr>
+     <td>Gamet, Treva Bernice</td><td>6</td><td>14</td><td>16</td><td>1756</td><td>2</td><td>C</td><td>01/24/1909</td><td>09/15/2002</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/225755760" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Gardner, Arthur Leslie "Art"</td><td>B7</td><td>1</td><td>2</td><td>B7 L127</td><td>2n</td><td>C</td><td>08/24/1929</td><td>04/16/2021</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/153942111" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -4056,6 +4056,8 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
      <td>Jennings, Debbie</td><td>B8</td><td>3</td><td>1</td><td>B8 L130</td><td>4</td><td></td><td>07/22/1956</td><td>08/28/1989</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/150308230" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td>X</td>
      <td>Jensen, Dennis LeRoy</td><td>6</td><td>7</td><td>12</td><td>1808</td><td>1</td><td></td><td>11/09/1931</td><td>07/08/2015</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/292635883" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
+     <td>Jensen, Margaret Lee</td><td>6</td><td>7</td><td>12</td><td>1808</td><td>2</td><td></td><td>05/18/1938</td><td>02/11/2026</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/160637503" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Jessiman, Griffen G.</td><td>4</td><td>5</td><td>7</td><td>350</td><td>1</td><td></td><td>11/13/1897</td><td>__/__/1900</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159796545" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -5023,7 +5025,7 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/133278302" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Marshall, Demar Ellison</td><td>1s</td><td>10</td><td>7</td><td>57</td><td>1of1</td><td></td><td>06/06/1904</td><td>11/22/1923</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/106027617" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Marshall, Edward E.</td><td>1s</td><td>10</td><td>5</td><td>55</td><td>1of1</td><td></td><td>__/__/1866</td><td>__/__/1956</td></tr>
+     <td>Marshall, Edward Ellsworth</td><td>1s</td><td>10</td><td>5</td><td>55</td><td>1of1</td><td></td><td>07/04/1866</td><td>06/06/1956</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/148585066" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td>X</td>
      <td>Marshall, Erwin Dunkerson</td><td>6</td><td>6</td><td>11</td><td>1815</td><td>2of3</td><td>A</td><td>04/11/1911</td><td>02/28/2005</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/106027535" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -5031,9 +5033,9 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/106695718" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Marshall, Matilda</td><td>3s</td><td>7</td><td>7</td><td>12</td><td>1of1</td><td></td><td>07/06/1836</td><td>08/08/1913</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/133279941" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Marshall, Ollie</td><td>6</td><td>7</td><td>12</td><td>1808</td><td>4</td><td></td><td>05/01/1910</td><td>__/__/1979</td></tr>
+     <td>Marshall, Ollie Mae</td><td>6</td><td>7</td><td>12</td><td>1808</td><td>4</td><td></td><td>05/01/1910</td><td>09/04/1979</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/133280377" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Marshall, Richard</td><td>6</td><td>7</td><td>12</td><td>1808</td><td>3</td><td></td><td>11/22/1906</td><td>__/__/1985</td></tr>
+     <td>Marshall, Richard Heman</td><td>6</td><td>7</td><td>12</td><td>1808</td><td>3</td><td></td><td>11/22/1906</td><td>08/24/1985</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159691277" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Marshall, Robert Lee [infant]</td><td>1s</td><td>10</td><td>4</td><td>627</td><td>n1/2</td><td></td><td>08/09/1931</td><td>05/25/1932</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/142211008" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -5075,7 +5077,7 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/159697490" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Martin, Harry</td><td>5n</td><td>15</td><td>10</td><td>1416</td><td>2</td><td></td><td>11/__/1891</td><td>__/__/1956</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159697554" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Martin, Hazel G.</td><td>6</td><td>13</td><td>9</td><td>1724</td><td>2</td><td></td><td>07/__/1891</td><td>__/__/1972</td></tr>
+     <td>Martin, Hazel Genieve</td><td>6</td><td>13</td><td>9</td><td>1724</td><td>2</td><td></td><td>07/21/1891</td><td>12/09/1974</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159698896" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Martin, James Alma</td><td>6</td><td>13</td><td>9</td><td>1724</td><td>3</td><td></td><td>05/13/1886</td><td>08/10/1955</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159698954" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -5511,7 +5513,7 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/159890437" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Moon, Charles Walter</td><td>5s</td><td>13</td><td>4</td><td>1446</td><td>2</td><td></td><td>11/19/1866</td><td>03/28/1952</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/76113573" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Moon, Cleo Margaret</td><td>B8</td><td>8</td><td>4</td><td>B8 L92</td><td>2</td><td></td><td>02/19/1904</td><td>07/25/2000</td></tr>
+     <td>Moon, Cleo Margaret</td><td>B8</td><td>1</td><td>4</td><td>B8 L85</td><td>2</td><td></td><td>02/19/1904</td><td>07/25/2000</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159933502" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td>X</td>
      <td>Moon, Dale Fredrick</td><td>B9</td><td>10</td><td>1</td><td>B9 L94</td><td>1</td><td>Cx2</td><td>04/05/1922</td><td>04/09/2011</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159931236" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -6896,6 +6898,8 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
      <td>Siltz, Blanche</td><td>5s</td><td>8</td><td>1</td><td>1508</td><td>2</td><td></td><td>03/05/1861</td><td>05/03/1944</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/157293332" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Siltz, Louis Frederick</td><td>5s</td><td>8</td><td>1</td><td>1508</td><td>1</td><td></td><td>03/06/1858</td><td>10/27/1937</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/191337243" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
+     <td>Silver, Bonnie Louise [PENDING]</td><td>5n</td><td>2</td><td>3</td><td>1279</td><td></td><td>CPx2</td><td>10/28/1933</td><td>07/11/2018</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/126433470" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Silver, Emma (Temple)</td><td>2</td><td>11</td><td>6</td><td>301</td><td>1</td><td></td><td>02/22/1822</td><td>03/30/1891</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/158503190" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -6903,11 +6907,13 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/126472004" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Silver, Fernande Leone</td><td>5n</td><td>1</td><td>1</td><td>1267</td><td>1</td><td>C</td><td>02/09/1905</td><td>09/16/1980</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/126470103" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Silver, Flora Anna</td><td>2</td><td>11</td><td>6</td><td>301</td><td>3</td><td></td><td>04/21/1870</td><td>06/__/1968</td></tr>
+     <td>Silver, Flora Anna</td><td>2</td><td>11</td><td>6</td><td>301</td><td>3</td><td></td><td>04/21/1870</td><td>06/30/1968</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/126472566" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td>X</td>
      <td>Silver, Howard Maxwell</td><td>B8</td><td>1</td><td>3</td><td>B8 L108</td><td>3</td><td></td><td>09/24/1889</td><td>01/15/1981</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/126432778" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Silver, Joseph Temple</td><td>2</td><td>11</td><td>6</td><td>301</td><td>2</td><td></td><td>05/16/1869</td><td>04/13/1926</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/292650449" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
+     <td>Silver, Maurice Clair [PENDING]</td><td>5n</td><td>2</td><td>3</td><td>1279</td><td></td><td>CPx2</td><td>04/06/1931</td><td>01/22/2026</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/126470292" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td>X</td>
      <td>Silver, Ralph Edison</td><td>5n</td><td>1</td><td>1</td><td>1267</td><td>3</td><td>C</td><td>07/27/1893</td><td>01/09/1996</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/157293370" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -8309,7 +8315,7 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/192049534" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>White, Mary Jane (Closson)</td><td>1n</td><td>8</td><td>2</td><td>1048</td><td>3</td><td>C</td><td>03/29/1935</td><td>06/25/2017</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/148225648" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>White, Maude B.</td><td>1n</td><td>8</td><td>2</td><td>1048</td><td>1</td><td></td><td>__/__/1897</td><td>__/__/1978</td></tr>
+     <td>White, Maude Belle</td><td>1n</td><td>8</td><td>2</td><td>1048</td><td>1</td><td></td><td>04/23/1897</td><td>06/23/1978</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/106614805" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>White, Mildred Lucille (Campbell)</td><td>5s</td><td>15</td><td>8</td><td>1424</td><td>1</td><td></td><td>11/23/1905</td><td>06/__/1975</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159122637" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -8323,11 +8329,13 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
 <tr><td><a href="http://FindAGrave.com/memorial/100618433" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>White, Victor Herbert</td><td>2</td><td>2</td><td>5</td><td>D2</td><td>1</td><td>Cx2</td><td>03/11/1929</td><td>11/11/2012</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/148225630" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>White, Warren E.</td><td>1n</td><td>8</td><td>2</td><td>1048</td><td>2</td><td></td><td>__/__/1891</td><td>__/__/1959</td></tr>
+     <td>White, Warren Edwin</td><td>1n</td><td>8</td><td>2</td><td>1048</td><td>2</td><td></td><td>03/26/1891</td><td>09/09/1959</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159122697" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Whitehead, James</td><td>2</td><td>12</td><td>12</td><td>438</td><td>2</td><td></td><td>04/12/1813</td><td>07/27/1898</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/156697936" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Whiting, Cecil Rae [infant girl]</td><td>4</td><td>4</td><td>22</td><td>522</td><td>3</td><td></td><td>03/03/1922</td><td>03/12/1922</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/49047306" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
+     <td>Wickes, Arena Louisa</td><td>4</td><td>10</td><td>3</td><td>223</td><td>3</td><td></td><td>07/26/1832</td><td>01/25/1911</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/151497415" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Wickes, Charles Ambrose</td><td>4</td><td>10</td><td>3</td><td>223</td><td>4</td><td></td><td>03/24/1856</td><td>05/13/1946</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/156697970" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
@@ -8336,11 +8344,9 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
      <td>Wickes, Edna Louisa [infant]</td><td>2</td><td>18</td><td>3</td><td>263</td><td>2</td><td></td><td>02/14/1886</td><td>10/11/1886</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/156698040" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Wickes, Elizabeth Gertrude</td><td>2</td><td>18</td><td>3</td><td>263</td><td>3</td><td></td><td>12/31/1862</td><td>03/18/1883</td></tr>
-<tr><td><a href="http://FindAGrave.com/memorial/49047306" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Wicks, Arena Louisa</td><td>4</td><td>10</td><td>3</td><td>223</td><td>3</td><td></td><td>07/26/1832</td><td>01/25/1911</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/156698074" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
-     <td>Wicks, Minnie Amanda</td><td>2</td><td>18</td><td>1</td><td>261</td><td>2</td><td></td><td>02/23/1849</td><td>03/16/1918</td></tr>
-<tr><td></td><td></td>
+     <td>Wickes, Minnie Amanda</td><td>2</td><td>18</td><td>1</td><td>261</td><td>2</td><td></td><td>02/23/1849</td><td>03/16/1918</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/52830991" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Wight Gunsolley, Martha Florence</td><td>3s</td><td>6</td><td>15</td><td>202</td><td>1</td><td></td><td>02/03/1875</td><td>12/12/1951</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/52831104" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Wight, David William</td><td>3s</td><td>6</td><td>15</td><td>202</td><td>2</td><td></td><td>07/02/1869</td><td>10/03/1901</td></tr>
@@ -8380,6 +8386,8 @@ NOTE: This generated code assumes that "FG.png" is a square image icon for Find-
      <td>Wilcoxson, Everett Glenn</td><td>B8</td><td>9</td><td>3</td><td>B8 L100</td><td>3</td><td></td><td>05/19/1901</td><td>04/14/1979</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/156698683" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Wilcoxson, Harry</td><td>2</td><td>14</td><td>19</td><td>468</td><td>4</td><td></td><td>01/05/1875</td><td>10/04/1952</td></tr>
+<tr><td><a href="http://FindAGrave.com/memorial/264976602" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
+     <td>Wilcoxson, Kathleen Jeanette</td><td>B9</td><td>4</td><td>7</td><td>B9 L33</td><td>1</td><td>NB</td><td>07/17/1937</td><td>02/15/2024</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/159122989" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>
      <td>Wilcoxson, Lavern Leath</td><td>B8</td><td>11</td><td>4</td><td>B8 L95</td><td>1</td><td></td><td>05/25/1923</td><td>06/05/1998</td></tr>
 <tr><td><a href="http://FindAGrave.com/memorial/156698714" target="_blank"><img src="FG.png" alt="" width="16"></a></td><td></td>

@@ -6,7 +6,7 @@ You must EXPORT this VETERANS report as a Windows text file (See the External Da
    4. Save the HTML file, check it out for errors, and upload it to the website to replace the old one.
 NOTE: This generated code assumes that "FG.png" is a square image icon for Find-A-Grave that is in the same directory as the html file that contains this code.
 -->
-<h1> Wednesday, January 21, 2026                        </h1>
+<h1> Friday, February 13, 2026                          </h1>
 <table  id="bottom">
 <thead>
 <tr><th>FG</th><th>Name</th><th>Military Record</th><th>Birthdate</th><th>Deathdate</th><th>Sect.</th><th>Lot</th><th>Code</th></tr>
